@@ -54,21 +54,21 @@ Before conducting real interviews, we tried to look around real activities findi
 7. Basically, "유랑", and "유디니" is Korean community. Also, if the interviewee had the chance to get foreign travel-mates in hostel, they said they avoided getting foreign traveler. These situations are caused by language barrier between Korean and English.
 8. In community observation, some posts had more replies than other posts. Most of them are female's posts, but the replies are mixed. It means female is more popular than male in candidate pool.
 9. In community observation, most of the cities are popular city. There are common cities to travel with travel-mates.
-10. 
+10. There are some critical factor that makes users decide travel-mate for each other. Although, the candidate has obvious disadvantages, when the candidate has suggestion to do the special activity, like watching musical, and the user loves musical, he decides the candidate as travel-mate.
 
 ----------
 ### Studion Reflections
 #### I Like...
-Your determination that change the topic.
-Your process that tries to find good target user.
+- Your determination that change the topic.
+- Your process that tries to find good target user.
 
 #### I wish...
-You concern more about the human factor. In my experience, big human pool is critical factor in this problem.
-You concern about the extreme users.
+- You concern more about the human factor. In my experience, big human pool is critical factor in this problem.
+- You concern about the extreme users.
 
 #### What if...
-expand the population to age axis.
-The old agers are tend to use package tour like "하나투어", "모두투어", think about it.
+- Expand the population to age axis.
+- The old agers are tend to use package tour like "하나투어", "모두투어", think about it.
 
 #### Reflections
 In studio feedback, there are several statements about the extreme users. In this reason, we think about the extreme users in our topic, finding travel-mates. We conclude that our extreme user can be determined by travel frequency or financial budget. With this matircs, we need more interview or survey, and we will be able to understand about our extreme users.
