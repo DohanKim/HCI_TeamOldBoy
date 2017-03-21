@@ -33,24 +33,26 @@ Before conducting real interviews, we tried to look around real activities findi
 
 Interesting Moments
 
-She searched facebook page with city name and kept scrolling down even though the search results was not that useful.
-She spent long time to check candidates’ personal information looking Facebook posts or Kakaotalk profile.
-She felt uncomfortable if the candidates set their information private.
-She said sharing food and taking photographs are important virtues of travel mates.
+- She searched facebook page with city name and kept scrolling down even though the search results was not that useful.
+- She spent long time to check candidates’ personal information looking Facebook posts or Kakaotalk profile.
+- She felt uncomfortable if the candidates set their information private.
+- She said sharing food and taking photographs are important virtues of travel mates.
 
-![false_account]()
-
+![false_account](./images/false_account.png)
 
 **Interviewee #2** (interviewer: Dohan, Jakyun, Giwan)
->**Descriptions:** 25 years old, male university student. He is from ..., and traveled Europe alone for 70 days.
+>**Descriptions:** 25 years old, male, university student. He is from ..., and traveled Europe alone for 70 days.
 
 Interesting Moments
 
-He 
+- He kept scrolling "유디니" Facebook group, when he has no specific purpose.
+- He prefer cauchsurfing where he can get free accomodations to travel-mates. When he got travel-mate in "유랑", the relationship between him and mate is almost business relationship. From this relationship, he felt frustrated, so he prefer couchsurfing that have more familiar communication with house-owner than just travel-mates.
+
+**Interviewee #3** (interviewer: Jakyun, Giwan)
 
 ----------
 ### Needs
-#### Want to find a travel-mate who
+#### The users want to find a travel-mate who
 - visits the same city
 - has the same itinerary
 - is credible or safe
