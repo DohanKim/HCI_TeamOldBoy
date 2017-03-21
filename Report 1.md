@@ -28,33 +28,7 @@ Before conducting real interviews, we tried to look around real activities findi
 - Used withdrawal and return scheme
 - Asked if they had any difficulty while finding a travel mate in the past
 
-**Interviewee #1** (interviewer: Giwan)
->**Descriptions:** 24 years old male unversity student. He is from Yongin City, and he experienced traveling alone three times for 3~7 days each. Plus, He was exchange student in Denmark.
-
-Interview Summary
-Interviewed in Facebook messenger, so this interview is not contextual inquiry. First, he travel alone because he has no friends that can go travel with him. He said about the difficulties when travle alone. He felt lonely in some situations like eating, taking selfie, or going somewhere with his luggage. When he wanted to remove lonely, he decided to find the travel-mates. Joining in the accomodation is one way to find travel-mates, but he usually find it in community called "유랑". It is served in naver cafe, so it is not optimized to find travel-mates. Searching who is in same city is not easy job. The optimized solution, moblie application, is available, but it has small human pool. In this reason he used "유랑", not mobile application.
-
-Interesting Moments
-
-
-**Interviewee #2** (interviewer: Eunseok)
->**Descriptions:** 25 years old, female, university student. She is from Seoul city, and traveled Europe alone for a month
-
-Interview Summary
-Searched facebook page with city name and kept scrolling down even though the search results was not that useful.
-Spent long time to check candidates’ personal information.
-Facebook wall
-Felt uncomfortable if the candidates set their information private
-Said sharing food and taking photographs are important virtues of travel mates.
-- used "유랑", "유디니" before
-
-**Interveiwee #3** (Interviewer: Dohan)
->**Descriptions:** 26 years old, male, graduate student. He is from Daejeon city, and he lived in Croatia for a year. He worked as a tour guide, and traveled the world a lot.
-
-Interesting Moments
-- He picked people wrote more introduction about themselves rather than dry information as a travel mate.
-- He prefered female to male as a travel mate. 
-- He said he loves visiting museum but it’s hard to find out if the candidates loves or not.
+/* The interviews will be inserted... */
 
 ----------
 ### Needs
