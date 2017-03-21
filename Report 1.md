@@ -1,9 +1,10 @@
-##CS374 Design Project 1 Report
+# CS374 Design Project 1 Report
+
 **Team members**: Dohan Kim, Eunseok Jung, Giwan Park,  Jaekyun Kim
 
 ----------
 ### Experience
-##**Finding a travel-mate.**
+## **Finding a travel-mate.**
 
 ----------
 ### Observations & Interviews
@@ -11,12 +12,12 @@
 #### Interview preparation
 Before conducting real interviews, we tried to look around real activities finding travel mates.
 
-#####Services finding travel mates
+##### Services finding travel mates
  - Naver cafe "유랑" (community of backpackers traveling the Europe)
  - Facebook group "유럽 어디까지 가봤니?" (a.k.a. 유디니) (community of backpackers traveling the Europe)
  - Mobile aplication "설레여행" (finds travelmates)
 
-#####We were noticed that
+##### We were noticed that
  - Most of the users finding travel mates in web services are 20s or 30s.
  - Some posts have several replies, but other have a few replies.
  - The posts finds travel-mates for today or for couple of months later.
@@ -84,9 +85,19 @@ Said he loves visiting museum but it’s hard to find out if the candidates love
 
 ----------
 ### Studion Reflections
-####I Like...
+#### I Like...
 Your determination that change the topic.
 Your process that tries to find good target user.
 
-####I wish...
+#### I wish...
 You concern more about
+
+#### I wish...
+You concern more about the human factor. In my experience, big human pool is critical factor in this problem.
+You concern about the extreme users.
+
+#### What if...
+expand the population to age axis.
+The old agers are tend to use package tour like "하나투어", "모두투어", think about it.
+
+#### Reflections
