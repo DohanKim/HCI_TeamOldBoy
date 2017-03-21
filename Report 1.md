@@ -53,16 +53,16 @@ Interesting Moments
 ----------
 ### Needs
 #### The users want to find a travel-mate who
-- visits the same city
-- has the same itinerary
-- is credible or safe
-- has similar personal character with me
-- has similar preference for food
-- has similar budget constraint
-- has the same style of traveling like visiting museum, art gallary, or landmarks.
-- has the similar volume of schedule
-- can share a accommodation
-- is good at taking photo
+1. visits the same city
+2. has the same itinerary
+3. is credible or safe
+4. has similar personal character with me
+5. has similar preference for food
+6. has similar budget constraint
+7. has the same style of traveling like visiting museum, art gallary, or landmarks.
+8. has the similar volume of schedule
+9. can share a accommodation
+10. is good at taking photo
 
 ----------
 ### Insights
