@@ -28,7 +28,26 @@ Before conducting real interviews, we tried to look around real activities findi
 - Used withdrawal and return scheme
 - Asked if they had any difficulty while finding a travel mate in the past
 
-/* The interviews will be inserted... */
+**Interviewee #1** (interviewer: Eunseok)
+>**Descriptions:** 25 years old, female, university student. She is from Seoul city, and traveled Europe alone for a month.
+
+Interesting Moments
+
+She searched facebook page with city name and kept scrolling down even though the search results was not that useful.
+She spent long time to check candidates’ personal information looking Facebook posts or Kakaotalk profile.
+She felt uncomfortable if the candidates set their information private.
+She said sharing food and taking photographs are important virtues of travel mates.
+
+![false_account]()
+
+
+**Interviewee #2** (interviewer: Dohan, Jakyun, Giwan)
+>**Descriptions:** 25 years old, male university student. He is from ..., and traveled Europe alone for 70 days.
+
+Interesting Moments
+
+He 
+
 ----------
 ### Needs
 #### Want to find a travel-mate who
