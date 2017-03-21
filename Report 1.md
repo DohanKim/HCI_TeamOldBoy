@@ -29,7 +29,6 @@ Before conducting real interviews, we tried to look around real activities findi
 - Asked if they had any difficulty while finding a travel mate in the past
 
 /* The interviews will be inserted... */
-
 ----------
 ### Needs
 #### Want to find a travel-mate who
@@ -47,14 +46,15 @@ Before conducting real interviews, we tried to look around real activities findi
 ----------
 ### Insights
 1. Finders starts serching with city names first, and compares date that candidates stay in the city. In this observation, The city name and date are the important metrics to narrow down their choice.
-1. Finders want many good aspect from travel-mates. It seems like they want disposible friend, not just bodyguard or person with itinerary. Probably, they want emotional connection with travle-mates.
-1. Some interviewees talked about the sudden disconnection with travel-mate candidate. However, they added when they communicate with Facebook, it is less likely to occur the sudden disconnection than anonymous KakaoTalk. When people are anonymous, they make disconnection more easily.
-1. When the users find travel-mates of tonight, they take care about the date and location only. However, when they find travel-mates for trip in a couple of months later, they starts consider many things.
-1. Female interviewees showed the action that checks whether the candidates are credible or not. For example, checking the KakaoTalk profile or checking the Facebook account. At this point female finders want to know about candidate's credibility.
-1. In the credibility checking, more personal information makes more credible. It can be checked with blog articles, Facebook posts, concrete explanations, etc.
-1. Basically, "유랑", and "유디니" is Korean community. Also, if the interviewee had the chance to get foreign travel-mates in hostel, they said they avoided getting foreign traveler. These situations are caused by language barrier between Korean and English.
-1. In community observation, some posts had more replies than other posts. Most of them are female's posts, but the replies are mixed. It means female is more popular than male in candidate pool.
-1. In community observation, most of the cities are popular city. There are common cities to travel with travel-mates.
+2. Finders want many good aspect from travel-mates. It seems like they want disposible friend, not just bodyguard or person with itinerary. Probably, they want emotional connection with travle-mates.
+3. Some interviewees talked about the sudden disconnection with travel-mate candidate. However, they added when they communicate with Facebook, it is less likely to occur the sudden disconnection than anonymous KakaoTalk. When people are anonymous, they make disconnection more easily.
+4. When the users find travel-mates of tonight, they take care about the date and location only. However, when they find travel-mates for trip in a couple of months later, they starts consider many things.
+5. Female interviewees showed the action that checks whether the candidates are credible or not. For example, checking the KakaoTalk profile or checking the Facebook account. At this point female finders want to know about candidate's credibility.
+6. In the credibility checking, more personal information makes more credible. It can be checked with blog articles, Facebook posts, concrete explanations, etc.
+7. Basically, "유랑", and "유디니" is Korean community. Also, if the interviewee had the chance to get foreign travel-mates in hostel, they said they avoided getting foreign traveler. These situations are caused by language barrier between Korean and English.
+8. In community observation, some posts had more replies than other posts. Most of them are female's posts, but the replies are mixed. It means female is more popular than male in candidate pool.
+9. In community observation, most of the cities are popular city. There are common cities to travel with travel-mates.
+10. 
 
 ----------
 ### Studion Reflections
@@ -71,3 +71,4 @@ expand the population to age axis.
 The old agers are tend to use package tour like "하나투어", "모두투어", think about it.
 
 #### Reflections
+In studio feedback, there are several statements about the extreme users. In this reason, we think about the extreme users in our topic, finding travel-mates. We conclude that our extreme user can be determined by travel frequency or financial budget. With this matircs, we need more interview or survey, and we will be able to understand about our extreme users.
