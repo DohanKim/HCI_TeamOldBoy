@@ -8,7 +8,6 @@
 
 ----------
 ### Observations & Interviews
-
 #### Interview preparation
 Before conducting real interviews, we tried to look around real activities finding travel mates.
 
@@ -23,10 +22,7 @@ Before conducting real interviews, we tried to look around real activities findi
  - The posts finds travel-mates for today or for couple of months later.
  - The finders describe their characteristics in many aspect not only the itinerary and traveling city, but their personalities, travel style, food preference, and even photo taking skills.
 
-
-
 #### Interviews
-
 - Tried to set Master-Apprentice relationship
 - Let them assume that they will travel to somewhere they want in two days and ‘do what they usually do’.
 - Used withdrawal and return scheme
@@ -88,9 +84,6 @@ Said he loves visiting museum but it’s hard to find out if the candidates love
 #### I Like...
 Your determination that change the topic.
 Your process that tries to find good target user.
-
-#### I wish...
-You concern more about
 
 #### I wish...
 You concern more about the human factor. In my experience, big human pool is critical factor in this problem.
