@@ -40,7 +40,7 @@ Interesting Moments
 - She felt uncomfortable if the candidates set their information private.
 - She said sharing food and taking photographs are important virtues of travel mates.
 
-![false_account](./images/false_account.png)
+![false_account](http://dl.dropbox.com/s/1ezc1uxoqzhotue/false_account.png)
 
 **Interviewee #2** (interviewer: Dohan, Jakyun, Giwan)
 >**Descriptions:** 25 years old, male, university student. He is from ..., and traveled Europe alone for 70 days.
@@ -50,7 +50,7 @@ He used "유랑" when he travle Europle. In the inverview, he is in the Belgium 
 Interesting Moments
 
 - He kept scrolling "유디니" Facebook group, when he has no specific purpose and even when the search results are not fit to his needs.
-![eudini](./images/Eudini.png)
+![eudini](http://dl.dropbox.com/s/pvemj0ync5nd8ad/Eudini.png)
 - He prefer cauchsurfing where he can get free accomodations to travel-mates. When he got travel-mate in "유랑", the relationship between him and mate is almost business relationship. From this relationship, he felt frustrated, so he prefer couchsurfing that have more familiar communication with house-owner than just travel-mates.
 - Also, he prefer "유디니" than "유랑" because he can know about the candidate's characteristics visiting his/her Facebook profile. In the contrast, most of posts in "유랑" has no personal information.
 
@@ -63,7 +63,7 @@ He is an extreme user that have already known the url of "유랑" naver cafe. In
 
 Interesting Moments
 - He did not look at messages written by guys. For example, there was a message written by "guyguy" user. He made certain that the message was written by a male. In some case, even though a travel period of a message a female wrote didn't overlap his period, he tried to click the link without recognizing the period. And some minutes passed by then, he realized it.
-![to_female](./images/tofemale.jpg)
+![to_female](http://dl.dropbox.com/s/616p58m1yr5eqkm/tofemale.jpg)
 - If he found a female user, he prefer sending Kakao Talk messages or private messages to leaving a public comment. Because he don't want to have an image unworthy of a gentleman to other users.(신사답지 못한 이미지를 갖고 싶지 않기 때문이다.)
 - There is no sign that it has been opened so that he also clicked some links that have already opened.
 
