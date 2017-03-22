@@ -43,14 +43,14 @@ Interesting Moments
 **Interviewee #2** (interviewer: Dohan, Jakyun, Giwan)
 >**Descriptions:** 25 years old, male, university student. He is from ..., and traveled Europe alone for 70 days.
 
+He used "유랑" when he travle Europle. In the inverview, he is in the Belgium and go to Rome, and need to find travel-mate for Rome trip. First, he go in to the "유디니", and search the hashtag "Rome travel-mate(로마동행)". He kept pressing see more buttons, and scrolling. However, most of the posts shows about past trip, so he went to "유랑". He searched city name and read through the title of posts to find right date. When there was proper title, he clicked, and checked the content fast. If he could know that the candidate was man, he immediately abandoned it, and checked another post. When he found the perfect candidate, first he check whether the KakaoTalk ID is available. If not, he uses Naver Note service. He spent some time to write the rich note to candidate. He explained this effort make me more valuable person to be chosen.
+
 Interesting Moments
 
 - He kept scrolling "유디니" Facebook group, when he has no specific purpose and even when the search results are not fit to his needs.
 ![eudini](./images/Eudini.png)
 - He prefer cauchsurfing where he can get free accomodations to travel-mates. When he got travel-mate in "유랑", the relationship between him and mate is almost business relationship. From this relationship, he felt frustrated, so he prefer couchsurfing that have more familiar communication with house-owner than just travel-mates.
 - Also, he prefer "유디니" than "유랑" because he can know about the candidate's characteristics visiting his/her Facebook profile. In the contrast, most of posts in "유랑" has no personal information.
-
-
 
 **Interviewee #3** (interviewer: Jakyun, Giwan)
 >**Descriptions:** 27 years old,  robust male, university student. He is from Seoul. 
@@ -60,7 +60,8 @@ He is an extreme user that have already known the url of "유랑" naver cafe. In
   Until, no more available messages left, he checked all related messages and contacted them.
 
 Interesting Moments
-- He did not look at messages written by guys. For example, there was a message written by "guyguy" user. He made certain that the message was written by a male. In some case, even though a travel period of a message a female wrote didn't overlap his period, he tried to click the link without recognizing the period. And some minutes passed by then, he realized it. 
+- He did not look at messages written by guys. For example, there was a message written by "guyguy" user. He made certain that the message was written by a male. In some case, even though a travel period of a message a female wrote didn't overlap his period, he tried to click the link without recognizing the period. And some minutes passed by then, he realized it.
+![to_female](./images/to female.jpg)
 - If he found a female user, he prefer sending Kakao Talk messages or private messages to leaving a public comment. Because he don't want to have an image unworthy of a gentleman to other users.(신사답지 못한 이미지를 갖고 싶지 않기 때문이다.)
 - There is no sign that it has been opened so that he also clicked some links that have already opened.
 
