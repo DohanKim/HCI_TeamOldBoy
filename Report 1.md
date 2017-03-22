@@ -6,7 +6,7 @@
 
 ----------
 ### Experience
-**Finding a travel-mate.**
+**Finding travel mates.**
 
 ----------
 ### Before the interviews
@@ -20,7 +20,7 @@ Before conducting real interviews, we tried to look around real activities happe
 ##### We were noticed that
  - Most of the users finding travel mates from web forums or mobile applications are in their 20s or 30s.
  - Users can be divided into two groups of finding travel mates today and finding travel mates for few months later.
- - Users sometimes describe their personal characters in many aspects such as travel style, food preference, and even photographic skills not only the itinerary.
+ - Users sometimes not only describe their itinerary but also introduce their personal characters in many aspects such as travel styles, food preferences, and even photographic skills.
 
 ----------
 ### Observations & Interviews
@@ -31,7 +31,7 @@ Before conducting real interviews, we tried to look around real activities happe
 - Used withdrawal and return scheme
 - Asked what difficulties interviewees had in finding travel mates in the past
 
-**Interviewee #1** (interviewer: Eunseok)
+**Interviewee #1** (interviewer: Dohan)
 >**Descriptions:** 25 years old, Female, University student, Live in Seoul city, Traveled Europe alone for a month.
 
 Interesting Moments
@@ -41,73 +41,77 @@ Interesting Moments
 - She felt uncomfortable if the candidates set their information private.
 - She said sharing food and taking photographs are important virtues of travel mates.
 
-![false_account](http://dl.dropbox.com/s/1ezc1uxoqzhotue/false_account.png)
+![false_account](https://github.com/DohanKim/HCI_TeamOldBoy/blob/master/images/false_account.png?raw=true)
 
-**Interviewee #2** (interviewer: Dohan)
->**Descriptions:** 25 years old, male, university student. He is from ..., and traveled Europe alone for 70 days.
+**Interviewee #2** (interviewer: Eunseok)
+>**Descriptions:** 25 years old, Male, University student, from Daejeon, Traveled Europe alone for 70 days.
 
-He used "유랑" when he travle Europle. In the inverview, he is in the Belgium and go to Rome, and need to find travel-mate for Rome trip. First, he go in to the "유디니", and search the hashtag "Rome travel-mate(로마동행)". He kept pressing see more buttons, and scrolling. However, most of the posts shows about past trip, so he went to "유랑". He searched city name and read through the title of posts to find right date. When there was proper title, he clicked, and checked the content fast. If he could know that the candidate was man, he immediately abandoned it, and checked another post. When he found the perfect candidate, first he check whether the KakaoTalk ID is available. If not, he uses Naver Note service. He spent some time to write the rich note to candidate. He explained this effort make me more valuable person to be chosen.
+We assumed he is in Belgium now and about to leave for Rome in two days so let him find travel mates for Rome. He began with visiting "유디니" Facebook group and searching with the hash tag "#유디니 로마". However, most of the search results were irrelevant to finding travel mates. So he had to keep pressing 'see more' button, and scrolling down. After the unsuccessful exploration, he moved to Naver cafe "유랑". In the "유랑동행" board, he searched with "Rome" keyword and skimmed through the titles of the search results mostly indicating travel period to see if the period match his schedule. Whenever the period matched, he went into the post and checked the contents. He sent KakaoTalk message if the contents contain the writer's KakaoTalk ID. Otherwise, he used Naver message to contact.
 
 Interesting Moments
 
-- He kept scrolling "유디니" Facebook group, when he has no specific purpose and even when the search results are not fit to his needs.
-![eudini](http://dl.dropbox.com/s/pvemj0ync5nd8ad/Eudini.png)
-- He prefer cauchsurfing where he can get free accomodations to travel-mates. When he got travel-mate in "유랑", the relationship between him and mate is almost business relationship. From this relationship, he felt frustrated, so he prefer couchsurfing that have more familiar communication with house-owner than just travel-mates.
-- Also, he prefer "유디니" than "유랑" because he can know about the candidate's characteristics visiting his/her Facebook profile. In the contrast, most of posts in "유랑" has no personal information.
+- He used a searching feature of facebook group but most of the search results were completely irrelevant to finding travel mates so he kept scrolling down watching unsatisfying information. 
+![eudini](https://github.com/DohanKim/HCI_TeamOldBoy/blob/master/images/Eudini.png?raw=true)
+- We asked why he keeps using "유디니" even though the search results were frustrating. He said that once he finds a candiate in the Facebook group, it is much better than Naver cafe because he could know a lot more about the candidate from his/her facebook wall.
+- He traveled twice with travel mates found in "유랑". But it was unsatisfying because they only spent short time together watching a football game or having dinner and went their separate ways immediately. 
+- He tried to check candidates' Naver blogs to get more information about them, but most of the blogs were empty.
+- He much prefered female to male as a travel mate.
 
 **Interviewee #3** (interviewer: Jakyun, Giwan)
->**Descriptions:** 27 years old,  robust male, university student. He is from Seoul. 
+>**Descriptions:** 27 years old, Male, University student, from Changwon, Has traveled with travel mates found on website over at least 10 times. (**extreme user**) 
 
-He is an extreme user that have already known the url of "유랑" naver cafe. In his upcoming travel, he want to find people to travel with him in London during 5 days. First of all, he try to find a fellow traveler and then plan a journey concerning the plan of the traveler. Even, he don't have to visit a landmark if the fellow traveler don't want to visit it.
-  Now, he visited "유랑".  He searched "London" in "유랑 동행" board. Then, he clicked the links of search result messages whose itinerary period overlaps his travel period in London, pressing command-key for opening a different tab in Chrome. That's the way for him to memorize the messages.
-  Until, no more available messages left, he checked all related messages and contacted them.
+He is a heavy user of existing services finding travel mates. He even remembered website url of "유랑" Naver cafe. We let him assume that he will be in London for 5 days from today. At first, he visited "유랑" by typing its url in a browser and searched "London" in the "유랑동행" board. Then he skimmed through the search results and verified if any of results fit to his schedule. To see detail of an article, he used command key of Macbook to open the link in new tab. If the articles contain KakaoTalk ID, he added he/she as a KakaoTalk friend to see his/her profile pictures by using his smartphone. Otherwise, he sent a Naver message to contact. He sent messages to all the female candidates whose schedule match his itinerary.
 
 Interesting Moments
-- He did not look at messages written by guys. For example, there was a message written by "guyguy" user. He made certain that the message was written by a male. In some case, even though a travel period of a message a female wrote didn't overlap his period, he tried to click the link without recognizing the period. And some minutes passed by then, he realized it.
-![to_female](http://dl.dropbox.com/s/616p58m1yr5eqkm/tofemale.jpg)
-- If he found a female user, he prefer sending Kakao Talk messages or private messages to leaving a public comment. Because he don't want to have an image unworthy of a gentleman to other users.(신사답지 못한 이미지를 갖고 싶지 않기 때문이다.)
-- There is no sign that it has been opened so that he also clicked some links that have already opened.
+- His scheduling was so flexible that he could make minor arrangements of itinerary always according to his travel mate's schedule.   
+- While skimming the search results, he mistakes "4월 22일" for "3월 22일" so he contacted with wrong person. He said it is confusing because there was too much search result rows and the date in each row has different vertical position.
+- He put efforts to write polite message when contact.
+- He prefered sending a KakaoTalk message or a Naver message to leaving a comment. Because a comment is viewable to public and therefore other people could realize that he is trying to contact with several people concurrently.
+- He sometimes opened the same article a couple of times by accident because Naver cafe didn't mark visited links.
+- Whenever it turned that a candidate is male, he immediately abandoned the candidate and continued finding process. He only contacted with women.
+![tofemale](https://github.com/DohanKim/HCI_TeamOldBoy/blob/master/images/tofemale.jpg?raw=true)
 
 ----------
 ### Needs
-#### The users want to find a travel-mate who
-1. visits the same city
-2. has the same itinerary
-3. is credible or safe
-4. has similar personal character with me
-5. has similar preference for food
-6. has similar budget constraint
-7. has the same style of traveling like visiting museum, art gallary, or landmarks.
-8. has the similar volume of schedule
-9. can share a accommodation
-10. is good at taking photo
+#### The users want to find a travel mate who
+- Visits the same city (main search word)
+- Has the same or similar itinerary (screening the search results)
+- Is credible or safe (checking candidates' other articles, blogs and SNS accounts)
+- Has the opposite sex
+- Has similar personal character with me
+- Has similar budget constraint (an experience having difficulty to decide what to do)
+- Has the same style of traveling (e.g. enjoying visiting museum vs. not enjoying)
+- Has similar fatigueness of schedule (an experience suffering from walking all day)
+- Can share an accommodation
+- Is good at taking photos (favorable reaction to whom introducing themselves as a good photographer)
+- Has similar preferences for food (an experience having difficulty to decide what to eat)
 
 ----------
 ### Insights
-1. Finders starts serching with city names first, and compares date that candidates stay in the city. In this observation, The city name and date are the important metrics to narrow down their choice.
-2. Finders want many good aspect from travel-mates. It seems like they want disposible friend, not just bodyguard or person with itinerary. Probably, they want emotional connection with travle-mates.
-3. When the users find travel-mates of tonight, they take care about the date and location only. However, when they find travel-mates for trip in a couple of months later, they starts consider many things.
-4. Some interviewees talked about the sudden disconnection with travel-mate candidate. However, they added when they communicate with Facebook, it is less likely to occur the sudden disconnection than anonymous KakaoTalk. When people are anonymous, they make disconnection more easily.
-5. Female interviewees showed the action that checks whether the candidates are credible or not. For example, checking the KakaoTalk profile or checking the Facebook account. At this point female finders want to know about candidate's credibility.
-6. In the credibility checking, more personal information makes more credible. It can be checked with blog articles, Facebook posts, concrete explanations, etc.
-7. Basically, "유랑", and "유디니" is Korean community. Also, if the interviewee had the chance to get foreign travel-mates in hostel, they said they avoided getting foreign traveler. These situations are caused by language barrier between Korean and English.
-8. In community observation, some posts had more replies than other posts. Most of them are female's posts, but the replies are mixed. It means female is more popular than male in candidate pool.
-9. In community observation, most of the cities are popular city. There are common cities to travel with travel-mates.
-10. There are some critical factor that makes users decide travel-mate for each other. Although, the candidate has obvious disadvantages, when the candidate has suggestion to do the special activity, like watching musical, and the user loves musical, he decides the candidate as travel-mate.
+- City name and travel dates are the most important criteria to narrow down their choice.
+- Criteria for finding travel mates become different according to days left to arrive the city. (a couple of days before arriving: schedule first vs. few months before arriving: personal character)
+- Users want travel mates who can share personal communion rather than just a person walking through together.
+- Common interests such as watching musical or football games makes people choose each other much more easily.
+- Some interviewees experienced sudden disconnections with travel mate candidates. It was more frequent when they communicate anonymously than doing with real name.
+- Female users are more sensitive to the guarantee that travel mate is a safe person.
+- In the credibility checking, more personal information makes more credible. It can be given by detailed explanations, blog articles, Facebook posts, etc.
+- Users want to settle down within their language barrier. Korean are usually finding only Korean as a travel mate.
+- Women are more popular to both men and women.
+- Traveling routes are a lot in common among most users.
 
 ----------
 ### Studion Reflections
 #### I Like...
-- Your determination that change the topic.
-- Your process that tries to find good target user.
+- You changed your target user from dormitory housemaster to people finding travel mates. 
+- How you tried to find target users before conducting real interviews.
 
 #### I wish...
-- You concern more about the human factor. In my experience, big human pool is critical factor in this problem.
-- You concern about the extreme users.
+- You consider strong points of existing solutions. I think the most important factor is number of users.
+- You consider and decide who would be the extreme users.
 
 #### What if...
-- Expand the user population to various ages.
-- The old agers are tend to use package tour like "하나투어", "모두투어", think about it.
+- You expand the target users to people in various age.
+- You consider the elderly tended to use package tour program provided by "하나투어" or "모두투어".
 
 #### Reflections
-In studio feedback, there are several statements about the extreme users. In this reason, we think about the extreme users in our topic, finding travel-mates. We conclude that our extreme user can be determined by travel frequency or financial budget. With this matircs, we need more interview or survey, and then we will be able to understand about our extreme users.
+There were statements about the extreme users. So we are planning to find critical factors which differentiate our target users into broad spectrum. Finding the factors will enable to decide who the extreme users are.
