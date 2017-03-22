@@ -51,6 +51,16 @@ Interesting Moments
 ![eudini](./images/Eudini.png)
 
 **Interviewee #3** (interviewer: Jakyun, Giwan)
+>**Descriptions:** 27 years old,  robust male, university student. He is from Seoul. 
+
+He is an extreme user that have already known the url of "유랑" naver cafe. In his upcoming travel, he want to find people to travel with him in London during 5 days. First of all, he try to find a fellow traveler and then plan a journey concerning the plan of the traveler. Even, he don't have to visit a landmark if the fellow traveler don't want to visit it.
+  Now, he visited "유랑".  He searched "London" in "유랑 동행" board. Then, he clicked the links of search result messages whose itinerary period overlaps his travel period in London, pressing command-key for opening a different tab in Chrome. That's the way for him to memorize the messages.
+  Until, no more available messages left, he checked all related messages and contacted them.
+
+Interesting Moments
+- He did not look at messages written by guys. For example, there was a message written by "guyguy" user. He made certain that the message was written by a male. In some case, even though a travel period of a message a female wrote didn't overlap his period, he tried to click the link without recognizing the period. And some minutes passed by then, he realized it. 
+- If he found a female user, he prefer sending Kakao Talk messages or private messages to leaving a public comment. Because he don't want to have an image unworthy of a gentleman to other users.(신사답지 못한 이미지를 갖고 싶지 않기 때문이다.)
+- There is no sign that it has been opened so that he also clicked some links that have already opened.
 
 ----------
 ### Needs
