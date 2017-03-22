@@ -9,29 +9,30 @@
 **Finding a travel-mate.**
 
 ----------
-### Observations & Interviews
-#### Interview preparation
-Before conducting real interviews, we tried to look around real activities finding travel mates.
+### Before the interviews
+Before conducting real interviews, we tried to look around real activities happening to find travel mates.
 
-##### Services finding travel mates
+##### References
  - Naver cafe "유랑" (community of backpackers traveling the Europe)
  - Facebook group "유럽 어디까지 가봤니?" (a.k.a. 유디니) (community of backpackers traveling the Europe)
  - Mobile aplication "설레여행" (finds travelmates)
 
 ##### We were noticed that
- - Most of the users finding travel mates in web services are 20s or 30s.
- - Some posts have several replies, but other have a few replies.
- - The posts finds travel-mates for today or for couple of months later.
- - The finders describe their characteristics in many aspect not only the itinerary and traveling city, but their personalities, travel style, food preference, and even photo taking skills.
+ - Most of the users finding travel mates from web forums or mobile applications are in their 20s or 30s.
+ - Users can be divided into two groups of finding travel mates today and finding travel mates for few months later.
+ - Users sometimes describe their personal characters in many aspects such as travel style, food preference, and even photographic skills not only the itinerary.
+
+----------
+### Observations & Interviews
 
 #### Interviews
-- Tried to set Master-Apprentice relationship
-- Let them assume that they will travel to somewhere they want in two days and ‘do what they usually do’.
+- Tried to set Master-Apprentice relationship with our interviewees
+- Let interviewees assume that they will travel to somewhere they want and ‘do what they usually do’.
 - Used withdrawal and return scheme
-- Asked if they had any difficulty while finding a travel mate in the past
+- Asked what difficulties interviewees had in finding travel mates in the past
 
 **Interviewee #1** (interviewer: Eunseok)
->**Descriptions:** 25 years old, female, university student. She is from Seoul city, and traveled Europe alone for a month.
+>**Descriptions:** 25 years old, Female, University student, Live in Seoul city, Traveled Europe alone for a month.
 
 Interesting Moments
 
@@ -42,7 +43,7 @@ Interesting Moments
 
 ![false_account](http://dl.dropbox.com/s/1ezc1uxoqzhotue/false_account.png)
 
-**Interviewee #2** (interviewer: Dohan, Jakyun, Giwan)
+**Interviewee #2** (interviewer: Dohan)
 >**Descriptions:** 25 years old, male, university student. He is from ..., and traveled Europe alone for 70 days.
 
 He used "유랑" when he travle Europle. In the inverview, he is in the Belgium and go to Rome, and need to find travel-mate for Rome trip. First, he go in to the "유디니", and search the hashtag "Rome travel-mate(로마동행)". He kept pressing see more buttons, and scrolling. However, most of the posts shows about past trip, so he went to "유랑". He searched city name and read through the title of posts to find right date. When there was proper title, he clicked, and checked the content fast. If he could know that the candidate was man, he immediately abandoned it, and checked another post. When he found the perfect candidate, first he check whether the KakaoTalk ID is available. If not, he uses Naver Note service. He spent some time to write the rich note to candidate. He explained this effort make me more valuable person to be chosen.
