@@ -48,7 +48,7 @@ Interesting Moments
 - He kept scrolling "유디니" Facebook group, when he has no specific purpose.
 - He prefer cauchsurfing where he can get free accomodations to travel-mates. When he got travel-mate in "유랑", the relationship between him and mate is almost business relationship. From this relationship, he felt frustrated, so he prefer couchsurfing that have more familiar communication with house-owner than just travel-mates.
 
-![eudini](./images/스크린샷_2017-03-22_03.17.12.png)
+![eudini](./images/Eudini.png)
 
 **Interviewee #3** (interviewer: Jakyun, Giwan)
 
