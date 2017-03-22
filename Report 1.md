@@ -33,12 +33,13 @@ Before conducting real interviews, we tried to look around real activities findi
 **Interviewee #1** (interviewer: Eunseok)
 >**Descriptions:** 25 years old, female, university student. She is from Seoul city, and traveled Europe alone for a month.
 
+When she was interviewed, the situation that she will be in Paris in 6 months later alone is given. First, she searched for Paris in "유랑", and read the titles to find the posts which has same dates in Paris. She hesitated in men's posts, and posts of person who is far from her age. After few pages of searching, she get some candidates. All the candidates' hyperlinks are scraped in her mobile memo app. To contact with them, first she tried to send message via KakaoTalk. If it fails, she tried to send via Naver Note service. She put many questions in her first messages like "Do you have enough budget to try French 'Guide Michelie' Restaurant?" or "Do you wait until I get some good photos with my DSLR?". After sending the messages, she said she usually just wait for reply, but there are some ignorances.
+
 Interesting Moments
 
-- She searched facebook page with city name and kept scrolling down even though the search results was not that useful.
-- She spent long time to check candidates’ personal information looking Facebook posts or Kakaotalk profile.
-- She felt uncomfortable if the candidates set their information private.
-- She said sharing food and taking photographs are important virtues of travel mates.
+- She said she had difficulty to adapt his travel partner’s spending level once so he want to see how much money other people are willing to spend.
+- She said sharing food and taking photographs are important virtues of travel-mates.
+- When she said about the sudden disconnection, she looked like uncomfortable. According to her explanation, she remembered the past moments feeling and consequently she got upset.
 
 ![false_account](http://dl.dropbox.com/s/1ezc1uxoqzhotue/false_account.png)
 
