@@ -1,6 +1,7 @@
 # CS374 Design Project 1 Report
 
-**Team members**: Dohan Kim, Eunseok Jeong, Giwan Park,  Jaekyun Kim
+**Team oldboy**
+**Members**: Dohan Kim, Eunseok Jeong, Giwan Park,  Jaekyun Kim
 
 ----------
 ### Experience
