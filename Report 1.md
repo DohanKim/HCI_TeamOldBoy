@@ -45,10 +45,12 @@ Interesting Moments
 
 Interesting Moments
 
-- He kept scrolling "유디니" Facebook group, when he has no specific purpose.
-- He prefer cauchsurfing where he can get free accomodations to travel-mates. When he got travel-mate in "유랑", the relationship between him and mate is almost business relationship. From this relationship, he felt frustrated, so he prefer couchsurfing that have more familiar communication with house-owner than just travel-mates.
-
+- He kept scrolling "유디니" Facebook group, when he has no specific purpose and even when the search results are not fit to his needs.
 ![eudini](./images/Eudini.png)
+- He prefer cauchsurfing where he can get free accomodations to travel-mates. When he got travel-mate in "유랑", the relationship between him and mate is almost business relationship. From this relationship, he felt frustrated, so he prefer couchsurfing that have more familiar communication with house-owner than just travel-mates.
+- Also, he prefer "유디니" than "유랑" because he can know about the candidate's characteristics visiting his/her Facebook profile. In the contrast, most of posts in "유랑" has no personal information.
+
+
 
 **Interviewee #3** (interviewer: Jakyun, Giwan)
 
@@ -70,8 +72,8 @@ Interesting Moments
 ### Insights
 1. Finders starts serching with city names first, and compares date that candidates stay in the city. In this observation, The city name and date are the important metrics to narrow down their choice.
 2. Finders want many good aspect from travel-mates. It seems like they want disposible friend, not just bodyguard or person with itinerary. Probably, they want emotional connection with travle-mates.
-3. Some interviewees talked about the sudden disconnection with travel-mate candidate. However, they added when they communicate with Facebook, it is less likely to occur the sudden disconnection than anonymous KakaoTalk. When people are anonymous, they make disconnection more easily.
-4. When the users find travel-mates of tonight, they take care about the date and location only. However, when they find travel-mates for trip in a couple of months later, they starts consider many things.
+3. When the users find travel-mates of tonight, they take care about the date and location only. However, when they find travel-mates for trip in a couple of months later, they starts consider many things.
+4. Some interviewees talked about the sudden disconnection with travel-mate candidate. However, they added when they communicate with Facebook, it is less likely to occur the sudden disconnection than anonymous KakaoTalk. When people are anonymous, they make disconnection more easily.
 5. Female interviewees showed the action that checks whether the candidates are credible or not. For example, checking the KakaoTalk profile or checking the Facebook account. At this point female finders want to know about candidate's credibility.
 6. In the credibility checking, more personal information makes more credible. It can be checked with blog articles, Facebook posts, concrete explanations, etc.
 7. Basically, "유랑", and "유디니" is Korean community. Also, if the interviewee had the chance to get foreign travel-mates in hostel, they said they avoided getting foreign traveler. These situations are caused by language barrier between Korean and English.
@@ -90,8 +92,8 @@ Interesting Moments
 - You concern about the extreme users.
 
 #### What if...
-- Expand the population to age axis.
+- Expand the user population to various ages.
 - The old agers are tend to use package tour like "하나투어", "모두투어", think about it.
 
 #### Reflections
-In studio feedback, there are several statements about the extreme users. In this reason, we think about the extreme users in our topic, finding travel-mates. We conclude that our extreme user can be determined by travel frequency or financial budget. With this matircs, we need more interview or survey, and we will be able to understand about our extreme users.
+In studio feedback, there are several statements about the extreme users. In this reason, we think about the extreme users in our topic, finding travel-mates. We conclude that our extreme user can be determined by travel frequency or financial budget. With this matircs, we need more interview or survey, and then we will be able to understand about our extreme users.
