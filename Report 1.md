@@ -63,22 +63,22 @@ He is an extreme user that have already known the url of "유랑" naver cafe. In
 Interesting Moments
 - He did not look at messages written by guys. For example, there was a message written by "guyguy" user. He made certain that the message was written by a male. In some case, even though a travel period of a message a female wrote didn't overlap his period, he tried to click the link without recognizing the period. And some minutes passed by then, he realized it.
 ![to_female](http://dl.dropbox.com/s/616p58m1yr5eqkm/tofemale.jpg)
-- If he found a female user, he prefer sending Kakao Talk messages or private messages to leaving a public comment. Because he don't want to have an image unworthy of a gentleman to other users.(신사답지 못한 이미지를 갖고 싶지 않기 때문이다.)
+- If he found a female user, he prefer sending Kakao Talk messages or private messages to leaving a public comment. Because he want not to have a image like a playboy by preventing from leaving too many public messages to women.
 - There is no sign that it has been opened so that he also clicked some links that have already opened.
 
 ----------
 ### Needs
 #### The users want to find a travel-mate who
-1. visits the same city
-2. has the same itinerary
-3. is credible or safe
-4. has similar personal character with me
-5. has similar preference for food
-6. has similar budget constraint
-7. has the same style of traveling like visiting museum, art gallary, or landmarks.
-8. has the similar volume of schedule
-9. can share a accommodation
-10. is good at taking photo
+1. visits the same city.
+2. has the same itinerary.
+3. is trustable or safe.
+4. has similar personality.
+5. has similar food preference.
+6. has similar budget.
+7. has similar preference of itinerary such as visiting museum, art gallery, or landmarks.
+8. has a long period overlapped by the user's travel period.
+9. can share a accommodation.
+10. has a good ability to take a photo.
 
 ----------
 ### Insights
