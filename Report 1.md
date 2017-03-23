@@ -105,7 +105,7 @@ Interesting Moments
 - Traveling routes are a lot in common among most users.
 
 ----------
-### Studion Reflections
+### Studio Reflections
 #### I Like...
 - You changed your target user from dormitory housemaster to people finding travel mates. 
 - How you tried to find target users before conducting real interviews.
