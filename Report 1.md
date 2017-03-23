@@ -40,7 +40,6 @@ Interesting Moments
 - She spent long time to check candidates’ personal information looking Facebook posts or Kakaotalk profile.
 - She felt uncomfortable if the candidates set their information private.
 - She said sharing food and taking photographs are important virtues of travel mates.
-
 ![false_account](https://github.com/DohanKim/HCI_TeamOldBoy/blob/master/images/false_account.png?raw=true)
 
 **Interviewee #2** (interviewer: Eunseok)
@@ -51,11 +50,11 @@ We assumed he is in Belgium now and about to leave for Rome in two days so let h
 Interesting Moments
 
 - He used a searching feature of facebook group but most of the search results were completely irrelevant to finding travel mates so he kept scrolling down watching unsatisfying information. 
-![eudini](https://github.com/DohanKim/HCI_TeamOldBoy/blob/master/images/Eudini.png?raw=true)
 - We asked why he keeps using "유디니" even though the search results were frustrating. He said that once he finds a candiate in the Facebook group, it is much better than Naver cafe because he could know a lot more about the candidate from his/her facebook wall.
 - He traveled twice with travel mates found in "유랑". But it was unsatisfying because they only spent short time together watching a football game or having dinner and went their separate ways immediately. 
 - He tried to check candidates' Naver blogs to get more information about them, but most of the blogs were empty.
 - He much prefered female to male as a travel mate.
+![eudini](https://github.com/DohanKim/HCI_TeamOldBoy/blob/master/images/Eudini.png?raw=true)
 
 **Interviewee #3** (interviewer: Jakyun, Giwan)
 >**Descriptions:** 27 years old, Male, University student, from Changwon, Has traveled with travel mates found on website over at least 10 times. (**extreme user**) 
