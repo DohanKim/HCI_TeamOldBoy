@@ -82,16 +82,16 @@ Interesting Moments
 
 ----------
 ### Insights
-1. Finders starts serching with city names first, and compares date that candidates stay in the city. In this observation, The city name and date are the important metrics to narrow down their choice.
-2. Finders want many good aspect from travel-mates. It seems like they want disposible friend, not just bodyguard or person with itinerary. Probably, they want emotional connection with travle-mates.
-3. When the users find travel-mates of tonight, they take care about the date and location only. However, when they find travel-mates for trip in a couple of months later, they starts consider many things.
-4. Some interviewees talked about the sudden disconnection with travel-mate candidate. However, they added when they communicate with Facebook, it is less likely to occur the sudden disconnection than anonymous KakaoTalk. When people are anonymous, they make disconnection more easily.
-5. Female interviewees showed the action that checks whether the candidates are credible or not. For example, checking the KakaoTalk profile or checking the Facebook account. At this point female finders want to know about candidate's credibility.
-6. In the credibility checking, more personal information makes more credible. It can be checked with blog articles, Facebook posts, concrete explanations, etc.
-7. Basically, "유랑", and "유디니" is Korean community. Also, if the interviewee had the chance to get foreign travel-mates in hostel, they said they avoided getting foreign traveler. These situations are caused by language barrier between Korean and English.
-8. In community observation, some posts had more replies than other posts. Most of them are female's posts, but the replies are mixed. It means female is more popular than male in candidate pool.
-9. In community observation, most of the cities are popular city. There are common cities to travel with travel-mates.
-10. There are some critical factor that makes users decide travel-mate for each other. Although, the candidate has obvious disadvantages, when the candidate has suggestion to do the special activity, like watching musical, and the user loves musical, he decides the candidate as travel-mate.
+1. Finders search with city names first, and then compare periods that other travel-mate candidates stay in the city. In this observation, the city name and date are the important metrics to narrow down their choice.
+2. Finders want many good aspects from travel-mates. It seems like they want a person to be a friend, not just bodyguard or a person with same itinerary. Probably, they want emotional connection with travel-mates.
+3. When the users find travel-mates for tonight, they take care about the date and location only. However, when they try to find travel-mates for a couple of months later trip, they start to consider many things.
+4. Some interviewees talked about the sudden disconnection with travel-mate. However, If they added friend in Facebook, they prevent those kind of events rather than connecting an anonymous Kakao Talk account. When people are anonymous, they sever contact more easily.
+5. Female interviewees want to figure out whether the candidates are trustable or not by checking KakaoTalk profile or checking Facebook account. At this point female finders want to know about candidate's trustability.
+6. In the trustability checking, more personal information makes more trustable. It can be checked with blog articles, Facebook posts, concrete explanations, etc.
+7. Basically, "유랑", and "유디니" is Korean communities. In that case, some interviewees don't want a language barrier so that they would not hang out foreign travelers even though they can easily meet in same accommodation. 
+8. In community observation, posts written by females had more replies written by both males and females than other posts. It means female candidate is more popular than male candidate.
+9. In community observation, most of cities in the community are popular cities such as London, Paris, and Rome. There are common cities to travel with travel-mates in the community.
+10. There are some critical factor that makes users decide travel-mate for each other. Despite of not matching assessment criteria such as gender, if the candidate has a plan with special activities like watching musical and the user loves those activities, the user decides the candidate as a travel-mate.
 
 ----------
 ### Studion Reflections
