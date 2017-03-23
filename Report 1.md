@@ -79,6 +79,7 @@ Interesting Moments
 8. has a long period overlapped by the user's travel period.
 9. can share a accommodation.
 10. has a good ability to take a photo.
+11. is opposite sex.
 
 ----------
 ### Insights
