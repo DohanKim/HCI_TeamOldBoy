@@ -43,7 +43,7 @@ Interesting Moments
 - He tried to check candidates' Naver blogs to get more information about them, but most of the blogs were empty.
 - He much prefered female to male as a travel mate.
 ![eudini](./images/Eudini.png)
-*Irrelevant search results in facebook group*
+*Searched with "#유디니 로마" but most results were irrelevant with finding travel mates*
 
 **Interviewee #2** (interviewer: Jakyun, Giwan)
 >**Descriptions:** 27 years old, Male, University student, from Changwon, Has traveled with travel mates found on website over at least 10 times. (**extreme user**) 
@@ -72,7 +72,7 @@ Interesting Moments
 - She said she had difficulty in the past to adapt her travel mate’s spend level so she wanted to know how much money other people are willing to spend.
 - She said she had an experience that a guy supposed to meet her didn't show up and kept out of touch which made her really upset.
 ![empty_blog](./images/empty_blog.png)
-*Tried to find a candidate's personal references from blog but failed*
+*Tried to find a candidate's personal references from the blog but empty blog made it unsuccessful*
 
 ----------
 ### Needs
