@@ -170,7 +170,7 @@ We made storyboard based on each solutions.
 
 #### Second, Offer various personal information about candidates such as interests, values, travel style.
 ![storyboard2](./images/storyboard2.jpg)
-
+In this storyboard, one guy want to get travel mate for his Barcelona trip at April 18th. After he found some candidates that met his condition, Barcelona, 4/18, he tried to know more about each candidate checking their answered questions. In the questions, there are candidates’  interests, value, and travel style, so he can judge whether the candidate is fit with him or not. After the checking stage, he is satisfied with his travel mate.
 
 #### Third, Make photo timeline from which users can check out travelers’ activities in close distance.
 ![storyboard3](./images/storyboard3.jpg)
