@@ -27,7 +27,7 @@
 - Not in a relationship for 6 months
 - Using iphone
 - Have traveled West Europe during her gap year
-- Have traveld Osaka with her friends last year
+- Have traveled Osaka with her friends last year
 
 #### Goals and Values
 - Wants to take photos at famous spots and upload it on Instagram. 
@@ -85,7 +85,7 @@ For each HMW questions, we spent 15 minutes for brainstorming to devise solution
   - Listing up activities available in the specific city and make each activities’ chat room.
   - Recommending nice places to hang out with travel mates.
   - Grouping people by their interests.
-  - Offering specific information for each travel mate.
+  - Give a chance to give a gift to each other.
   - Having talent show for each other.
   - Giving advice about fashion style.
   - Showing nice pictures taken in their previous travels.
@@ -121,6 +121,7 @@ After taking a vote, we discussed what to choose among the solutions which got m
 
 #### List up activities and make each activity’s chat room.
 ![storyboard1](./images/storyboard1.jpg)
+One day, a guy traveling moved from Paris to London by train. In the train, he was trying to find someone to watch Lion King musical with. In a chance, he found a chat room about Lion King in our application. When he joined the chat room, people in there had already had an appointment to watch the musical together. Therefore, He asked them if he could join the group and finally, they watched the musical together.
 
 #### Offer various personal information about candidates such as interests, values, travel style.
 ![storyboard2](./images/storyboard2.jpg)
@@ -128,6 +129,7 @@ In this storyboard, one guy want to get travel mate for his Barcelona trip at Ap
 
 #### Make photo timeline from which users can check out travelers’ activities in close distance.
 ![storyboard3](./images/storyboard3.jpg)
+A beautiful woman traveled in Paris alone. When she went to the Eiffel Tower, she felt unexpectedly lonely. She want somebody to travel with her. Therefore She saw a photo timeline in our application and she could see a picture taken by a handsome guy near by the Eiffel Tower in a few minutes ago. And she sent him a message to meet. Finally, they had a good time at the Eiffel Tower.
 
 ----------
 ### Studio Reflections
