@@ -30,7 +30,7 @@
 - Have traveled Osaka with her friends last year
 
 #### Goals and Values
-- Wants to take photos at famous spots and upload it on Instagram. 
+- Wants to take photos at famous spots and upload it on Instagram 
 - Wants to find a travel mate who is handsome and active
 - Prefers flexible travel plan
 - Believes travel should be happy
@@ -108,7 +108,7 @@ For each HMW questions, we spent 15 minutes for brainstorming to devise solution
 After taking a vote, we discussed what to choose among the solutions which got many votes with following criteria. After the discussion, top 3 solutions were selected.
 - It should be related with the POV.
 - It should be distinct each other.
-- It should have many aspects to research and experiment
+- It should have many aspects to research and experiment.
 - It should be fun to develop during the semester.
 
 #### Top 3 Solution Ideas
@@ -119,52 +119,53 @@ After taking a vote, we discussed what to choose among the solutions which got m
 ----------
 ### Storyboards
 
-#### List up activities and make each activity’s chat room.
+#### Listing up activities available in the specific city and make each activities’ chat room.
 ![storyboard1](./images/storyboard1.jpg)
 Giwan was moving from Paris to London by train. In the train, he was trying to find someone to watch the musical 'Lion King' together. By using our service, he found the chat room for watching the musical in London. When he joined the chat room, people in there already had an appointment, therefore he asked them if he could join. Finally Giwan watched the musical with people happily.
 
-#### Offer various personal information about candidates such as interests, values, travel style.
+#### Offering various personal information about candidates such as interests, values, and travel style.
 ![storyboard2](./images/storyboard2.jpg)
 Giwan wanted to find a travel mate for his Barcelona trip on April 18th. After he found some candidates based on his schedule, tried to know more about each candidates by checking their interests, values, and travel style, and so on. He could judge whether the candidates are fit him or not. When he really met chosen travel mate, he really satisfied with the travel mate.
 
-#### Make photo timeline from which users can check out travelers’ activities in close distance.
+#### Making photo timeline from which users can check out other travelers’ activities in close distance. Photos taken during the travel will be automatically uploaded to the timeline.
 ![storyboard3](./images/storyboard3.jpg)
 Soohee was traveling Paris alone. When she arrived at the Eiffel Tower, she felt so lonely that she wanted to find a travel mate. Therefore she looked through the photo timeline to see who took photos near her just now. After finding a picture taken by a handsome guy near the Eiffel Tower few minutes ago, she sent a message to him. Finally, Soohee had a good time at the Eiffel Tower with him.
 
 ----------
 ### Studio Reflections
 
-#### I Like...
-- First solution because it reflects real situation.
-- third solution because traveler could find their travel mate in travel! (Not before the trip)
-- focus your user to a single traveler
+#### I Like
+- First solution because I(the speaker) experienced the needs a lot in real situation.
+- Third solution because traveler could find travel mate immediately when they want. 
+- Your team focusing on single travelers as the target user 
 
-#### I wish...
-- slightly modify your POV's wording or solution. Your app looks like a dataing app, not a travel app.
+#### I Wish
+- Your team slightly modify the POV's wording or solution. It seems like a dating app, not a travel app.
 
-#### What if...
-- think considerately about how you arrange traveler's actual time and place
-- focus on security issue(prevent strange user) for female traveler
+#### What If
+- Your team consider security issues of photo timeline 
 
 #### Reflections
-- contents
+- (About the ‘I wish’ item) What we found out and surprised about was people actually finding their travel mates as they are finding date partners. So it is intended if our service looks like a dating app. 
+- (About the ‘What If’ item) We will consider the security issues on further design process. We are thingking about probable issues and solutions.
 
 ----------
 ### More Needfinding (Updates in DP1)
 
-We did interview again and get few more insights.
+We interviewed one more person to catch for insights from female user.
 
-**New Interviewee #1** (interviewer: ALL)
->**Descriptions:** 23 years old, Female, University student, from Daejeon, exchage student in Italy, Traveled Europe alone for about 2 months.
->
->**Observations** : We assume that she will be in London in 3 days and see how she acts in online. 
+**New Interviewee #1** (interviewer: Dohan, Giwan, Jaegyun, Eunseok)
 
-#### new insight:
+#### Personal Information
+She is 23 years old university student living in Daejeon. She was in Italy as an exchange student and has traveled Europe alone for about 2 months.
 
-- Female prefer Male as well
-(Our previous insight was female prefer both gender)
-- how to filter strange person(normally man) will be our challenge issue
-- After traveler send message to their travel mate candidate, they may wait unitl 3~4 hours. After that they could consider that request is finished
-( we should think about how can we make user reply fast / in time)
-- Profile picture is very important in choose travel mate in online
-- We can develop some ideas about make events with Korean domitory(한인민박) 
+#### Interview Process
+- Tried to set Master-Apprentice relationship
+- Let her assume that she will travel London in two days and ‘do what she usually do’.
+- Used withdrawal and return scheme
+- Asked if she had any difficulty when she was finding a travel mate
+
+#### Insights
+- Female prefer male as well (We expected that female would not have gender preferences)
+- Users need a method to avoid suspicious people
+- Pictures are very important information to choose travel mates
