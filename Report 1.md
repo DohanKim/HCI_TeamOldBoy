@@ -42,7 +42,7 @@ Interesting Moments
 - He traveled twice with travel mates found in "유랑". But it was unsatisfying because they only spent short time together watching a football game or having dinner and went their separate ways immediately. 
 - He tried to check candidates' Naver blogs to get more information about them, but most of the blogs were empty.
 - He much prefered female to male as a travel mate.
-![eudini](./images/Eudini.png)
+![eudini](./images/1/Eudini.png)
 *Searched with "#유디니 로마" but most results were irrelevant with finding travel mates*
 
 **Interviewee #2** (interviewer: Jakyun, Giwan)
@@ -57,7 +57,7 @@ Interesting Moments
 - He prefered sending a KakaoTalk message or a Naver message to leaving a comment. Because a comment is viewable to public and therefore other people could realize that he is trying to contact with several people concurrently.
 - He sometimes opened the same article a couple of times by accident because Naver cafe didn't mark visited links.
 - Whenever it turned that a candidate is male, he immediately abandoned the candidate and continued finding process. He only contacted with women.
-![tofemale](./images/tofemale.jpg)
+![tofemale](./images/1/tofemale.jpg)
 *Writing naver message to a candidate*
 
 **Interviewee #3** (interviewer: Dohan)
@@ -71,7 +71,7 @@ Interesting Moments
 - She said she wants there's no way to know if the candidates are good photographers.
 - She said she had difficulty in the past to adapt her travel mate’s spend level so she wanted to know how much money other people are willing to spend.
 - She said she had an experience that a guy supposed to meet her didn't show up and kept out of touch which made her really upset.
-![empty_blog](./images/empty_blog.png)
+![empty_blog](./images/1/empty_blog.png)
 *Tried to find a candidate's personal references from the blog but empty blog made it unsuccessful*
 
 ----------

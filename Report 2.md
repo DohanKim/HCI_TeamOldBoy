@@ -15,7 +15,7 @@
 ----------
 ### Persona
 
-![persona](./images/persona.png)
+![persona](./images/2/persona.png)
 
 #### Soohee Han
 >_I plan a travel just before joining my first company! I want to go London, Rome, and Paris. I want to find a friendly, kind, attractive man who will be my travel mate in this summer:)_
@@ -120,15 +120,15 @@ After taking a vote, we discussed what to choose among the solutions which got m
 ### Storyboards
 
 #### Listing up activities available in the specific city and make each activities’ chat room.
-![storyboard1](./images/storyboard1.jpg)
+![storyboard1](./images/2/storyboard1.jpg)
 Giwan was moving from Paris to London by train. In the train, he was trying to find someone to watch the musical 'Lion King' together. By using our service, he found the chat room for watching the musical in London. When he joined the chat room, people in there already had an appointment, therefore he asked them if he could join. Finally Giwan watched the musical with people happily.
 
 #### Offering various personal information about candidates such as interests, values, and travel style.
-![storyboard2](./images/storyboard2.jpg)
+![storyboard2](./images/2/storyboard2.jpg)
 Giwan wanted to find a travel mate for his Barcelona trip on April 18th. After he found some candidates based on his schedule, tried to know more about each candidates by checking their interests, values, and travel style, and so on. He could judge whether the candidates are fit him or not. When he really met chosen travel mate, he really satisfied with the travel mate.
 
 #### Making photo timeline from which users can check out other travelers’ activities in close distance. Photos taken during the travel will be automatically uploaded to the timeline.
-![storyboard3](./images/storyboard3.jpg)
+![storyboard3](./images/2/storyboard3.jpg)
 Soohee was traveling Paris alone. When she arrived at the Eiffel Tower, she felt so lonely that she wanted to find a travel mate. Therefore she looked through the photo timeline to see who took photos near her just now. After finding a picture taken by a handsome guy near the Eiffel Tower few minutes ago, she sent a message to him. Finally, Soohee had a good time at the Eiffel Tower with him.
 
 ----------
