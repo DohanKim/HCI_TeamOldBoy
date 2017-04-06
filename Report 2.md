@@ -16,9 +16,9 @@
 ### Persona
 
 ![persona](./images/persona.png)
->_I plan a travel just before joining my first company! I want to go London, Rome, and Paris. I want to find a friendly, kind, attractive man who will be my travel mate in this summer:)_
 
-#### Name: Soohee Han
+#### Soohee Han
+>_I plan a travel just before joining my first company! I want to go London, Rome, and Paris. I want to find a friendly, kind, attractive man who will be my travel mate in this summer:)_
 
 #### Personal Records
 - Female
@@ -93,16 +93,16 @@ For each HMW questions, we spent 15 minutes for brainstorming to devise solution
   - Matching with local tour guides.
 
 - How might we make people do not just pass by their ideal travel mate?
-  - Introduce some restaurants that many single travelers prefer.
-  - Introduce some place that would be better if going there together. 
+  - Giving a list of recent visitors who came to user's current location.
   - Making photo timeline from which users can check out other travelers’ activities in close distance.
   - Creating instant groups for people in the same area.
   - Giving candidates list in a specific city.
   - Grouping people using same transportation.
   - Giving a signal when a user is passing by any candidates.
   - Giving candidates list with their accommodation information.
-  - Offer notification service in even none wifi zone so that avoid a situation that single travelers can not meet because of unavailable connection.
-  - Reschedule users’ travel schedule to fit with the schedule of the travel mate.
+  - Offering notification service even working in offline condition so that users can meet up easily.
+  - Flexibly rearranging the user’s travel schedule to fit other people's itinerary automatically.
+  - Introducing places where single travels mostly visit.
 
 ### Selecting top 3 Solution Ideas
 After taking a vote, we discussed what to choose among the solutions which got many votes with following criteria. After the discussion, top 3 solutions were selected.
@@ -121,21 +121,21 @@ After taking a vote, we discussed what to choose among the solutions which got m
 
 #### List up activities and make each activity’s chat room.
 ![storyboard1](./images/storyboard1.jpg)
-One day, a guy traveling moved from Paris to London by train. In the train, he was trying to find someone to watch Lion King musical with. In a chance, he found a chat room about Lion King in our application. When he joined the chat room, people in there had already had an appointment to watch the musical together. Therefore, He asked them if he could join the group and finally, they watched the musical together.
+Giwan was moving from Paris to London by train. In the train, he was trying to find someone to watch the musical 'Lion King' together. By using our service, he found the chat room for watching the musical in London. When he joined the chat room, people in there already had an appointment, therefore he asked them if he could join. Finally Giwan watched the musical with people happily.
 
 #### Offer various personal information about candidates such as interests, values, travel style.
 ![storyboard2](./images/storyboard2.jpg)
-In this storyboard, one guy want to get travel mate for his Barcelona trip at April 18th. After he found some candidates that met his condition, Barcelona, 4/18, he tried to know more about each candidate checking their answered questions. In the questions, there are candidates’  interests, value, and travel style, so he can judge whether the candidate is fit with him or not. After the checking stage, he is satisfied with his travel mate.
+Giwan wanted to find a travel mate for his Barcelona trip on April 18th. After he found some candidates based on his schedule, tried to know more about each candidates by checking their interests, values, and travel style, and so on. He could judge whether the candidates are fit him or not. When he really met chosen travel mate, he really satisfied with the travel mate.
 
 #### Make photo timeline from which users can check out travelers’ activities in close distance.
 ![storyboard3](./images/storyboard3.jpg)
-A beautiful woman traveled in Paris alone. When she went to the Eiffel Tower, she felt unexpectedly lonely. She want somebody to travel with her. Therefore She saw a photo timeline in our application and she could see a picture taken by a handsome guy near by the Eiffel Tower in a few minutes ago. And she sent him a message to meet. Finally, they had a good time at the Eiffel Tower.
+Soohee was traveling Paris alone. When she arrived at the Eiffel Tower, she felt so lonely that she wanted to find a travel mate. Therefore she looked through the photo timeline to see who took photos near her just now. After finding a picture taken by a handsome guy near the Eiffel Tower few minutes ago, she sent a message to him. Finally, Soohee had a good time at the Eiffel Tower with him.
 
 ----------
 ### Studio Reflections
 
 #### I Like...
-- first solution because reflects real situation.
+- First solution because it reflects real situation.
 - third solution because traveler could find their travel mate in travel! (Not before the trip)
 - focus your user to a single traveler
 
