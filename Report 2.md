@@ -93,16 +93,16 @@ For each HMW questions, we spent 15 minutes for brainstorming to devise solution
   - Matching with local tour guides.
 
 - How might we make people do not just pass by their ideal travel mate?
-  - Finding candidates by narrow place like landmarks or streets.
-  - Finding candidates by schedules.
+  - Introduce some restaurants that many single travelers prefer.
+  - Introduce some place that would be better if going there together. 
   - Making photo timeline from which users can check out other travelers’ activities in close distance.
   - Creating instant groups for people in the same area.
   - Giving candidates list in a specific city.
   - Grouping people using same transportation.
   - Giving a signal when a user is passing by any candidates.
   - Giving candidates list with their accommodation information.
-  - Offering notification without internet.
-  - Reschedule users’ travel schedule.
+  - Offer notification service in even none wifi zone so that avoid a situation that single travelers can not meet because of unavailable connection.
+  - Reschedule users’ travel schedule to fit with the schedule of the travel mate.
 
 ### Selecting top 3 Solution Ideas
 After taking a vote, we discussed what to choose among the solutions which got many votes with following criteria. After the discussion, top 3 solutions were selected.
