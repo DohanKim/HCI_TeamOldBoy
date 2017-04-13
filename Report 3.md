@@ -20,7 +20,8 @@ If user click any of these pins, detail information will be popped up and the us
 
 ![prototype3](./images/3/prototype3.png)
 #### By clicking camera icon, a user can select their photos and upload them to the timeline.
-We use photograph for 'photo timeline' feature. Because its name is 'photo timeline', we decided to print out photo that user recognize it as 'photo timeline' easily.
+
+Why we used real pictures: If we had drawn pictures instead of real pictures, our paper prototype might have been so low fidelity of look that test users had some problems to concentrate the tests.
 
 ----------
 ### Participants
