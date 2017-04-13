@@ -10,21 +10,17 @@
 ----------
 ### Prototype
 
-
-![prototype1](./images/3/prototype1.jpg)
--> A User can find a travel mate from the photo timeline which shows recently taken photos near the user.
+![prototype1](./images/3/prototype1.png)
+#### A user can find a travel mate from the photo timeline which shows recently taken photos near the user.
 If a user clicks any of these photos, detail information page will be popped up and the user can send a message by pressing 'Send Message' button.
 
-![prototype2](./images/3/prototype2.jpg)
--> User can find a travel mate by map.
-If user click any of these pin-points, detailed information is popped up and user can send message by 'Send Message' button.
+![prototype2](./images/3/prototype2.png)
+#### A user can find a travel mate by from the map containing pins indicating other users' position.
+If user click any of these pins, detail information will be popped up and the user can send a message.
 
-![prototype3](./images/3/prototype3.jpg)
--> By clicking 'camera icon', users can select their photo and upload them to timeline.
-
-
+![prototype3](./images/3/prototype3.png)
+#### By clicking camera icon, a user can select their photos and upload them to the timeline.
 We use photograph for 'photo timeline' feature. Because its name is 'photo timeline', we decided to print out photo that user recognize it as 'photo timeline' easily.
-
 
 ----------
 ### Participants
@@ -52,32 +48,31 @@ This is the interface test for design project in CS374, Introduction to Human-Co
 
 #### Observations for Task 1 (After watching the timeline, find a travel mate you want to travel with and send a message.)
 - There was no action even if the user clicked a map in a photo pop-up page. (Medium) - P1
-    - ++We need to++ add an action to show the map view with the location point of the photo.
+    - We need to add an action to show the map view with the location point of the photo.
 - The users could not figure out the meaning of a timeline button in the main page. (High) - P1, P2
-    - ++We need to++ reconsider the wording of "Timeline" button.
+    - We need to reconsider the wording of "Timeline" button.
 - If the users sent a message to contact new candidate and waited for the reply from the candidate but coincidentally received new arrival message from other candidate, then they got confused about the context of the new arrival message because they expected the message would be the reply. (High) - P2, P3
-    - ++We need to++ design differently between new arrival message and a reply.
+    - We need to design differently between new arrival message and a reply.
 
 #### Observations for Task 2 (After watching a map, find a travel mate you want to travel with and send a message.)
 - The user asked about the time at a pin-point. (Medium) - P1
-    - ++We need to++ consider design of the time at a pin-point
+    - We need to consider design of the time at a pin-point
 - The users clicked a cancel button by mistake in the message page. (High) - P1, P2
-    - ++We need to++ consider position of the cancel button.
+    - We need to consider position of the cancel button.
 - The users asked auto-saving a draft message. (High) - P1, P2
-    - ++We need to++ add auto-saving feature in writing a message.
+    - We need to add auto-saving feature in writing a message.
 - There was too few information that a pin-point contains to choose an appropriate candidate. (Medium) - P2
-    - ++We need to++ add a photo in addition to the time and gender information at a pin-point.
+    - We need to add a photo in addition to the time and gender information at a pin-point.
 
 #### Observations for Task 3 (Upload photos that you took in your place.)
 - The users wondered why clicking a select button again although they already selected the image in the album. (High) - P1, P2, P3
-    - ++We need to++ reduce unnecessary clicks
+    - We need to reduce unnecessary clicks
 - The user asked the way to watch images he uploaded. (Low) - P3
-    - ++We need to++ make a profile page to watch the user's personal information.
+    - We need to make a profile page to watch the user's personal information.
 - The user wondered why a image was popped-up right after he uploaded the image. (Low) - P3
-    - Instead of popping up, ++We need to++ show an alert that the image is uploaded well and make an album that the user can watch images they uploaded.
+    - Instead of popping up, We need to show an alert that the image is uploaded well and make an album that the user can watch images they uploaded.
 
 ----------
-
 ### Individual Reflections
 
 #### 1. Dohan Kim
@@ -133,9 +128,6 @@ P1: Facilitator, P2: Observer, P3: Observer
 - What did your paper prototype not cover or test?
     - Basically our service need at least two user. (because someone should find ‘real user’) But it’s very hard to test two user with paper prototype. Therefore we need to make ‘virtual character’ based on our imagination. However in real world, it’s very hard to expect what user will upload. Therefore there is a possibility that our simulation is quite different from user’s actual behaviour. This problem is common problem in service related to C2C(customer-customer) business model.
 
-
-
-
 ----------
 ### Studio Reflections
 
@@ -156,4 +148,6 @@ P1: Facilitator, P2: Observer, P3: Observer
 - Remove margin on the phone that user can see photo much bigger?
 
 #### Reflections
-- 
+- For this application, we will develop on a web app environment.
+- We will try to enlarge a timeline’s pop-up view by reducing unnecessary margin.
+- We will take discussion later about safety issue and etc.
