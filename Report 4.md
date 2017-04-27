@@ -38,7 +38,7 @@ By this prototype, we could test three tasks.
 **Common Design Issue:** Forward buttons and back buttons are located at the top right and top left corners respectively in all pages of our prototype for internal consistency.
 
 #### Timeline(Main page)
-![prototype1](./images/1.png)
+![prototype1](./images/4/1.png)
 #### Reasons for Design Choices:
 - Based on user-tests and researches we have gotten, we could have known which information users want to know from travel mate candidates. Therefore we organized this page with other users' location, pictures, and my current location.
 - At first, an image size in the timeline was as same as an image size in the detail page which could be viewed by clicking an image in the timeline. That was too less visual feedback for user to notice that the page was changed. In that reason, we intended to make the image size smaller by adding some margins.
@@ -51,7 +51,7 @@ By this prototype, we could test three tasks.
 ----------
 
 #### Map view
-![prototype2](./images/2.png)
+![prototype2](./images/4/2.png)
 #### Reasons for Design Choices:
 - Like other UIs using a map, we took a red circle for current location and a pin-point icon for noticing other users' location in the map for the external consistency.
 - Based on user-tests and researches, we exposed gender, age, and time information which users need for choosing travel mates in the map view. 
@@ -61,7 +61,7 @@ By this prototype, we could test three tasks.
 ----------
 
 #### Detail page
-![prototype3](./images/3.png)
+![prototype3](./images/4/3.png)
 #### Reasons for Design Choices:
 - For external consistency, the close button shaped 'x' located at the top of the screen. 
 - For important information visibility, we set a picture larger.
@@ -73,7 +73,7 @@ By this prototype, we could test three tasks.
 ----------
 
 #### Message page
-![prototype4](./images/4.png)
+![prototype4](./images/4/4.png)
 #### Reasons for Design Choices:
 - We changed this feature's conceptual model from old-fashioned message box which was implemented at the paper-prototype to a chatting model. Because the chatting model handles all stories with one candidate as a single chat item, but old-fashioned messages treats too many message boxes with one candidate.
 - Each message item showed not only basic information but also detail information such as read status and some part of recent message for good information scent.
@@ -84,7 +84,7 @@ By this prototype, we could test three tasks.
 ----------
 
 #### Camera Roll
-![prototype5](./images/5.png)
+![prototype5](./images/4/5.png)
 #### Reasons for Design Choices:
 - In order to prevent from uploading a photo by mistake, there are margins between each photos and confirm button is located at the top right corner.
 - To give visual feedback to users for a selected photo, we add black borders and a check icon on the photo.
@@ -94,7 +94,7 @@ By this prototype, we could test three tasks.
 ----------
 
 #### Successfully uploaded.
-![prototype6](./images/6.png)
+![prototype6](./images/4/6.png)
 #### Reasons for Design Choices:
 - The purpose of the timeline is to look at photos of others rather than seeing the user him/herself's photos. Therefore, rather than displaying photos that the user uploaded to the timeline, only flash messages indicate that the photo is successfully uploaded.
 
@@ -149,13 +149,13 @@ We set criticality based on these factors.
     
 #### Uploading Photos
 - User tried to find their photo from the timeline just  after they uploaded the photo (High) - P1, P2, P3, P4
-![prototype7](./images/7.png)
+![prototype7](./images/4/7.png)
     - Usability Issue : As we mention in prototype 'Successfully uploaded' part, visiablity of flash message was too low. In addition, we didn't give enough feedback to user that they could confirm ther upload photo.  (learnablity, visiblity )
     - We need to upload user's photo on their timeline.
 
 
 - When users went into ‘upload' screen while clicking around the screen to explore, they tried to click the tab bar which is not exist (Medium) P1, P3
-![prototype8](./images/8.png)
+![prototype8](./images/4/8.png)
   - Usablity issue : They were confused because tab bar is disappeared (internal consistency)
   - We need to put tab bar menu on the upload screen as well.
 
