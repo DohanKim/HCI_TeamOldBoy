@@ -38,7 +38,7 @@ By this prototype, we could test three tasks.
 **Common Design Issue:** Forward buttons and back buttons are located at the top right and top left corners respectively in all pages of our prototype for internal consistency.
 
 #### Timeline(Main page)
-![](https://i.imgur.com/1Jm1tXV.png =400x800)
+![](https://i.imgur.com/1Jm1tXV.png)
 #### Reasons for Design Choices:
 - Based on user-tests and researches we have gotten, we could have known which information users want to know from travel mate candidates. Therefore we organized this page with other users' location, pictures, and my current location.
 - At first, an image size in the timeline was as same as an image size in the detail page which could be viewed by clicking an image in the timeline. That was too less visual feedback for user to notice that the page was changed. In that reason, we intended to make the image size smaller by adding some margins.
