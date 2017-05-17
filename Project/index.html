@@ -1,11 +1,68 @@
+<!doctype html>
 <html>
-<head>
-</head>
-<body>
-  <div id="output"></div>
+  <head>
+  	<meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-  <script src="./main_script.js"></script>
-</body>
+      <!-- load MUI -->
+      <link href="https://cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.muicss.com/mui-0.9.16/js/mui.min.js"></script>
+      <!-- load jQuery -->
+      <!-- <script src="jquery-3.2.1.min.js"></script> -->
+      <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+      <script src="./main_script.js"></script>
+      <link href="donghang.css" rel="stylesheet" type="text/css" />
+  <!--     <script src="donghang.js"></script> -->
+  </head>
+  <body>
+    <div id="output"></div>
+    <header class="mui-appbar">
+        <h1> Doki Doki Travel </h1>
+      </header>
+      <div>
+        
+      </div>
+      <div id="photo" class="mui-container">
+        <div id="photocolomn">
+          <img src="images/IMG_2621.JPG">
+          <img src="images/IMG_2622.JPG">
+          <img src="images/IMG_4351.JPG">
+        </div>
+        <div id="photocolomn">
+          <img src="images/IMG_7613.JPG">
+          <img src="images/IMG_7618.jpg">
+          <img src="images/IMG_7619.jpg">
+        </div>
+        <div id="photocolomn">
+          <img src="images/IMG_7692.JPG">
+          <img src="images/IMG_7698.JPG">
+          <img src="images/IMG_7717.JPG">
+        </div>
+        <div id="photocolomn">
+          <img src="images/IMG_7719.JPG">
+          <img src="images/IMG_4497.JPG">
+          <img src="images/IMG_7604.JPG">
+        </div>
+  <!--
+        <div id="photocolomn">
+          <img src="images/IMG_7766.JPG">
+          <img src="images/IMG_7738.JPG">
+          <img src="images/IMG_7758.JPG">
+        </div>
+  -->
+      </div>
+      <div class="mui-divider"></div>
+      <div id="bottom">
+        <button class="mui-btn mui-btn--primary" onclick="location.href='./index.html'"> Photo </button>
+        <span></span>
+        <button id="upload-btn" class="mui-btn mui-btn--primary filebox">
+          <label for="upload"> Upload </label>
+          <input type="file" name="Upload" id="upload" accept="image/*">
+        </button>
+        <span></span>
+        <button id="message" class="mui-btn mui-btn--primary" onclick="location.href='./message.html'"> Message </button>
+      </div>
+  </body>
 </html>
