@@ -35,6 +35,7 @@ h1 {
 }
 
 #bottom button {
+  vertical-align: bottom;
   bottom: 0;
   border: 0px;
   padding: 0px;
@@ -77,4 +78,10 @@ img {
   overflow: hidden;
   clip:rect(0,0,0,0);
   border: 0;
+}
+
+/* for icons */
+.fa {
+  vertical-align: middle;
+  font-size: 20pt;
 }
