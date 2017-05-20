@@ -67,7 +67,6 @@ img {
 .filebox label {
   vertical-align: middle;
 }
-
 .filebox input[type="file"] {  /* 파일 필드 숨기기 */
   vertical-align: middle;
   position: absolute;
