@@ -4,27 +4,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- load font awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- load MUI -->
-    <link href="//cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" />
-    <script src="//cdn.muicss.com/mui-0.9.16/js/mui.min.js"></script>
+    <link href="https://cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-0.9.16/js/mui.min.js"></script>
     <!-- load jQuery -->
-    <script src="jquery-3.2.1.min.js"></script>
-    
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- load firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <!-- load local files -->
+    <script src="./donghang.js"></script>
     <link href="donghang.css" rel="stylesheet" type="text/css" />
-    <script src="donghang.js"></script>
   </head>
   <body>
     <p> this is message view page </p>
     <button class="mui-btn mui-btn--danger" onclick="location.href='./photoview.html'"> Go to Home </button>
     <div id="bottom">
-        <button class="mui-btn mui-btn--primary" onclick="location.href='./photoview.html'"> Photo </button>
-        <span></span>
-        <button id="upload-btn" class="mui-btn mui-btn--primary filebox">
-          <label for="upload"> Upload </label>
-          <input type="file" name="Upload" id="upload" accept="image/*">
-        </button>
-        <span></span>
-        <button id="message" class="mui-btn mui-btn--primary" onclick="location.href='./message.html'"> Message </button>
-      </div>
+      <button id="photo-btn"class="mui-btn mui-btn--primary" onclick="location.href='./photoview.html'"> <i class="fa fa-th" aria-hidden="true"></i> </button>
+      <span></span>
+      <button id="upload-btn" class="mui-btn mui-btn--primary filebox">
+        <label for="upload">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </label>
+        <input type="file" name="Upload" id="upload" accept="image/*">
+      </button>
+      <span></span>
+      <button id="message-btn" class="mui-btn mui-btn--primary" onclick="location.href='./message.html'"> <i class="fa fa-comments" aria-hidden="true"></i> </button>
+    </div>
   </body>
 </html>

@@ -48,14 +48,13 @@ h1 {
   align-content: center;
   width: 100%;
   height: auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 15px 0px;
 }
 
 #photocolomn {
   vertical-align: middle;
   align-content: center;
-  margin-bottom: 0px;
+  margin: 0px;
   width: 100%;
 }
 
