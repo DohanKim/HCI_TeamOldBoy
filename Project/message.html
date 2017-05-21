@@ -1,25 +1,63 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- load font awesome -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-    <!-- load MUI -->
-    <link href="https://cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.muicss.com/mui-0.9.16/js/mui.min.js"></script>
-    <!-- load jQuery -->
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- load firebase -->
-    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-    <!-- load local files -->
-    <script src="./donghang.js"></script>
-    <link href="donghang.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <p> this is message view page </p>
-    <button class="mui-btn mui-btn--danger" onclick="location.href='./photoview.html'"> Go to Home </button>
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title> Certain Message</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<!-- load font awesome -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+<!-- load MUI -->
+<link href="https://cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.muicss.com/mui-0.9.16/js/mui.min.js"></script>
+<!-- load jQuery -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- load firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<!-- load local files -->
+<script src="./photo_window.js"></script>
+<link href="photo_window.css" rel="stylesheet" type="text/css" />
+
+    
+<!-- load jQuery -->
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+  <link rel='stylesheet prefetch' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/animate.min.css'>
+
+      <link rel="stylesheet" href="messagestyle.css">
+
+  
+</head>
+<body>
+  
+<div class="wrapper">
+  <nav class="nav" id="nav">
+    <div class="default-nav">
+      <div class="main-nav">
+        <div class="toggle" onclick="location.href='./message_list.html'"></div>
+        <div class="main-nav-item"><a class="main-nav-item-link" href="#">Messages</a></div>
+        <div class="options"></div>
+      </div>
+    </div>
+  </nav>
+  <div class="inner" id="inner">
+    <div class="content" id="content"></div>
+  </div>
+  <div class="bottom" id="bottom">
+    <textarea class="input" onkeyup="enterkey();" autocomplete=off id="inputbox"></textarea>
+    <div class="send" id="send"></div>
+  </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+</script>
+  <script src="message.js"></script>
+
+    
+</body>
+    
+<button class="mui-btn mui-btn--danger" onclick="location.href='./photoview.html'"> Go to Home </button>
     <div id="bottom">
       <button id="photo-btn"class="mui-btn mui-btn--primary" onclick="location.href='./photoview.html'"> <i class="fa fa-th" aria-hidden="true"></i> </button>
       <span></span>
@@ -31,6 +69,7 @@
       </button>
       <span></span>
       <button id="message-btn" class="mui-btn mui-btn--primary" onclick="location.href='./message.html'"> <i class="fa fa-comments" aria-hidden="true"></i> </button>
-    </div>
-  </body>
+    </div>        
+    
+    
 </html>
