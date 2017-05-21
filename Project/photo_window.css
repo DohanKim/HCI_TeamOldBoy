@@ -28,9 +28,10 @@ header .title {
 #photos .column {
   width: 33.3333333%;
   float: left;
+  padding: 3px;
 }
 #photos .column img {
-  padding: 3px;
+  width: 100%;
 }
 
 .mui-divider {

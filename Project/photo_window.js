@@ -1,7 +1,7 @@
 const GeoInformationUpdateDuration = 1000;
 const UnitAngle = 30;
 const AngleIndexLimit = 360 / UnitAngle;
-const LinesPerColumn = 4;
+const LinesPerColumn = 3;
 
 var photos = [];
 var output = $('#output');
@@ -48,13 +48,8 @@ function calculateGeoInformation() {
 
         gotCurrentPosition = true;
     }, function(err) {
-        print(err.message);
         console.log(err);
     });
-}
-
-function print(a) {
-    output.text(output.text() + '\n' + a);
 }
 
 function handleOrientation(event) {
@@ -63,8 +58,6 @@ function handleOrientation(event) {
     var alpha = event.alpha;
     if (alpha < 0) alpha += 360; // assure alpha > 0
     var angleIndex = Math.floor(alpha / UnitAngle);
-
-    print("angleIndex :" + angleIndex);
 
     var leftCol = [];
     var midCol = [];
@@ -96,8 +89,6 @@ function handleOrientation(event) {
 
 
     if (angleIndex != prevAngleIndex) { // time to move the photo window
-        //print("30' rotated");
-        //
         // add additional column
         // move whole photos
         // remove invisible column
@@ -107,7 +98,7 @@ function handleOrientation(event) {
         $('#column3').empty();
         for(var i = 0; i < LinesPerColumn; i++) {
             if (leftCol[i]) $('#column1').append(`<img src="${leftCol[i].url}">`);
-            if (midcol[i]) $('#column2').append(`<img src="${midCol[i].url}">`);
+            if (midCol[i]) $('#column2').append(`<img src="${midCol[i].url}">`);
             if (rightCol[i]) $('#column3').append(`<img src="${rightCol[i].url}">`);
         }
     }
