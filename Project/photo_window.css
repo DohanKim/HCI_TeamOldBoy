@@ -89,3 +89,26 @@ header .title {
   vertical-align: middle;
   font-size: 20pt;
 }
+
+
+/* Detail view -- */
+#map {
+  	width: 100%;
+	height: 75%;
+}
+.mui-appbar.detail{
+	position: fixed;
+	width: 100%;
+}
+#map_pic_modal{
+	background-color: #fff;
+	width: 85%;
+	margin: 100px auto;
+}
+
+.small_images, .mark_small_images {
+  width: 33.3333333%;
+  float: left;
+  padding: 3px;
+}
+/* -- Detail view */
