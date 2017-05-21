@@ -88,5 +88,9 @@ img {
 	position: fixed;
 	width: 100%;
 }
-
+#map_pic_modal{
+	background-color: #fff;
+	width: 85%;
+	margin: 100px auto;
+}
 /* -- Detail view */
