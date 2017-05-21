@@ -50,12 +50,15 @@ function calculateGeoInformation() {
     navigator.geolocation.watchPosition(function(position) {
         var currentCoords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude); 
 
-        photos.forEach(function(photo, i) {
-            var photoCoords = new google.maps.LatLng(photo.position);
-            photo.angle = google.maps.geometry.spherical.computeHeading(currentCoords, photoCoords); // degree
-            photo.angleIndex = Math.floor(photo.angle / UnitAngle);
-            photo.distance = google.maps.geometry.spherical.computeDistanceBetween(currentCoords, photoCoords); // meter
-        })
+        for (var key in photos) {
+            if (photos.hasOwnProperty(key)) {
+                var photo = photos[key];
+                var photoCoords = new google.maps.LatLng(photo.position);
+                photo.angle = google.maps.geometry.spherical.computeHeading(currentCoords, photoCoords); // degree
+                photo.angleIndex = Math.floor(photo.angle / UnitAngle);
+                photo.distance = google.maps.geometry.spherical.computeDistanceBetween(currentCoords, photoCoords); // meter
+            }
+        }
 
         gotCurrentPosition = true;
     }, function(err) {
@@ -73,17 +76,20 @@ function handleOrientation(event) {
     var midCol = [];
     var rightCol = [];
 
-    photos.forEach(function(photo, i) {
-        if (photo.angleIndex == (angleIndex-1 + AngleIndexLimit) % AngleIndexLimit) {
-            leftCol.push(photo);
+    for (var key in photos) {
+        if (photos.hasOwnProperty(key)) {
+            var photo = photos[key];
+            if (photo.angleIndex == (angleIndex-1 + AngleIndexLimit) % AngleIndexLimit) {
+                leftCol.push(photo);
+            }
+            else if (photo.angleIndex == angleIndex) {
+                midCol.push(photo);
+            }
+            else if (photo.angleIndex == (angleIndex+1) % AngleIndexLimit) {
+                rightCol.push(photo);
+            }
         }
-        else if (photo.angleIndex == angleIndex) {
-            midCol.push(photo);
-        }
-        else if (photo.angleIndex == (angleIndex+1) % AngleIndexLimit) {
-            rightCol.push(photo);
-        }
-    });
+    }
 
     function compareByDistance(x, y) {
         return x.distance - y.distance;
@@ -121,7 +127,7 @@ function uploadPhoto(e) {
     imageRef.put(file).then(function(snapshot) {
         var url = snapshot.downloadURL;
         navigator.geolocation.getCurrentPosition(function(pos) {
-            photosRef.push({url: url, position: {lat: pos.coords.latitude, lng: pos.coords.longitude}});
+            photosRef.push({url: url, position: {lat: pos.coords.latitude, lng: pos.coords.longitude}}).then(() => alert("uploaded"));
         }, function(err) {
             console.warn(`ERROR(${err.code}): ${err.message}`);
         }); 
