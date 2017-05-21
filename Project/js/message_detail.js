@@ -1,13 +1,3 @@
-//initialize
-
-var database;
-var messageRef;
-
-$(function() {
-    database = firebase.database()
-    messageRef = database.ref("messages")
-});
-
 var flag_bigger = false;
 var flag_smaller = false;
 

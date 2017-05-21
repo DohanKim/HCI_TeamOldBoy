@@ -1,11 +1,11 @@
 var storageRef;
 var photosRef;
+var messageRef;
 
 initializeFirebase();
 
 $(function() {
     $('#upload-btn').click(function() {
-        alert("!");
         $('#input_upload').click();
     });
 
@@ -23,6 +23,7 @@ function initializeFirebase() {
     });
 
     photosRef = firebase.database().ref("photos");
+    messageRef = firebase.database().ref("messages");
     storageRef = firebase.storage().ref();
 }
 
