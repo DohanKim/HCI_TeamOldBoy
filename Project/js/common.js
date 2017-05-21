@@ -3,13 +3,8 @@ var photosRef;
 
 initializeFirebase();
 
-    console.log("start of page");
 $(function() {
-    console.log("start of loading");
-    $('#footer').load('footer.html');
-    console.log("loaded");
     $('#upload-btn').click(function() {
-        alert("!");
         $('#input_upload').click();
     });
 
