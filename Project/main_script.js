@@ -63,7 +63,7 @@ function handleOrientation(event) {
 
     var alpha = event.alpha;
     if (alpha < 0) alpha += 360; // assure alpha > 0
-    var angleIndex = alpha / UnitAngle;
+    var angleIndex = Math.floor(alpha / UnitAngle);
 
     print("angleIndex :" + angleIndex);
 
