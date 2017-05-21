@@ -7,7 +7,7 @@
 PutDataToMap	js/photo_detail_map.js	/^function PutDataToMap(map, label, travel_map){$/;"	f	language:JavaScript
 calculateGeoInformation	js/photo_window.js	/^function calculateGeoInformation() {$/;"	f	language:JavaScript
 currentPosition	js/photo_window.js	/^var currentPosition;$/;"	v	language:JavaScript
-database	js/message_detail.js	/^var database = firebase.database();$/;"	v	language:JavaScript
+database	js/message_detail.js	/^var database;$/;"	v	language:JavaScript
 flag_bigger	js/message_detail.js	/^var flag_bigger = false;$/;"	v	language:JavaScript
 flag_smaller	js/message_detail.js	/^var flag_smaller = false;$/;"	v	language:JavaScript
 gotCurrentPosition	js/photo_window.js	/^var gotCurrentPosition = false;$/;"	v	language:JavaScript
@@ -20,7 +20,7 @@ lat1	js/message_detail.js	/^var lat1 = 0;$/;"	v	language:JavaScript
 lat2	js/message_detail.js	/^var lat2 = 0;$/;"	v	language:JavaScript
 lon1	js/message_detail.js	/^var lon1 = 0;$/;"	v	language:JavaScript
 lon2	js/message_detail.js	/^var lon2 = 0;$/;"	v	language:JavaScript
-messageRef	js/message_detail.js	/^var messageRef = database.ref("messages");$/;"	v	language:JavaScript
+messageRef	js/message_detail.js	/^var messageRef;$/;"	v	language:JavaScript
 myTimer.getLocation	js/message_detail.js	/^    function getLocation() {$/;"	f	language:JavaScript
 myTimer.getPosition	js/message_detail.js	/^    function getPosition(position) {$/;"	f	language:JavaScript
 myTimer.toRadians	js/message_detail.js	/^    function toRadians(Value) {$/;"	f	language:JavaScript

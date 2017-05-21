@@ -1,10 +1,10 @@
 var storageRef;
 var photosRef;
 
+initializeFirebase();
+
 $(function() {
     $('#footer').load('footer.html');
-
-    initializeFirebase();
 
     $('#upload-btn').click(function() {
         $('#input_upload').click();
