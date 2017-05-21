@@ -7,6 +7,7 @@ var photos = [];
 var output = $('#output');
 var gotCurrentPosition = false;
 var prevAngleIndex = -1;
+var currentPosition;
 
 var photosRef;
 var storageRef;
@@ -48,13 +49,15 @@ function updatePhotos() {
 
 function calculateGeoInformation() {
     navigator.geolocation.watchPosition(function(position) {
+        currentPosition = position;
+
         var currentCoords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude); 
 
         for (var key in photos) {
             if (photos.hasOwnProperty(key)) {
                 var photo = photos[key];
                 var photoCoords = new google.maps.LatLng(photo.position);
-                photo.angle = google.maps.geometry.spherical.computeHeading(currentCoords, photoCoords); // degree
+                photo.angle = (google.maps.geometry.spherical.computeHeading(currentCoords, photoCoords) + 360) % 360; // degree
                 photo.angleIndex = Math.floor(photo.angle / UnitAngle);
                 photo.distance = google.maps.geometry.spherical.computeDistanceBetween(currentCoords, photoCoords); // meter
             }
@@ -63,6 +66,10 @@ function calculateGeoInformation() {
         gotCurrentPosition = true;
     }, function(err) {
         console.log(err);
+    }, {
+        enableHighAccuracy: true, 
+        maximumAge        : 30000, 
+        timeout           : 10000,
     });
 }
 
@@ -122,15 +129,13 @@ function handleOrientation(event) {
 }
 
 function uploadPhoto(e) {
+    alert("upload start");
     var file = e.target.files[0];
     var imageRef = storageRef.child('images/' + (new Date()).getTime() + '_' + file.name);
     imageRef.put(file).then(function(snapshot) {
         var url = snapshot.downloadURL;
-        navigator.geolocation.getCurrentPosition(function(pos) {
-            photosRef.push({url: url, position: {lat: pos.coords.latitude, lng: pos.coords.longitude}}).then(() => alert("uploaded"));
-        }, function(err) {
-            console.warn(`ERROR(${err.code}): ${err.message}`);
-        }); 
+        alert("uploaded to storage");
+        photosRef.push({url: url, position: {lat: currentPosition.coords.latitude, lng: currentPosition.coords.longitude}}).then(() => alert("uploaded"));
         updatePhotos();
     });
 };
