@@ -49,26 +49,33 @@ header .title {
 }
 
 #bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  padding: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding: 0;
 }
 #bottom button {
-  vertical-align: bottom;
-  bottom: 0;
-  border: 0px;
-  padding: 0px;
-  margin: 0px;
-  width: 32%;
-  height: 45px;
-  margin: 0;
-  float: left;
+	position: absolute;
+	border-radius: 0px;
+	display: inline;
+  	vertical-align: bottom;
+  	bottom: 0;
+  	border: 0px;
+  	padding: 0px;
+  	margin: 0px;
+  	width: 33.3333333%;
+  	height: 45px;
+  	margin: 0;
+  	float: left;
 }
-#bottom #photo-btn, #bottom #upload-btn {
-  margin-right: 2%;
+#upload-btn {
+	left: 33.3333333%;
+	background-color: #0176C3;
+}
+#message-btn {
+	right: 0%;
 }
 
 .filebox label {
