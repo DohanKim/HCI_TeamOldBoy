@@ -105,28 +105,84 @@ function handleOrientation(event) {
     prevAngleIndex = angleIndex;
 }
 
-// function growUpload() {
-    //   height = 80;
-    //   setInterval(function() {
-        //     var width = $("#upload-btn").css("width");
-        //     var height = $("#upload-btn").css("height");
-        //     var other_width = $("#photo-btn").css("width");
-        //   
-        //     width = width.replace('px', '');
-        //     height = height.replace('px', '');
-        //     other_width = other_width.replace('px', '');
-        //     heigth_num = Number(height) + 10;
-        //     width_num = Number(width) + 4;
-        //     num = Number(other_width) - 2;
-        //     if (heigth_num < 120) {
-            //       height = heigth_num.toString();
-            //       width = width_num.toString();
-            //       other_width = num.toString();
-            //     $("#upload-btn").css("width", width+"px");
-            //     $("#upload-btn").css("height", height+"px");
-            //     $("#photo-btn").css("width", other_width+"px");
-            //     $("#message-btn").css("width", other_width+"px");
-            //     }
-        //   }, 100);
-    // }
-// setTimeout(growUpload, 5000);
+function getDistance(position1, position2) {
+  function toRadians(Value) {
+    /** Converts numeric degrees to radians */
+    return Value * Math.PI / 180;
+  }
+  var lat1 = position1.coords.latitude
+  var lon1 = position1.coords.longitude
+  var lat2 = position2.coords.latitude
+  var lon2 = position2.coords.longitude
+  
+  //Calculate the distance between two area
+  //http://www.movable-type.co.uk/scripts/latlong.html
+  var R = 6371; // metres
+  var phi1 = toRadians(lat1);
+  var phi2 = toRadians(lat2);
+  var delta_phi = toRadians((lat2-lat1));
+  var delta_lambda = toRadians((lon2-lon1));
+  var a = Math.sin(delta_phi/2) * Math.sin(delta_phi/2) +
+          Math.cos(phi1) * Math.cos(phi2) *
+          Math.sin(delta_lambda/2) * Math.sin(delta_lambda/2);
+  var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  var d = R * c;
+  console.log(d);
+  return d;
+}
+
+var flag_bigger = false;
+var pre_position;
+
+function controlUploadSize() {
+  navigator.geolocation.watchPosition(function(position) {
+    var current_position = position;
+    
+    // for the first iteration
+    if (typeof pre_position === "undefined") {
+      pre_position = current_position;  
+    }
+    
+    var current_lat = current_position.coords.latitude;
+    var current_lng = current_position.coords.longitude;
+    var pre_lat = pre_position.coords.latitude;
+    var pre_lng = pre_position.coords.longitude;
+    
+    console.log(pre_lat, pre_lng);
+    console.log(current_lat, current_lng);
+    
+    var d = getDistance(current_position, pre_position);
+    if (d != 0) {
+      // update the flag
+      if (d > 0.005 && flag_bigger == true){
+          flag_bigger = false;
+      }
+
+      if (d < 0.005 && flag_bigger == false){
+          flag_bigger = true;
+      }
+
+      // Change the size of the text
+      if (flag_bigger == true){    
+          $("#upload-btn").animate({
+            height: "90px"
+          });
+          flag_bigger= false;
+      } else {
+          $("#upload-btn").animate({
+            height: "45px"
+          });
+          flag_bigger = true;
+      }
+    }
+    pre_position = current_position;
+	console.log("finished");
+  }, function(err) {
+      console.log(err);
+  }, {
+    enableHighAccuracy: true,
+    timeout           : Infinity,
+    maximumAge        : 0
+  });
+}
+controlUploadSize();
