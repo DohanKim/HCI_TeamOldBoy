@@ -3,10 +3,13 @@ var photosRef;
 
 initializeFirebase();
 
+    console.log("start of page");
 $(function() {
+    console.log("start of loading");
     $('#footer').load('footer.html');
-
+    console.log("loaded");
     $('#upload-btn').click(function() {
+        alert("!");
         $('#input_upload').click();
     });
 
@@ -32,7 +35,7 @@ function uploadPhoto(e) {
     var imageRef = storageRef.child('images/' + (new Date()).getTime() + '_' + file.name);
     imageRef.put(file).then(function(snapshot) {
         var url = snapshot.downloadURL;
-        photosRef.push({url: url, position: {lat: currentPosition.coords.latitude, lng: currentPosition.coords.longitude}}).then(() => alert("uploaded"));
+        photosRef.push({user: "U", url: url, position: {lat: currentPosition.coords.latitude, lng: currentPosition.coords.longitude}}).then(() => alert("uploaded"));
         updatePhotos();
     });
 };
