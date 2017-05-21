@@ -176,7 +176,6 @@ function controlUploadSize() {
       }
     }
     pre_position = current_position;
-	console.log("finished");
   }, function(err) {
       console.log(err);
   }, {
