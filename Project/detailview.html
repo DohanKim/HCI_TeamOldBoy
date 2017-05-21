@@ -17,24 +17,28 @@
     </head>
     <body>
         <div class="mui-appbar detail">
-            <table width="100%">
+            <table id="detail_top_bar">
                 <tr style="vertical-align:middle;">
-                    <td id='back' class="mui--appbar-height" style='background-color:#78909C; width:70%; text-align:center;' onclick="window.history.back();">Back</td>
-                    <td id="send_msg" class="mui--appbar-height" style='background-color:#78900A; text-align:center;' align="right" onclick="location.href='./message.html'">Send message</td>
+                    <td id='back' class="mui--appbar-height" onclick="window.history.back();">Back</td>
+                    <td id="send_msg" class="mui--appbar-height" align="right" onclick="location.href='./message.html'">Send message</td>
                 </tr>
             </table>
         </div>
-        <div id="photo_booth">
+        <div id="photo_booth" style="margin-top:64px;">
             <img id='main_photo' style="width:100%;" src="images/IMG_7869.JPG">
             <div>
                 <img class='small_images' src="images/IMG_2621.JPG">
                 <img class='small_images' src="images/IMG_2622.JPG">
                 <img class='small_images' src="images/IMG_4351.JPG">
-            </div>>
+            </div>
         </div>
-        <div>
-            성별 나이 
-        </div>
+		<div style="background-color:#CFD8DC;">
+			<h3>Information</h3>
+			<div>
+				<span class="mui--text-subhead">Gender : Female </span>
+				<span class="mui--divider-left mui--text-subhead">&nbsp;Age : 28 </span>
+			</div>
+		</div>
         <div id="map"></div>
     </body>
 </html>

@@ -99,7 +99,8 @@ var initMap = function() {
 		scrollwheel: false, 
 		disableDoubleClickZoom: true,
 		streetViewControl: false,
-		mapTypeControl: false
+		mapTypeControl: false,
+		fullscreenControl: false
 	});
 	
 	google.maps.event.addDomListener(window, "resize", function() {
