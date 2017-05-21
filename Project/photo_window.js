@@ -42,7 +42,7 @@ function calculateGeoInformation() {
         photos.forEach(function(photo, i) {
             var photoCoords = new google.maps.LatLng(photo.position);
             photo.angle = google.maps.geometry.spherical.computeHeading(currentCoords, photoCoords); // degree
-            photo.angleIndex = photo.angle / UnitAngle;
+            photo.angleIndex = Math.floor(photo.angle / UnitAngle);
             photo.distance = google.maps.geometry.spherical.computeDistanceBetween(currentCoords, photoCoords); // meter
         })
 
@@ -106,9 +106,9 @@ function handleOrientation(event) {
         $('#column2').empty();
         $('#column3').empty();
         for(var i = 0; i < LinesPerColumn; i++) {
-            $('#column1').append(`<img src="${leftCol[i].url}">`);
-            $('#column2').append(`<img src="${midCol[i].url}">`);
-            $('#column3').append(`<img src="${rightCol[i].url}">`);
+            if (leftCol[i]) $('#column1').append(`<img src="${leftCol[i].url}">`);
+            if (midcol[i]) $('#column2').append(`<img src="${midCol[i].url}">`);
+            if (rightCol[i]) $('#column3').append(`<img src="${rightCol[i].url}">`);
         }
     }
 
