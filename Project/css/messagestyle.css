@@ -1,4 +1,4 @@
-/* Reference:  */
+/* Reference: http://codepen.io/blaketarter/pen/emWbYm */
 
 * {
   box-sizing: border-box;
@@ -28,7 +28,6 @@
   overflow: scroll;
   height: 520px;
   padding-top: 64px;
-  background: #f2f2f2;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
 }
@@ -174,12 +173,6 @@
   right: 0;
   bottom: 0;
 }
-.bottom .send:focus {
-  outline: none;
-}
-.bottom .send:hover {
-  cursor: pointer;
-}
 
 @media (max-width: 560px) {
   .wrapper {
@@ -236,14 +229,18 @@
 }
 
 
-.message{
-    text-align: right;    
+
+.message {
+  text-align: right;      
+  
 }
 
 .message_contents{
     font-size : 20px;
+    
 }
 
 .message_time{
     font-size : 15px;
+    margin-bottom: 5px;
 }
