@@ -4,40 +4,15 @@ const AngleIndexLimit = 360 / UnitAngle;
 const LinesPerColumn = 3;
 
 var photos = [];
-var output = $('#output');
 var gotCurrentPosition = false;
 var prevAngleIndex = -1;
 var currentPosition;
 
-var photosRef;
-var storageRef;
-
 $(function() {
-    initializeFirebase();
     updatePhotos();
 
     window.addEventListener('deviceorientationabsolute', handleOrientation);
-
-    $('#upload-btn').click(function() {
-        $('#input_upload').click();
-    });
-
-    $('#input_upload').change(uploadPhoto);
 });
-
-function initializeFirebase() {
-    firebase.initializeApp({
-        apiKey: "AIzaSyAD6jEZFv56owk4zrJ34JjI7sjHIKTmcfk",
-        authDomain: "dokidokitraveler-1495041989137.firebaseapp.com",
-        databaseURL: "https://dokidokitraveler-1495041989137.firebaseio.com",
-        projectId: "dokidokitraveler-1495041989137",
-        storageBucket: "dokidokitraveler-1495041989137.appspot.com",
-        messagingSenderId: "586932970026"
-    });
-
-    photosRef = firebase.database().ref("photos");
-    storageRef = firebase.storage().ref();
-}
 
 function updatePhotos() {
     return photosRef.once('value').then(function(data) {
@@ -129,16 +104,6 @@ function handleOrientation(event) {
 
     prevAngleIndex = angleIndex;
 }
-
-function uploadPhoto(e) {
-    var file = e.target.files[0];
-    var imageRef = storageRef.child('images/' + (new Date()).getTime() + '_' + file.name);
-    imageRef.put(file).then(function(snapshot) {
-        var url = snapshot.downloadURL;
-        photosRef.push({url: url, position: {lat: currentPosition.coords.latitude, lng: currentPosition.coords.longitude}}).then(() => alert("uploaded"));
-        updatePhotos();
-    });
-};
 
 // function growUpload() {
     //   height = 80;

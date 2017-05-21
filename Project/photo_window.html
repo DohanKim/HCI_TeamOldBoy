@@ -7,7 +7,7 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="https://cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" />
-    <link href="photo_window.css" rel="stylesheet" type="text/css" />
+    <link href="./css/photo_window.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header class="mui-appbar">
@@ -25,26 +25,13 @@
 
     <div class="mui-divider"></div>
 
-    <div id="bottom"> 
-      <button id="photo-btn"class="mui-btn mui-btn--primary" onclick="location.href='./photo_window.html'"> 
-        <i class="fa fa-th" aria-hidden="true"></i> 
-        <label>Photo</label>
-      </button>
-      <button id="upload-btn" class="mui-btn mui-btn--primary filebox">
-        <i class="fa fa-plus" aria-hidden="true"></i>
-        <label>Upload</label>
-      </button>
-      <input type="file" name="Upload" id="input_upload" accept="image/*" hidden>
-      <button id="message-btn" class="mui-btn mui-btn--primary" onclick="location.href='./message.html'"> 
-        <i class="fa fa-comments" aria-hidden="true"></i> 
-        <label>Message</label>
-      </button>
-    </div>
+    <div id="footer"></div>
 
     <script src="https://cdn.muicss.com/mui-0.9.16/js/mui.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOYS73k1s5fhbZhRQX7nhf2cl2pZWdkBQ&libraries=geometry"></script>
-    <script src="./photo_window.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/photo_window.js"></script>
   </body>
 </html>
