@@ -1,5 +1,6 @@
 var storageRef;
 var photosRef;
+var messageRef;
 
 initializeFirebase();
 
@@ -22,6 +23,7 @@ function initializeFirebase() {
     });
 
     photosRef = firebase.database().ref("photos");
+    messageRef = firebase.database().ref("messages");
     storageRef = firebase.storage().ref();
 }
 
