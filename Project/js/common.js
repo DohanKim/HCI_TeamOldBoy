@@ -5,6 +5,7 @@ initializeFirebase();
 
 $(function() {
     $('#upload-btn').click(function() {
+        alert("!");
         $('#input_upload').click();
     });
 
