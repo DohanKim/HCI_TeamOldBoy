@@ -79,6 +79,8 @@ function handleOrientation(event) {
     var alpha = (360 - event.alpha) % 360;
     var angleIndex = Math.floor(alpha / UnitAngle);
 
+    angleIndex = 6;
+
     var leftCol = [];
     var midCol = [];
     var rightCol = [];
@@ -119,9 +121,9 @@ function handleOrientation(event) {
         $('#column2').empty();
         $('#column3').empty();
         for(var i = 0; i < LinesPerColumn; i++) {
-            if (leftCol[i]) $('#column1').append(`<img src="${leftCol[i].url}">`);
-            if (midCol[i]) $('#column2').append(`<img src="${midCol[i].url}">`);
-            if (rightCol[i]) $('#column3').append(`<img src="${rightCol[i].url}">`);
+            if (leftCol[i]) $('#column1').append($('<div class="image" />').css('background-image', 'url(' + leftCol[i].url + ')'));
+            if (midCol[i]) $('#column2').append($('<div class="image" />').css('background-image', 'url(' + midCol[i].url + ')'));
+            if (rightCol[i]) $('#column3').append($('<div class="image" />').css('background-image', 'url(' + rightCol[i].url + ')'));
         }
     }
 
