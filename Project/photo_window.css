@@ -38,6 +38,7 @@ header .title {
 }
 #photos .column img {
   width: 100%;
+  height: 20%; 
 }
 
 .mui-divider {

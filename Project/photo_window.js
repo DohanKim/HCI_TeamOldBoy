@@ -129,12 +129,10 @@ function handleOrientation(event) {
 }
 
 function uploadPhoto(e) {
-    alert("upload start");
     var file = e.target.files[0];
     var imageRef = storageRef.child('images/' + (new Date()).getTime() + '_' + file.name);
     imageRef.put(file).then(function(snapshot) {
         var url = snapshot.downloadURL;
-        alert("uploaded to storage");
         photosRef.push({url: url, position: {lat: currentPosition.coords.latitude, lng: currentPosition.coords.longitude}}).then(() => alert("uploaded"));
         updatePhotos();
     });
