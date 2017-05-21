@@ -121,6 +121,13 @@
   transition: 0.3s ease;
 }
 
+
+#bottom{
+    border-top-color : #f1f1f1;
+    border-top-width: thin;
+    border-top-style: solid;
+}
+
 .bottom {
   position: fixed;
   bottom: 0;
