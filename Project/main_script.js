@@ -1,11 +1,15 @@
 const GeoInformationUpdateDuration = 1000;
 const UnitAngle = 30;
+const AngleIndexLimit = 360 / UnitAngle;
 
 var photos = [];
 var output = $('#output');
 var gotCurrentPosition = false;
+var prevAngleIndex = -1;
 
 $(function() {
+    initializeFirebase();
+
     //fake data
     //photos: {url, position: {lat, lng}, angle}
     for (var i = 0; i < 10; i++) {
@@ -21,6 +25,17 @@ $(function() {
     window.addEventListener('deviceorientation', handleOrientation);
 });
 
+function initializeFirebase() {
+    firebase.initializeApp({
+        apiKey: "AIzaSyAD6jEZFv56owk4zrJ34JjI7sjHIKTmcfk",
+        authDomain: "dokidokitraveler-1495041989137.firebaseapp.com",
+        databaseURL: "https://dokidokitraveler-1495041989137.firebaseio.com",
+        projectId: "dokidokitraveler-1495041989137",
+        storageBucket: "dokidokitraveler-1495041989137.appspot.com",
+        messagingSenderId: "586932970026"
+    });
+}
+
 function calculateGeoInformation() {
     navigator.geolocation.watchPosition(function(position) {
         var currentCoords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude); 
@@ -28,6 +43,7 @@ function calculateGeoInformation() {
         photos.forEach(function(photo, i) {
             var photoCoords = new google.maps.LatLng(photo.position);
             photo.angle = google.maps.geometry.spherical.computeHeading(currentCoords, photoCoords); // degree
+            photo.angleIndex = photo.angle / UnitAngle;
             photo.distance = google.maps.geometry.spherical.computeDistanceBetween(currentCoords, photoCoords); // meter
         })
 
@@ -47,30 +63,39 @@ function handleOrientation(event) {
 
     var alpha = event.alpha;
     if (alpha < 0) alpha += 360; // assure alpha > 0
+    var angleIndex = alpha / UnitAngle;
 
     var leftCol = [];
     var midCol = [];
     var rightCol = [];
 
     photos.forEach(function(photo, i) {
-        var angleDifference = photo.angle - alpha;
-        print(photo.angle);
-        print(angleDifference);
-        if (Math.abs(angleDifference) <= UnitAngle * 1.5) {
-            if (angleDifference < UnitAngle * -0.5) {
-                leftCol.push(photo);
-            }
-            else if (angleDifference < UnitAngle * 0.5) {
-                midCol.push(photo);
-            }
-            else {
-                rightCol.push(photo);
-            }
+        if (photo.angleIndex == (angleIndex-1 + AngleIndexLimit) % AngleIndexLimit) {
+            leftCol.push(photo);
+        }
+        else if (photo.angleIndex == angleIndex) {
+            midCol.push(photo);
+        }
+        else if (photo.angleIndex == (angleIndex+1) % AngleIndexLimit) {
+            rightCol.push(photo);
         }
     });
 
+    function compareByDistance(x, y) {
+        return x.distance - y.distance;
+    }
+    leftCol.sort(compareByDistance);
+    midCol.sort(compareByDistance);
+    rightCol.sort(compareByDistance);
+
     console.log(leftCol);
-    print(midCol.length);
+    console.log(midCol);
     console.log(rightCol);
     console.log("----------------------");
+
+    if (angleIndex != prevAngleIndex) { // time to move the photo window
+        print("30' rotated");
+    }
+
+    prevAngleIndex = angleIndex;
 }
