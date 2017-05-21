@@ -65,6 +65,8 @@ function handleOrientation(event) {
     if (alpha < 0) alpha += 360; // assure alpha > 0
     var angleIndex = alpha / UnitAngle;
 
+    print("angleIndex :" + angleIndex);
+
     var leftCol = [];
     var midCol = [];
     var rightCol = [];
@@ -94,7 +96,7 @@ function handleOrientation(event) {
     console.log("----------------------");
 
     if (angleIndex != prevAngleIndex) { // time to move the photo window
-        print("30' rotated");
+        //print("30' rotated");
     }
 
     prevAngleIndex = angleIndex;
