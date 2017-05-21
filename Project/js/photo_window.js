@@ -24,6 +24,7 @@ function updatePhotos() {
 
 function calculateGeoInformation() {
     navigator.geolocation.watchPosition(function(position) {
+		controlUploadSize(position);
         currentPosition = position;
 
         var currentCoords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude); 
@@ -53,8 +54,6 @@ function handleOrientation(event) {
 
     var alpha = (360 - event.alpha) % 360;
     var angleIndex = Math.floor(alpha / UnitAngle);
-
-    angleIndex = 6;
 
     var leftCol = [];
     var midCol = [];
@@ -88,7 +87,6 @@ function handleOrientation(event) {
     console.log("----------------------");
 
     if (angleIndex != prevAngleIndex) { // time to move the photo window
-        alert(angleIndex);
         // add additional column
         // move whole photos
         // remove invisible column
@@ -135,54 +133,45 @@ function getDistance(position1, position2) {
 var flag_bigger = false;
 var pre_position;
 
-function controlUploadSize() {
-  navigator.geolocation.watchPosition(function(position) {
-    var current_position = position;
-    
-    // for the first iteration
-    if (typeof pre_position === "undefined") {
-      pre_position = current_position;  
-    }
-    
-    var current_lat = current_position.coords.latitude;
-    var current_lng = current_position.coords.longitude;
-    var pre_lat = pre_position.coords.latitude;
-    var pre_lng = pre_position.coords.longitude;
-    
-    console.log(pre_lat, pre_lng);
-    console.log(current_lat, current_lng);
-    
-    var d = getDistance(current_position, pre_position);
-    if (d != 0) {
-      // update the flag
-      if (d > 0.005 && flag_bigger == true){
-          flag_bigger = false;
-      }
+function controlUploadSize(position) {
+	var current_position = position;
 
-      if (d < 0.005 && flag_bigger == false){
-          flag_bigger = true;
-      }
+	// for the first iteration
+	if (typeof pre_position === "undefined") {
+	  pre_position = current_position;  
+	}
 
-      // Change the size of the text
-      if (flag_bigger == true){    
-          $("#upload-btn").animate({
-            height: "90px"
-          });
-          flag_bigger= false;
-      } else {
-          $("#upload-btn").animate({
-            height: "45px"
-          });
-          flag_bigger = true;
-      }
-    }
-    pre_position = current_position;
-  }, function(err) {
-      console.log(err);
-  }, {
-    enableHighAccuracy: true,
-    timeout           : Infinity,
-    maximumAge        : 0
-  });
+	var current_lat = current_position.coords.latitude;
+	var current_lng = current_position.coords.longitude;
+	var pre_lat = pre_position.coords.latitude;
+	var pre_lng = pre_position.coords.longitude;
+
+	console.log(pre_lat, pre_lng);
+	console.log(current_lat, current_lng);
+
+	var d = getDistance(current_position, pre_position);
+	if (d != 0) {
+	  // update the flag
+	  if (d > 0.005 && flag_bigger == true){
+		  flag_bigger = false;
+	  }
+
+	  if (d < 0.005 && flag_bigger == false){
+		  flag_bigger = true;
+	  }
+
+	  // Change the size of the text
+	  if (flag_bigger == true){    
+		  $("#upload-btn").animate({
+			height: "90px"
+		  });
+		  flag_bigger= false;
+	  } else {
+		  $("#upload-btn").animate({
+			height: "45px"
+		  });
+		  flag_bigger = true;
+	  }
+	}
+	pre_position = current_position; 
 }
-controlUploadSize();
