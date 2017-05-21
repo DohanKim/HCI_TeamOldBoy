@@ -36,14 +36,26 @@ var hisTravel = {
   }
 };
 
+var recommend = {
+	theater: {
+		center: {lat:36.368938, lng:127.360841},
+		numPhoto: 1
+	}
+}
+
 // TODO: travel map 에 사진 정보 파베에서 받아서 moalEl 코드 작성하기!
 function PutDataToMap(map, label, travel_map){
 	// Construct the circle for each value in citymap.
 	// Note: We scale the area of the circle based on the population.
 	if(label == 'I'){
-		var color = '#f00';
+		var color = '#FF4081';
+		var icon = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
+	}else if(label == 'star'){
+		var icon = 'images/star.png';
+		label = '';
 	}else{
-		var color = '#00f';
+		var color = '#5C6BC0';
+		var icon = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png';
 	}
 	
 	for (var point in travel_map) {
@@ -62,6 +74,7 @@ function PutDataToMap(map, label, travel_map){
 		var Marker = new google.maps.Marker({
 			position: travel_map[point].center,
 			map: map,
+			icon: icon,
 			label: label
 		});
 
@@ -91,11 +104,9 @@ function PutDataToMap(map, label, travel_map){
 var initMap = function() {
   // Create the map.
 	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 17,
+		zoom: 15,
 		center: {lat: 36.370536, lng: 127.362590},
-		mapTypeId: 'roadmap',
-		draggable: false, 
-		zoomControl: false, 
+		mapTypeId: 'roadmap',  
 		scrollwheel: false, 
 		disableDoubleClickZoom: true,
 		streetViewControl: false,
@@ -110,5 +121,6 @@ var initMap = function() {
 	});
 
 	PutDataToMap(map, 'I', myTravel);
-	PutDataToMap(map, 'Y', hisTravel);
+	PutDataToMap(map, 'U', hisTravel);
+	PutDataToMap(map, 'star', recommend);
 };
