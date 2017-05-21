@@ -15,7 +15,7 @@ $(function() {
         calculateGeoInformation();
     });
 
-    window.addEventListener('deviceorientation', handleOrientation);
+    window.addEventListener('deviceorientationabsolute', handleOrientation);
 });
 
 function initializeFirebase() {
