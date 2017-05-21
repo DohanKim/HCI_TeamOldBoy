@@ -4,6 +4,7 @@ const UnitAngle = 30;
 var photos = [];
 var output = $('#output');
 var gotCurrentPosition = false;
+var prevAlpha = -1;
 
 $(function() {
     //fake data
@@ -45,7 +46,10 @@ function print(a) {
 function handleOrientation(event) {
     if (gotCurrentPosition == false) return;
 
+    print("prev: " + prevAlpha);
     var alpha = event.alpha;
+    
+    print(alpha);
     if (alpha < 0) alpha += 360; // assure alpha > 0
 
     var leftCol = [];
@@ -54,8 +58,6 @@ function handleOrientation(event) {
 
     photos.forEach(function(photo, i) {
         var angleDifference = photo.angle - alpha;
-        print(photo.angle);
-        print(angleDifference);
         if (Math.abs(angleDifference) <= UnitAngle * 1.5) {
             if (angleDifference < UnitAngle * -0.5) {
                 leftCol.push(photo);
@@ -69,8 +71,17 @@ function handleOrientation(event) {
         }
     });
 
+    function compareByDistance(x, y) {
+        return x.distance - y.distance;
+    }
+    leftCol.sort(compareByDistance);
+    midCol.sort(compareByDistance);
+    rightCol.sort(compareByDistance);
+
     console.log(leftCol);
-    print(midCol.length);
+    console.log(midCol);
     console.log(rightCol);
     console.log("----------------------");
+
+    prevAlpha = alpha;    
 }
