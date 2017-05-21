@@ -7,20 +7,12 @@ var output = $('#output');
 var gotCurrentPosition = false;
 var prevAngleIndex = -1;
 
+var photosRef;
+
 $(function() {
-    initializeFirebase();
-
-    //fake data
-    //photos: {url, position: {lat, lng}, angle}
-    for (var i = 0; i < 10; i++) {
-        photos[i] = {
-            url: 'https://nationalzoo.si.edu/sites/default/files/styles/slide_small_scale/public/newsroom/0038_nz_panda_0823_c_2014_david_galen.jpg?itok=vejfEI2s', 
-            position: {lat: 36.3700567 + Math.random(), lng: 127.35980400000001 + Math.random()}, 
-        };
-    }
-    console.log(photos);
-
-    calculateGeoInformation();
+    initializeFirebase().then(function() {
+        calculateGeoInformation();
+    });
 
     window.addEventListener('deviceorientation', handleOrientation);
 });
@@ -33,6 +25,12 @@ function initializeFirebase() {
         projectId: "dokidokitraveler-1495041989137",
         storageBucket: "dokidokitraveler-1495041989137.appspot.com",
         messagingSenderId: "586932970026"
+    });
+
+    photosRef = firebase.database().ref("photos");
+    return photosRef.once('value').then(function(data) {
+        photos = data.val();
+        console.log(photos);
     });
 }
 
@@ -97,6 +95,10 @@ function handleOrientation(event) {
 
     if (angleIndex != prevAngleIndex) { // time to move the photo window
         //print("30' rotated");
+        //
+        // add additional column
+        // move whole photos
+        // remove invisible column
     }
 
     prevAngleIndex = angleIndex;
