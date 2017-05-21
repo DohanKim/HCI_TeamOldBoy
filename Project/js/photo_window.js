@@ -50,6 +50,7 @@ function calculateGeoInformation() {
 
 function handleOrientation(event) {
     if (gotCurrentPosition == false) return;
+    console.log(event.alpha);
 
     var alpha = (360 - event.alpha) % 360;
     var angleIndex = Math.floor(alpha / UnitAngle);
