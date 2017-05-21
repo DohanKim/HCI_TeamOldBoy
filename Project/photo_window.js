@@ -1,6 +1,7 @@
 const GeoInformationUpdateDuration = 1000;
 const UnitAngle = 30;
 const AngleIndexLimit = 360 / UnitAngle;
+const LinesPerColumn = 4;
 
 var photos = [];
 var output = $('#output');
@@ -93,12 +94,22 @@ function handleOrientation(event) {
     console.log(rightCol);
     console.log("----------------------");
 
+
     if (angleIndex != prevAngleIndex) { // time to move the photo window
         //print("30' rotated");
         //
         // add additional column
         // move whole photos
         // remove invisible column
+        //
+        $('#column1').empty();
+        $('#column2').empty();
+        $('#column3').empty();
+        for(var i = 0; i < LinesPerColumn; i++) {
+            $('#column1').append(`<img src="${leftCol[i].url}">`);
+            $('#column2').append(`<img src="${midCol[i].url}">`);
+            $('#column3').append(`<img src="${rightCol[i].url}">`);
+        }
     }
 
     prevAngleIndex = angleIndex;

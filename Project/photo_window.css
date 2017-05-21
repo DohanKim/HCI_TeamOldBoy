@@ -5,17 +5,32 @@ html,body {
     padding: 0px;
     overflow-x: hidden; 
 }
-h1 {
-  padding: 0px;
-  margin: 0px 5px 0px 5px;
-}
+
 .mui-appbar {
   padding: 5px;
   margin-bottom: 5px;
+  height: 30px !important;
+  min-height: 0;
 }
+header .title {
+  font-size: 20px;
+}
+
 .mui-container {
   margin-bottom: 5px;
   padding: 3px 0px 3px 0px;
+}
+#photos {
+  width: 100%;
+  height: auto;
+  margin: 15px 0px;
+}
+#photos .column {
+  width: 33.3333333%;
+  float: left;
+}
+#photos .column img {
+  padding: 3px;
 }
 
 .mui-divider {
@@ -29,40 +44,21 @@ h1 {
   left: 0;
   right: 0;
   width: 100%;
-  align-content: center;
   padding: 0;
 }
-
 #bottom button {
   vertical-align: bottom;
   bottom: 0;
   border: 0px;
   padding: 0px;
   margin: 0px;
-  width: 30%;
-  height: 60px;
-  margin: 0 1.5%;
+  width: 32%;
+  height: 40px;
+  margin: 0;
+  float: left;
 }
-
-#photos {
-  align-content: center;
-  width: 100%;
-  height: auto;
-  margin: 15px 0px;
-}
-
-#photocolomn {
-  vertical-align: middle;
-  align-content: center;
-  margin: 0px;
-  width: 100%;
-}
-
-img {
-  vertical-align: middle;
-  width: 33.33%;
-  margin: -2px;
-  padding: 0px;
+#bottom #photo-btn, #bottom #upload-btn {
+  margin-right: 2%;
 }
 
 .filebox label {
