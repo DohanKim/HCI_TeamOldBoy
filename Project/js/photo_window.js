@@ -7,6 +7,8 @@ var photos = [];
 var gotCurrentPosition = false;
 var prevAngleIndex = -1;
 var currentPosition;
+var flag_bigger = false;
+var pre_position;
 
 $(function() {
     updatePhotos();
@@ -44,8 +46,8 @@ function calculateGeoInformation() {
         console.log(err);
     }, {
         enableHighAccuracy: true, 
-        maximumAge        : 30000, 
-        timeout           : 10000,
+        maximumAge        : 0, 
+        timeout           : 100,
     });
 }
 
@@ -130,8 +132,7 @@ function getDistance(position1, position2) {
   return d;
 }
 
-var flag_bigger = false;
-var pre_position;
+
 
 function controlUploadSize(position) {
 	var current_position = position;
