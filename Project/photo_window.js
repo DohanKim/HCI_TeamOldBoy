@@ -55,8 +55,7 @@ function calculateGeoInformation() {
 function handleOrientation(event) {
     if (gotCurrentPosition == false) return;
 
-    var alpha = event.alpha;
-    if (alpha < 0) alpha += 360; // assure alpha > 0
+    var alpha = (360 - event.alpha) % 360;
     var angleIndex = Math.floor(alpha / UnitAngle);
 
     var leftCol = [];
@@ -86,7 +85,6 @@ function handleOrientation(event) {
     console.log(midCol);
     console.log(rightCol);
     console.log("----------------------");
-
 
     if (angleIndex != prevAngleIndex) { // time to move the photo window
         // add additional column
