@@ -1,13 +1,7 @@
 //initialize
 
-var config = {
-  apiKey: "AIzaSyAuqcDhQe17C-Uw0xEK9b74Wr50ZfYANDk",
-  databaseURL: "https://message-test-38e7e.firebaseio.com/"
-}
-
-firebase.initializeApp(config);
-var database = firebase.database()
-var messageRef = database.ref("certain_message")
+var database = firebase.database();
+var messageRef = database.ref("messages");
 
 
 
@@ -105,22 +99,18 @@ function myTimer() {
     if (lat1 == 0 ){
         lat1 = lat2
     } 
-    console.log('lat1: ', lat1);
-    console.log('lat2: ', lat2);
-    console.log('lon1: ', lon1);
-    console.log('lon2: ', lon2);
-
+    
     
     //Calculate the distance between two area
     //http://www.movable-type.co.uk/scripts/latlong.html
     var R = 6371; // metres
-    var φ1 = toRadians(lat1);
-    var φ2 = toRadians(lat2);
-    var Δφ = toRadians((lat2-lat1));
-    var Δλ = toRadians((lon2-lon1));
-    var a = Math.sin(Δφ/2) * Math.sin(Δφ/2) +
-            Math.cos(φ1) * Math.cos(φ2) *
-            Math.sin(Δλ/2) * Math.sin(Δλ/2);
+    var pi1 = toRadians(lat1);
+    var pi2 = toRadians(lat2);
+    var delpi = toRadians((lat2-lat1));
+    var dellambda = toRadians((lon2-lon1));
+    var a = Math.sin(delpi/2) * Math.sin(delpi/2) +
+            Math.cos(pi1) * Math.cos(pi2) *
+            Math.sin(dellambda/2) * Math.sin(dellambda/2);
     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
     var d = R * c;
     
