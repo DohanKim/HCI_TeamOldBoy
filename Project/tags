@@ -6,9 +6,13 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 PutDataToMap	js/photo_detail_map.js	/^function PutDataToMap(map, label, travel_map){$/;"	f	language:JavaScript
 calculateGeoInformation	js/photo_window.js	/^function calculateGeoInformation() {$/;"	f	language:JavaScript
+controlUploadSize	js/photo_window.js	/^function controlUploadSize() {$/;"	f	language:JavaScript
 currentPosition	js/photo_window.js	/^var currentPosition;$/;"	v	language:JavaScript
 flag_bigger	js/message_detail.js	/^var flag_bigger = false;$/;"	v	language:JavaScript
+flag_bigger	js/photo_window.js	/^var flag_bigger = false;$/;"	v	language:JavaScript
 flag_smaller	js/message_detail.js	/^var flag_smaller = false;$/;"	v	language:JavaScript
+getDistance	js/photo_window.js	/^function getDistance(position1, position2) {$/;"	f	language:JavaScript
+getDistance.toRadians	js/photo_window.js	/^  function toRadians(Value) {$/;"	f	language:JavaScript
 gotCurrentPosition	js/photo_window.js	/^var gotCurrentPosition = false;$/;"	v	language:JavaScript
 handleOrientation	js/photo_window.js	/^function handleOrientation(event) {$/;"	f	language:JavaScript
 handleOrientation.compareByDistance	js/photo_window.js	/^    function compareByDistance(x, y) {$/;"	f	language:JavaScript
@@ -26,6 +30,7 @@ myTimer.toRadians	js/message_detail.js	/^    function toRadians(Value) {$/;"	f	l
 myTravel.bakery	js/photo_detail_map.js	/^	bakery: {$/;"	p	language:JavaScript
 photos	js/photo_window.js	/^var photos = [];$/;"	v	language:JavaScript
 photosRef	js/common.js	/^var photosRef;$/;"	v	language:JavaScript
+pre_position	js/photo_window.js	/^var pre_position;$/;"	v	language:JavaScript
 prevAngleIndex	js/photo_window.js	/^var prevAngleIndex = -1;$/;"	v	language:JavaScript
 recommend.theater	js/photo_detail_map.js	/^	theater: {$/;"	p	language:JavaScript
 storageRef	js/common.js	/^var storageRef;$/;"	v	language:JavaScript

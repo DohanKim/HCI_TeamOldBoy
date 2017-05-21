@@ -88,6 +88,7 @@ function handleOrientation(event) {
     console.log("----------------------");
 
     if (angleIndex != prevAngleIndex) { // time to move the photo window
+        alert(angleIndex);
         // add additional column
         // move whole photos
         // remove invisible column
