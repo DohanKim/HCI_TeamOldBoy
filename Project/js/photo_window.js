@@ -14,6 +14,11 @@ $(function() {
     updatePhotos();
 
     window.addEventListener('deviceorientationabsolute', handleOrientation);
+	
+	$(document).on("click", ".image", function() {
+		console.log('clicked')
+		window.location="./photo_detail.html";
+	})
 });
 
 function updatePhotos() {
@@ -32,6 +37,7 @@ function calculateGeoInformation() {
         var currentCoords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude); 
 
         for (var key in photos) {
+			
             if (photos.hasOwnProperty(key)) {
                 var photo = photos[key];
                 var photoCoords = new google.maps.LatLng(photo.position);
@@ -56,6 +62,11 @@ function handleOrientation(event) {
 
     var alpha = (360 - event.alpha) % 360;
     var angleIndex = Math.floor(alpha / UnitAngle);
+//	var angleIndex = 5;
+	console.log("event.alpha:", event.alpha);
+	console.log("alpha:", alpha);
+	console.log("UnitAngle:", UnitAngle);
+	console.log("angleindex:", angleIndex);
 
     var leftCol = [];
     var midCol = [];
@@ -64,13 +75,17 @@ function handleOrientation(event) {
     for (var key in photos) {
         if (photos.hasOwnProperty(key)) {
             var photo = photos[key];
+			console.log("angleIndex: ", photo.angleIndex);
             if (photo.angleIndex == (angleIndex-1 + AngleIndexLimit) % AngleIndexLimit) {
+				console.log("append image to left");
                 leftCol.push(photo);
             }
             else if (photo.angleIndex == angleIndex) {
+				console.log("append image to mid");
                 midCol.push(photo);
             }
             else if (photo.angleIndex == (angleIndex+1) % AngleIndexLimit) {
+				console.log("append image to right");
                 rightCol.push(photo);
             }
         }
@@ -97,9 +112,10 @@ function handleOrientation(event) {
         $('#column2').empty();
         $('#column3').empty();
         for(var i = 0; i < LinesPerColumn; i++) {
-            if (leftCol[i]) $('#column1').append($('<a href="./photo_detail.html"> <div class="image"  />').css('background-image', 'url(' + leftCol[i].url + ')'));
-            if (midCol[i]) $('#column2').append($('<a href="./photo_detail.html"> <div class="image" />').css('background-image', 'url(' + midCol[i].url + ')'));
-            if (rightCol[i]) $('#column3').append($('<a href="./photo_detail.html"> <div class="image" />').css('background-image', 'url(' + rightCol[i].url + ')'));
+			console.log("draw image");
+            if (leftCol[i]) $('#column1').append($('<div class="image"  />').css('background-image', 'url(' + leftCol[i].url + ')'));
+            if (midCol[i]) $('#column2').append($('<div class="image" />').css('background-image', 'url(' + midCol[i].url + ')'));
+            if (rightCol[i]) $('#column3').append($('<div class="image" />').css('background-image', 'url(' + rightCol[i].url + ')'));
         }
     }
 
@@ -174,3 +190,4 @@ function controlUploadSize(position) {
 	}
 	pre_position = current_position; 
 }
+
