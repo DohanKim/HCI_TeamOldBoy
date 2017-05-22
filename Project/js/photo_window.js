@@ -47,7 +47,7 @@ function calculateGeoInformation() {
     }, {
         enableHighAccuracy: true, 
         maximumAge        : 0, 
-        timeout           : 100,
+        timeout           : 1000,
     });
 }
 
@@ -97,9 +97,9 @@ function handleOrientation(event) {
         $('#column2').empty();
         $('#column3').empty();
         for(var i = 0; i < LinesPerColumn; i++) {
-            if (leftCol[i]) $('#column1').append($('<div class="image" />').css('background-image', 'url(' + leftCol[i].url + ')'));
-            if (midCol[i]) $('#column2').append($('<div class="image" />').css('background-image', 'url(' + midCol[i].url + ')'));
-            if (rightCol[i]) $('#column3').append($('<div class="image" />').css('background-image', 'url(' + rightCol[i].url + ')'));
+            if (leftCol[i]) $('#column1').append($('<a href="./photo_detail.html"> <div class="image"  />').css('background-image', 'url(' + leftCol[i].url + ')'));
+            if (midCol[i]) $('#column2').append($('<a href="./photo_detail.html"> <div class="image" />').css('background-image', 'url(' + midCol[i].url + ')'));
+            if (rightCol[i]) $('#column3').append($('<a href="./photo_detail.html"> <div class="image" />').css('background-image', 'url(' + rightCol[i].url + ')'));
         }
     }
 
@@ -131,8 +131,6 @@ function getDistance(position1, position2) {
   console.log(d);
   return d;
 }
-
-
 
 function controlUploadSize(position) {
 	var current_position = position;
