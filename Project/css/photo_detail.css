@@ -61,7 +61,8 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 
 .small_images, .mark_small_images {
-  width: 33.3333333%;
+  width: 33vw;
+  height: 33vw;
   float: left;
   padding: 3px;
 }
