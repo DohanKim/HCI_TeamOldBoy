@@ -1,0 +1,35 @@
+── Project
+   ├── css
+   │   ├── message.css
+   │   ├── photo_detail.css
+   │   └── photo_window.css
+   ├── images
+   │   └── star.png
+   ├── js
+   │   ├── common.js
+   │   ├── message_detail.js
+   │   ├── photo_detail.js
+   │   ├── photo_detail_map.js
+   │   └── photo_window.js
+   ├── message_detail.html
+   ├── message_list.html
+   ├── photo_detail.html
+   ├── photo_window.html
+
+All codes of our project are in “Project” folder.
+
+This project consists of four parts.
+
+The first one is a photo_window for the main page.
+This page consists of photo_window.html, css/photo_window.css, js/common.js, and photo_window.js.
+
+The second one is a photo_detail for the detail pages of each user.
+This page consists of photo_detail.html, css/photo_window.css, photo_detail.css, js/common.js, photo_detail.js, and photo_detail_map.js.
+
+The third one is a message_list.
+This page consists of message_list.html, css/photo_window.css, message.css, and js/common.js.
+
+The last one is a message_detail for each message window.
+This page consists of message_detail.html, css/photo_window.css, message.css, js/common.js, and message_detail.js.
+
+And Icon image(google map marker) is saved in images folder.
