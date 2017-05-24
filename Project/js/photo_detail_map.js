@@ -29,15 +29,15 @@ function PutDataToMap(map, label, travel_map){
 			  fillOpacity: 0.35,
 			  map: map,
 			  center: {lat: point["lat"], lng: point["lng"]},
-			  radius: point["url"].length * 35
+			  radius: point["url"].length * 20
 			});
 		}
 		
 		marker = new google.maps.Marker({
 			position: {lat: point["lat"], lng: point["lng"]},
 			map: map,
-			icon: icon,
-			label: label
+			icon: icon
+			//label: label
 		});
 		listenMarker (marker, point["url"])		
 	}
@@ -132,7 +132,6 @@ $(function(){
 		   google.maps.event.trigger(map, "resize");
 		   map.setCenter(center); 
 		});
-		console.log(myTravel.length);
 		
 		PutDataToMap(map, 'U', hisTravel);
 		PutDataToMap(map, 'I', myTravel);
