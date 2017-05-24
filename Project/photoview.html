@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- load font awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- load MUI -->
+    <link href="https://cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-0.9.16/js/mui.min.js"></script>
+    <!-- load jQuery -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- load firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <!-- load local files -->
+    <script src="./donghang.js"></script>
+    <link href="donghang.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="output"></div>
+    <header class="mui-appbar">
+        <h1> Doki Doki Travel </h1>
+      </header>
+      <div id="photo" class="mui-container">
+        <div id="photocolomn">
+          <img src="images/IMG_2621.JPG">
+          <img src="images/IMG_2622.JPG">
+          <img src="images/IMG_4351.JPG">
+        </div>
+        <div id="photocolomn">
+          <img src="images/IMG_7613.JPG">
+          <img src="images/IMG_7618.jpg">
+          <img src="images/IMG_7619.jpg">
+        </div>
+        <div id="photocolomn">
+          <img src="images/IMG_7692.JPG">
+          <img src="images/IMG_7698.JPG">
+          <img src="images/IMG_7717.JPG">
+        </div>
+        <div id="photocolomn">
+          <img src="images/IMG_7719.JPG">
+          <img src="images/IMG_4497.JPG">
+          <img src="images/IMG_7604.JPG">
+        </div>
+  <!--
+        <div id="photocolomn">
+          <img src="images/IMG_7766.JPG">
+          <img src="images/IMG_7738.JPG">
+          <img src="images/IMG_7758.JPG">
+        </div>
+  -->
+      </div>
+      <div class="mui-divider"></div>
+      <div id="bottom">
+        <button id="photo-btn"class="mui-btn mui-btn--primary" onclick="location.href='./photoview.html'"> <i class="fa fa-th" aria-hidden="true"></i> </button>
+        <span></span>
+        <button id="upload-btn" class="mui-btn mui-btn--primary filebox">
+          <label for="upload">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </label>
+          <input type="file" name="Upload" id="upload" accept="image/*">
+        </button>
+        <span></span>
+        <button id="message-btn" class="mui-btn mui-btn--primary" onclick="location.href='./message.html'"> <i class="fa fa-comments" aria-hidden="true"></i> </button>
+      </div>
+  </body>
+</html>

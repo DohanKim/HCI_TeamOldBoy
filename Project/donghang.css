@@ -1,0 +1,87 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+h1 {
+  padding: 0px;
+  margin: 0px 5px 0px 5px;
+}
+.mui-appbar {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.mui-container {
+  margin-bottom: 5px;
+  padding: 3px 0px 3px 0px;
+}
+
+.mui-divider {
+  bottom: 1;
+  margin: 5px;
+}
+
+#bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+/*  height: 90px;*/
+  align-content: center;
+  vertical-align: text-bottom;
+  padding: 4px;
+  margin-bottom: 5px;
+}
+
+#bottom button {
+  vertical-align: bottom;
+  bottom: 0;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 32%;
+  height: 60px;
+}
+
+#photo {
+  align-content: center;
+  width: 100%;
+  height: auto;
+  margin: 15px 0px;
+}
+
+#photocolomn {
+  vertical-align: middle;
+  align-content: center;
+  margin: 0px;
+  width: 100%;
+}
+
+img {
+  vertical-align: middle;
+  width: 33.33%;
+  margin: -2px;
+  padding: 0px;
+}
+
+.filebox label {
+  vertical-align: middle;
+}
+.filebox input[type="file"] {  /* 파일 필드 숨기기 */
+  vertical-align: middle;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+
+/* for icons */
+.fa {
+  vertical-align: middle;
+  font-size: 20pt;
+}
