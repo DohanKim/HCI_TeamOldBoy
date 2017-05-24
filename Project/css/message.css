@@ -1,4 +1,4 @@
-/* Reference: http://codepen.io/blaketarter/pen/emWbYm */
+/* Reference http://codepen.io/blaketarter/pen/emWbYm */
 
 * {
   box-sizing: border-box;
@@ -45,13 +45,15 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 64px;
+  height: 40px;
   z-index: 100;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+
+
 .nav .default-nav {
-  height: 64px;
+  height: 40px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -64,11 +66,12 @@
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+
 .nav .default-nav .main-nav {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 64px;
+  height: 40px;
   top: 0;
   margin: 0;
   padding: 0;
@@ -81,40 +84,30 @@
   width: 32px;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/ic_arrow_back_white_48dp.png);
   background-size: contain;
-  margin: 16px;
+  margin: 6px;
   float: left;
 }
 .nav .default-nav .main-nav .toggle:hover {
   cursor: pointer;
 }
-.nav .default-nav .main-nav .options {
-  height: 32px;
-  width: 32px;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/ic_more_vert_white_48dp.png);
-  background-size: contain;
-  margin: 16px;
-  position: absolute;
-  right: 0;
-}
-.nav .default-nav .main-nav .options:hover {
-  cursor: pointer;
-}
+
 .nav .default-nav .main-nav .main-nav-item {
   float: left;
-  height: 64px;
-  margin-right: 50px;
+  height: 30px;
+  margin-right: 40px;
   position: relative;
-  line-height: 64px;
+  line-height: 44px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 .nav .default-nav .main-nav .main-nav-item .main-nav-item-link {
   display: block;
   position: relative;
-  height: 64px;
+  height: 40px;
   width: 100%;
   text-align: center;
-  line-height: 64px;
+  font-size: 20px;
+  line-height: 45px;
   text-decoration: none;
   color: inherit;
   -webkit-transition: 0.3s ease;
@@ -164,15 +157,15 @@
   height: 42.66667px;
   width: 42.66667px;
   border-radius: 50%;
-  border: 0;
-  background: #2196F3;
+  border: 10px;
+  background: #ffffff;
   color: #ffffff;
   bottom: 10.66667px;
   right: 10.66667px;
 }
 .bottom .send:before {
   content: '';
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/ic_send_white_48dp.png) no-repeat center center;
+  background: url(http://www.icon2s.com/img256/256x256-black-white-android-message-outline.png) no-repeat center center;
   background-size: 25.6px;
   position: absolute;
   top: 0;
@@ -181,21 +174,6 @@
   bottom: 0;
 }
 
-@media (max-width: 560px) {
-  .wrapper {
-    width: 100%;
-    height: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  .wrapper .inner {
-    height: 100%;
-    height: 100vh;
-  }
-}
 
 
 

@@ -14,24 +14,31 @@
   </head>
   <body>
 
-    <div class="wrapper">
+<!-- <header class="mui-appbar">
+      <i class="fa fa-arrow-left" aria-hidden="true" onclick="window.history.back();"></i>
+      
+      <span class="title">Messages</span>
+    </header>
+-->
+
+      <div class="wrapper">
       <nav class="nav" id="nav">
         <div class="default-nav">
           <div class="main-nav">
             <div class="toggle" onclick="window.history.back();"></div>
             <div class="main-nav-item"><a class="main-nav-item-link" href="./message_list.html">
                 Messages </a></div>
-<!--            <div class="options"></div>-->
           </div>
         </div>
       </nav>
+
       <div class="inner" id="inner">
         <div class="content" id="content"></div>
       </div>
       <div class="mui-divider"></div>
       <div class="bottom" id="bottom">
         <textarea class="input" onkeyup="enterkey();" autocomplete=off id="inputbox"></textarea>
-        <div class="send" id="send"></div>
+        <div class="send" id="send"></div>  
       </div>
     </div>
     <!--
