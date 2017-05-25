@@ -7,41 +7,49 @@ $('#send').on('click', function (e){
     var input = $("#inputbox").val()
     messageRef.push({
         input: input,
-        hour : (new Date()).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})});
+        hour : (new Date()).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}),
+		unread: true
+	});
     $("#inputbox").val("");
-})
+});
 
 
 // Send Data to firebase by press 'enter key'
 function enterkey() {
-        if (window.event.keyCode == 13) {
-             var input = $("#inputbox").val();
-                messageRef.push({
-                input: input,
-                hour : (new Date()).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})});
-            $("#inputbox").val("");
-             
-}
+	if (window.event.keyCode == 13) {
+		var input = $("#inputbox").val();
+		messageRef.push({
+			input: input,
+			hour : (new Date()).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}),
+			unread: true
+		});
+		$("#inputbox").val("");
+	}
 }
 
 
 
 
 messageRef.on("value", function(newData) {
-  var input = newData.val();
-  var childHTMLs = Object.keys(input).map(function(key) {
-    var data = input[key];
-    return `
-      <div class="message">
-        <div class = "message_contents"><b>${data.input}</b><div>
-        <div class = "message_time"> <span>${data.hour}</span>
-      </div>
-    `
-  })
-  var childHTML = childHTMLs.join("")
-  $("#content").empty();
-  $("#content").append(childHTML);
-})
+	var input = newData.val();
+	var childHTMLs = Object.keys(input).map(function(key) {
+		var data = input[key];
+		var newMsgRef = firebase.database().ref("messages/" + key);
+		// update the messge status to "read"
+		newMsgRef.update({
+			"unread": false
+		});
+		return `
+			<div class="message">
+				<div class = "message_contents"><b>${data.input}</b><div>
+				<div class = "message_time"> <span>${data.hour}</span>
+			</div>
+			`
+	});
+	var childHTML = childHTMLs.join("");
+	$("#content").empty();
+	$("#content").append(childHTML);
+});
 
 
 

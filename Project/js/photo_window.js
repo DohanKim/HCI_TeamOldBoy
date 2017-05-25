@@ -16,9 +16,23 @@ $(function() {
     window.addEventListener('deviceorientationabsolute', handleOrientation);
 	
 	$(document).on("click", ".image", function() {
-		console.log('clicked')
 		window.location="./photo_detail.html";
-	})
+	});
+	messageRef.on("value", function(newdata) {
+		var messages_raw = newdata.val();
+		var unread_count = 0;
+		// count unread message
+		Object.keys(messages_raw).map(function (key) {
+			var message = messages_raw[key];
+			if (message.unread == true) {
+				unread_count += 1;
+			}
+			return 0;
+		});
+		console.log("Unread Messages: ", unread_count);
+		// display badge on message button
+		$("#message-btn").append(`<div id="badge"> ${unread_count} </div>`);
+    });
 });
 
 function updatePhotos() {
@@ -61,12 +75,15 @@ function handleOrientation(event) {
     if (gotCurrentPosition == false) return;
 
     var alpha = (360 - event.alpha) % 360;
-//    var angleIndex = Math.floor(alpha / UnitAngle);
-	var angleIndex = 5;
-	console.log("event.alpha:", event.alpha);
-	console.log("alpha:", alpha);
-	console.log("UnitAngle:", UnitAngle);
-	console.log("angleindex:", angleIndex);
+    var angleIndex = Math.floor(alpha / UnitAngle);
+	// for devices that cannot get the orientation value
+	if (angleIndex === 0) {
+		var angleIndex = 5;
+	}
+//	console.log("event.alpha:", event.alpha);
+//	console.log("alpha:", alpha);
+//	console.log("UnitAngle:", UnitAngle);
+//	console.log("angleindex:", angleIndex);
 
     var leftCol = [];
     var midCol = [];
@@ -75,17 +92,13 @@ function handleOrientation(event) {
     for (var key in photos) {
         if (photos.hasOwnProperty(key)) {
             var photo = photos[key];
-			console.log("angleIndex: ", photo.angleIndex);
             if (photo.angleIndex == (angleIndex-1 + AngleIndexLimit) % AngleIndexLimit) {
-				console.log("append image to left");
                 leftCol.push(photo);
             }
             else if (photo.angleIndex == angleIndex) {
-				console.log("append image to mid");
                 midCol.push(photo);
             }
             else if (photo.angleIndex == (angleIndex+1) % AngleIndexLimit) {
-				console.log("append image to right");
                 rightCol.push(photo);
             }
         }
@@ -112,7 +125,6 @@ function handleOrientation(event) {
         $('#column2').empty();
         $('#column3').empty();
         for(var i = 0; i < LinesPerColumn; i++) {
-			console.log("draw image");
             if (leftCol[i]) $('#column1').append($('<div class="image"  />').css('background-image', 'url(' + leftCol[i].url + ')'));
             if (midCol[i]) $('#column2').append($('<div class="image" />').css('background-image', 'url(' + midCol[i].url + ')'));
             if (rightCol[i]) $('#column3').append($('<div class="image" />').css('background-image', 'url(' + rightCol[i].url + ')'));
@@ -144,7 +156,6 @@ function getDistance(position1, position2) {
           Math.sin(delta_lambda/2) * Math.sin(delta_lambda/2);
   var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
   var d = R * c;
-  console.log(d);
   return d;
 }
 
@@ -161,8 +172,8 @@ function controlUploadSize(position) {
 	var pre_lat = pre_position.coords.latitude;
 	var pre_lng = pre_position.coords.longitude;
 
-	console.log(pre_lat, pre_lng);
-	console.log(current_lat, current_lng);
+	console.log("past position: ", pre_lat, pre_lng);
+	console.log("current position: ", current_lat, current_lng);
 
 	var d = getDistance(current_position, pre_position);
 	if (d != 0) {

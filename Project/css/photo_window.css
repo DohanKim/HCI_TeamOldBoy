@@ -75,6 +75,8 @@ header .title {
 	background-color: #0176C3;
 }
 #message-btn {
+	align-content: center;
+	vertical-align: middle;
 	right: 0%;
 }
 
@@ -156,5 +158,13 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 }
 #photo_booth{
 	margin-top: 64px;
+}
+
+#badge {
+	vertical-align: middle;
+	width: 15px;
+	border-radius: 7px;
+	background-color: #FF4081;
+	float: right;
 }
 /* -- Detail view */
