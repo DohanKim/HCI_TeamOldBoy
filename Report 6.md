@@ -61,38 +61,34 @@ Each 3 photos in a column represent the photo of that side (left / front/ right)
 There are 'upload' button in the down side, and when user is not moving it will grow!
 Because the longer time of user stay in particular location, the larger possibility that user upload photo in that area.
 
-![](https://i.imgur.com/X4sZmVw.png =300x600)
+![](./images/6/photo_window.png)
 
 ##### 2. Photo Detail Page -1
 When user push one of above images, photo detail pages will be appeared.
 As time goes by, 'Send message' button will grow. Because the longer time a user spend to watch a profile, the more likely the user is interested in sending a message.
-![](https://i.imgur.com/9Q5WIsn.png =300x600)
+![](./images/6/detail_view_1.png)
 
 ##### 3. Photo Detail Page -2
 Downside of photo detail pages, there are some visual icon that represent the user's information. 
 In addition there is a map that shows, when user A is watching user B's photo detail page, places where each A and B visited, and places where other users upload photos frequently at among the places where both of users haven't visited yet.
-![](https://i.imgur.com/VDxs1oI.png =300x600)
+![](./images/6/detail_view_2.png)
 
 ##### 4. Message Detail Page -1
 By pushing 'message' icon, user can send a message. When user is moving, the message and the message icon will be larger that they can write and send mush easier. 
-![](https://i.imgur.com/6NCmlGB.png =300x600)
+![](./images/6/message_detail.png)
 
 ----------
 ### Individual Reflections
-
-Each member should write this part on their own, reflecting on their own experience. Merge all members' mini-reports in the final report. Answer the following questions:
-
+<!-- Each member should write this part on their own, reflecting on their own experience. Merge all members' mini-reports in the final report. Answer the following questions:
 - Which part the UI did you directly contribute to?
 - What were some of the difficulties you faced?
 - List one useful implementation skill you learned while working on DP5 and DP6.
-
 (이건 참고하시길!.!) 채점기준
 Individual Reflections (15%) -- graded individually
 - Individual contribution clearly specified?
 - Difficulty discussion has enough depth and insight?
 - Non-trivial implementation skill added?
-
-
+-->
 
 #### Dohan Kim
 - Which part the UI did you directly contribute to?
