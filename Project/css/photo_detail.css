@@ -78,4 +78,12 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 #photo_booth{
 	margin-top: 64px;
 }
+
+.demographic {
+	border-bottom: solid #aaa 1px;
+	padding: 10px;
+	margin-top: 102px;
+	margin-bottom: 14px;
+	padding-left: 26px;
+}
 /* -- Detail view */
