@@ -1,4 +1,4 @@
-/* Reference http://codepen.io/blaketarter/pen/emWbYm */
+/* Skeleton Reference http://codepen.io/blaketarter/pen/emWbYm */
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@
 }
 
 .wrapper {
-  height: 600px;
+  height: 100%;
   width: 100%;
   overflow: hidden;
   background-color: white;
@@ -26,7 +26,7 @@
 }
 .wrapper .inner {
   overflow: scroll;
-  height: 520px;
+  height: 680px;
   padding-top: 64px;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
@@ -115,22 +115,22 @@
 }
 
 
-#bottom{
+#input_text{
     border-top-color : #f1f1f1;
     border-top-width: thin;
     border-top-style: solid;
 }
 
-.bottom {
+.input_text {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 64px;
+  height: 80px;
   background: #ffffff;
   /* box-shadow: 0px -3px 3px 0px rgba(50, 50, 50, 0.1); */
 }
-.bottom .input {
+.input_text .input {
   height: 64px;
   background: #ffffff;
   border: none;
@@ -146,13 +146,13 @@
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
 }
-.bottom .input:focus {
+.input_text .input:focus {
   outline: none;
 }
-.bottom .input::-webkit-scrollbar {
+.input_text .input::-webkit-scrollbar {
   width: 0 !important;
 }
-.bottom .send {
+.input_text .send {
   position: fixed;
   height: 42.66667px;
   width: 42.66667px;
@@ -163,10 +163,11 @@
   bottom: 10.66667px;
   right: 10.66667px;
 }
-.bottom .send:before {
+.input_text .send:before {
+  background-color: #2196F3;
   content: '';
-  background: url(http://www.icon2s.com/img256/256x256-black-white-android-message-outline.png) no-repeat center center;
-  background-size: 25.6px;
+  background: url(https://cdn4.iconfinder.com/data/icons/system-ui/154/reply-send-resend-arrow-right-512.png) no-repeat center center;
+  background-size: 40.6px;
   position: absolute;
   top: 0;
   left: 0;
@@ -222,10 +223,44 @@
 
 .message_contents{
     font-size : 20px;
-    
+    color : #2196F3;
 }
 
 .message_time{
     font-size : 15px;
+    color : #000000;
     margin-bottom: 5px;
+}
+
+
+#bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding: 0;
+}
+#bottom button {
+	position: absolute;
+	border-radius: 0px;
+	display: inline;
+  	vertical-align: bottom;
+  	bottom: 0;
+  	border: 0px;
+  	padding: 0px;
+  	margin: 0px;
+  	width: 33.3333333%;
+  	height: 45px;
+  	margin: 0;
+  	float: left;
+}
+#upload-btn {
+	left: 33.3333333%;
+	background-color: #0176C3;
+}
+#message-btn {
+	align-content: center;
+	vertical-align: middle;
+	right: 0%;
 }
