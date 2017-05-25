@@ -3,7 +3,7 @@ var flag_smaller = false;
 
 // Send Data to firebase by click
 
-$('#send').on('click', function (e){
+$('#sendbutton').on('click', function (e){
     var input = $("#inputbox").val()
     messageRef.push({
         input: input,

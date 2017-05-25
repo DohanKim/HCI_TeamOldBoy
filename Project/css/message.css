@@ -152,6 +152,8 @@
 .input_text .input::-webkit-scrollbar {
   width: 0 !important;
 }
+
+/*
 .input_text .send {
   position: fixed;
   height: 42.66667px;
@@ -163,6 +165,8 @@
   bottom: 10.66667px;
   right: 10.66667px;
 }
+*/
+/*
 .input_text .send:before {
   background-color: #2196F3;
   content: '';
@@ -174,8 +178,12 @@
   right: 0;
   bottom: 0;
 }
-
-
+*/
+#sendbutton {
+bottom: 15.66667px;
+right: 10.66667px;
+position: fixed;
+}
 
 
 .images{
