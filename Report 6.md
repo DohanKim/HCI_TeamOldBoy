@@ -66,15 +66,18 @@ Because the longer time of user stay in particular location, the larger possibil
 ##### 2. Photo Detail Page -1
 When user push one of above images, photo detail pages will be appeared.
 As time goes by, 'Send message' button will grow. Because the longer time a user spend to watch a profile, the more likely the user is interested in sending a message.
+
 ![](./images/6/detail_view_1.png)
 
 ##### 3. Photo Detail Page -2
 Downside of photo detail pages, there are some visual icon that represent the user's information. 
 In addition there is a map that shows, when user A is watching user B's photo detail page, places where each A and B visited, and places where other users upload photos frequently at among the places where both of users haven't visited yet.
+
 ![](./images/6/detail_view_2.png)
 
 ##### 4. Message Detail Page -1
-By pushing 'message' icon, user can send a message. When user is moving, the message and the message icon will be larger that they can write and send mush easier. 
+By pushing 'message' icon, user can send a message. When user is moving, the message and the message icon will be larger that they can write and send mush easier.
+
 ![](./images/6/message_detail.png)
 
 ----------
@@ -104,6 +107,7 @@ I implemented photo window page especially its javascript functions.
     - At first, we didn't sure if it is technically possible to track users' movement and orientation. So I had spend time to reasearch and test with real code in various devices. Because of javascript engines' difference of iPhone and various versions of Android as well as smartphone browsers, currently our system is optimal in the Chrome browser of Android device and still somewhat unstable. 
 
 - List one useful implementation skill you learned while working on DP5 and DP6.
+
 Actually I already had some experiences developing web services, so the implementation itself was not that challenging to me except using new APIs for geolocation and orientation of devices. However as it was first time to me developing a service with other programmers, after working on DP5 and DP6, I feel much more confident to use Git with other programmers such as managing branches, merging branches and resolving conflicts.
 
 #### Jaegyun Kim
@@ -118,30 +122,45 @@ Actually I already had some experiences developing web services, so the implemen
     - Implementation
         - I implemented photo detail page and its javascript functions.
 - What were some of the difficulties you faced?
-Javascript closure concept and asynchronous firebase, google map callback functions.
 
-    - For javascript closure parts, some variables can access to outer functions. In this reason, It is really hard to save a correct value to a correct variable. Therefore, I encapsulated a function which have a variable access problem.
+    - Javascript closure concept and asynchronous firebase, google map callback functions.
 
-    - For asynchronous firebase and google map callback functions, I changed google map initialize function synchronous. And called a function that set markers in the map after getting firebase data responses.
+        - For javascript closure parts, some variables can access to outer functions. In this reason, It is really hard to save a correct value to a correct variable. Therefore, I encapsulated a function which have a variable access problem.
+
+        - For asynchronous firebase and google map callback functions, I changed google map initialize function synchronous. And called a function that set markers in the map after getting firebase data responses.
+        
 - List one useful implementation skill you learned while working on DP5 and DP6.
+
 Using Google map API to set markers in the map and show some photo modals when users click the marker.
 #### Giwan Park
 - Which part the UI did you directly contribute to?
-The upload button that gets bigger when stay in one place.
+
+I suggested the ideat that the upload button that gets bigger when stay in one place, and implement it. Plus, I implemented the initial structure of our service.
 
 - What were some of the difficulties you faced?
-Both upload button and photo window uses geolocation. Integrating with those two functionality is greatest difficulty. When I use function that gets geolocation twice, the system is too slow to use. In this reason, I should implement the system have only one geolocation function use, and handles both upload button and photo window drawing. I put the function that handles size of upload button in the function that draws the photo window, so getting geolocation function is called once in a period.
+
+    - Both upload button and photo window uses geolocation. Integrating with those two functionality is greatest difficulty. When I use function that gets geolocation twice, the system is too slow to use. In this reason, I should implement the system have only one geolocation function use, and handles both upload button and photo window drawing. I put the function that handles size of upload button in the function that draws the photo window, so getting geolocation function is called once in a period.
+    - Using git with other people makes me confused when I merge my commit or I pull some latest commits.
+    - Because our service is worked on mobile environment, I had some trouble about testing with my laptop. There were some weird action like unintentional loading in device orientation function, and I think it is caused by laptop environment.
 
 - List one useful implementation skill you learned while working on DP5 and DP6.
-Using jquery animate function when implementing dynamic effect.
-Using geolocation API to know current position.
+
+    - Using material UI library.
+    - Using jquery animate function when implementing dynamic effect.
+    - Using geolocation API to know current position.
+    - Using git with other team mates. (push commits, pull commits, and branch control)
 
 #### Eunseok Jeong
-- Which part the UI did you directly contribute to? 
+- Which part the UI did you directly contribute to?
+
 I implemented message_list and message_detail pages. In particulary, I added special feature that change the size of text when user is moving. Result of that feature, user can see text more easily while they move.
+
 - What were some of the difficulties you faced?
+
 Since it was my first webpage development experience, I did many minor mistakes(grammar mistakes in html/css/JavaScript) that cause a lots of times. But at least I learned a lot from that mistakes:)
+
 - List one useful implementation skill you learned while working on DP5 and DP6.
+
 Since everything was first to me, it's hard to pick one specific skill. Overall, I could be familar with HTML / CSS / Javascript / Git version control than before. 
 
 
