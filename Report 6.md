@@ -11,24 +11,24 @@
 
 ----------
 ### POV
-A traveler who looks for a travel mate needs to watch travel mate candidate's photos. Because he/she decides to travel with the candidate or not based on gender, age, appearance, and atmosphere.
+**A traveler who are looking for travel mates** needs to **watch photos of candidates**. Because important information they need is **candidates' appearance, atmosphere, gender, and age**.
 
 ----------
 ### Target Users
-A traveler seeking travel mates who are nearby during a trip.
+Travelers looking for nearby travel mates during a trip.
 
 ----------
 ### Task
-1. Greet a travel mate who you want to travel with.
-2. Check that someone greeted to you to ask to be a travel mate.
-3. Inform other users of you and your location by photos.
+1. Pick travel mate who you want to travel with and ask for traveling together.
+2. Reply someone's message who want to travel with you.
+3. Inform other users about you and your location by uploading photos.
 
 ### Implementation Notes:
 #### URL of our prototype:
 https://dohankim.github.io/HCI_TeamOldBoy/Project/photo_window
 
 **Specific requirements:**
-- Only android device supported with location access allowed.
+- Works best with the Chrome browser of the Android devices with allowing permission to location access allowed.
 - Main page shows photos taken in near area. Therefore, If main page doesn't show any photos, you need to upload some photos in nearby current location.
 
 #### URL of our Git repository:
