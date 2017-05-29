@@ -13,6 +13,7 @@
     <link href="//cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" />
     <link href="./css/photo_window.css" rel="stylesheet" type="text/css" />
     <link href="./css/message.css" rel="stylesheet" type="text/css" />
+    <link href="./css/footer.css" rel="stylesheet" type="text/css" />
 
   </head>
   <body>
@@ -52,31 +53,32 @@
       </div>
 
       <div id="bottom"> 
-        <a href="./photo_window.html">
-          <button id="photo-btn"class="mui-btn mui-btn--primary"> 
-            <i class="fa fa-th" aria-hidden="true"></i> 
-            <label>Photo</label>
-          </button>
-        </a>
-
-        <button id="upload-btn" class="mui-btn mui-btn--primary filebox">
-          <i class="fa fa-plus" aria-hidden="true"></i>
-          <label>Upload</label>
+      <a href="./photo_window.html">
+        <button id="photo-btn"class="mui-btn mui-btn--primary"> 
+          <i class="fa fa-th" aria-hidden="true"></i> 
+          <label>Photo</label>
         </button>
-        <input type="file" name="Upload" id="input_upload" accept="image/*" hidden>
-        <a href="./message_list.html">
-          <button id="message-btn" class="mui-btn mui-btn--primary" onclick="location.href='./message.html'"> 
-            <i class="fa fa-comments" aria-hidden="true"></i> 
-            <label>Message</label>
-          </button>
-        </a>
-      </div>
+      </a>
+
+      <button id="upload-btn" class="mui-btn mui-btn--primary filebox">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        <label>Upload</label>
+      </button>
+      <input type="file" name="Upload" id="input_upload" accept="image/*" hidden>
+      <a href="./message_list.html">
+        <button id="message-btn" class="mui-btn mui-btn--primary"> 
+          <i class="fa fa-comments" aria-hidden="true"></i> 
+          <label>Message</label>
+        </button>
+      </a>
+    </div>
       </div>
     <script src="https://cdn.muicss.com/mui-0.9.16/js/mui.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script src="//cdn.muicss.com/mui-0.9.16/js/mui.min.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/footer.js"></script>
   </body>
 </html>
 

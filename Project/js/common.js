@@ -4,13 +4,7 @@ var messageRef;
 
 initializeFirebase();
 
-$(function() {
-    $('#upload-btn').click(function() {
-        $('#input_upload').click();
-    });
 
-    $('#input_upload').change(uploadPhoto);
-});
 
 function initializeFirebase() {
     firebase.initializeApp({

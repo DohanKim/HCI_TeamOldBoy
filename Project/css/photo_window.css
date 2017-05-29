@@ -48,59 +48,11 @@ header .title {
   margin: 5px;
 }
 
-#bottom {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	padding: 0;
-}
-#bottom button {
-	position: absolute;
-	border-radius: 0px;
-	display: inline;
-  	vertical-align: bottom;
-  	bottom: 0;
-  	border: 0px;
-  	padding: 0px;
-  	margin: 0px;
-  	width: 33.3333333%;
-  	height: 45px;
-  	margin: 0;
-  	float: left;
-}
-#upload-btn {
-	left: 33.3333333%;
-	background-color: #0176C3;
-}
-#message-btn {
-	align-content: center;
-	vertical-align: middle;
-	right: 0%;
-}
-
-.filebox label {
-  vertical-align: middle;
-}
-.filebox input[type="file"] {  /* 파일 필드 숨기기 */
-  vertical-align: middle;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip:rect(0,0,0,0);
-  border: 0;
-}
-
 /* for icons */
 .fa {
   vertical-align: middle;
   font-size: 20pt;
 }
-
 
 /* Detail view -- */
 #back {
@@ -160,11 +112,5 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	margin-top: 64px;
 }
 
-#badge {
-	vertical-align: middle;
-	width: 15px;
-	border-radius: 7px;
-	background-color: #FF4081;
-	float: right;
-}
+
 /* -- Detail view */

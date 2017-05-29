@@ -14,24 +14,9 @@ $(function() {
     updatePhotos();
 
     window.addEventListener('deviceorientationabsolute', handleOrientation);
-	
-	$(document).on("click", ".image", function() {
-		window.location="./photo_detail.html";
-	});
-	messageRef.on("value", function(newdata) {
-		var messages_raw = newdata.val();
-		var unread_count = 0;
-		// count unread message
-		Object.keys(messages_raw).map(function (key) {
-			var message = messages_raw[key];
-			if (message.unread == true) {
-				unread_count += 1;
-			}
-			return 0;
-		});
-		console.log("Unread Messages: ", unread_count);
-		// display badge on message button
-		$("#message-btn").append(`<div id="badge"> ${unread_count} </div>`);
+
+    $(document).on("click", ".image", function() {
+        window.location="./photo_detail.html";
     });
 });
 
@@ -68,6 +53,7 @@ function calculateGeoInformation() {
         enableHighAccuracy: true, 
         maximumAge        : 1000, 
         timeout           : 1000,
+        // wait 1sec and if the location is not updated, cached location is returned 
     });
 }
 
@@ -153,44 +139,48 @@ function getDistance(position1, position2) {
 
 function controlUploadSize(position) {
 	var current_position = position;
+    var init_time = new Date();
+    var current_time = init_time.getTime()
 
 	// for the first iteration
 	if (typeof pre_position === "undefined") {
-	  pre_position = current_position;  
+      pre_position = {"position": current_position, "time": current_time};  
 	}
 
 	var current_lat = current_position.coords.latitude;
 	var current_lng = current_position.coords.longitude;
-	var pre_lat = pre_position.coords.latitude;
-	var pre_lng = pre_position.coords.longitude;
+	var pre_lat = pre_position.position.coords.latitude;
+	var pre_lng = pre_position.position.coords.longitude;
+    var pre_time = pre_position.time;
 
 	console.log("past position: ", pre_lat, pre_lng);
 	console.log("current position: ", current_lat, current_lng);
 
-	var d = getDistance(current_position, pre_position);
-	if (d != 0) {
-	  // update the flag
-	  if (d > 0.005 && flag_bigger == true){
-		  flag_bigger = false;
-	  }
-
-	  if (d < 0.005 && flag_bigger == false){
-		  flag_bigger = true;
-	  }
-
-	  // Change the size of the text
-	  if (flag_bigger == true){    
-		  $("#upload-btn").animate({
-			height: "90px"
-		  });
-		  flag_bigger= false;
-	  } else {
-		  $("#upload-btn").animate({
-			height: "45px"
-		  });
-		  flag_bigger = true;
-	  }
+	var d = getDistance(current_position, pre_position.position); // km
+    var t = current_time - pre_time; // ms
+    
+	if (t != 0) {
+        var v = (d * 1000) / (t / 1000); // meter per sec
+        // update the flag
+        if (v >= 1 && flag_bigger == true){
+            flag_bigger = false;
+        }
+        if (v < 1 && flag_bigger == false){
+            flag_bigger = true;
+        }
+        // Change the size of the text
+        if (flag_bigger == true){
+            $("#upload-btn").animate({
+                height: "90px"
+            });
+            flag_bigger= false;
+        } else {
+            $("#upload-btn").animate({
+                height: "45px"
+            });
+            flag_bigger = true;
+        }
 	}
-	pre_position = current_position; 
+	pre_position = {"position": current_position, "time": current_time}; 
 }
 
