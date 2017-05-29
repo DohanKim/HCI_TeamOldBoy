@@ -43,6 +43,7 @@ function calculateGeoInformation() {
             if (photos.hasOwnProperty(key)) {
                 var photo = photos[key];
                 var photoCoords = new google.maps.LatLng(photo.position);
+                photo.key = key;
                 photo.angle = (google.maps.geometry.spherical.computeHeading(currentCoords, photoCoords) + 360) % 360; // degree
                 photo.angleIndex = Math.floor(photo.angle / UnitAngle);
                 photo.distance = google.maps.geometry.spherical.computeDistanceBetween(currentCoords, photoCoords); // meter
@@ -106,9 +107,9 @@ function handleOrientation(event) {
         $('#column2').empty();
         $('#column3').empty();
         for(var i = 0; i < LinesPerColumn; i++) {
-            if (leftCol[i]) $('#column1').append($('<div class="image"  />').css('background-image', 'url(' + leftCol[i].url + ')'));
-            if (midCol[i]) $('#column2').append($('<div class="image" />').css('background-image', 'url(' + midCol[i].url + ')'));
-            if (rightCol[i]) $('#column3').append($('<div class="image" />').css('background-image', 'url(' + rightCol[i].url + ')'));
+            if (leftCol[i]) $('#column1').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').css('background-image', 'url(' + leftCol[i].url + ')'));
+            if (midCol[i]) $('#column1').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').css('background-image', 'url(' + midCol[i].url + ')'));
+            if (rightCol[i]) $('#column1').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').css('background-image', 'url(' + rightCol[i].url + ')'));
         }
     }
 
