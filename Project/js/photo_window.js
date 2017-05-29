@@ -17,10 +17,6 @@ $(function() {
 
     // change footer button color
     $("#photo-btn").css("background-color", "#0176C3");
-
-    $(document).on("click", ".image", function() {
-        window.location="./photo_detail.html";
-    });
 });
 
 function updatePhotos() {
@@ -107,9 +103,9 @@ function handleOrientation(event) {
         $('#column2').empty();
         $('#column3').empty();
         for(var i = 0; i < LinesPerColumn; i++) {
-            if (leftCol[i]) $('#column1').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').css('background-image', 'url(' + leftCol[i].url + ')'));
-            if (midCol[i]) $('#column1').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').css('background-image', 'url(' + midCol[i].url + ')'));
-            if (rightCol[i]) $('#column1').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').css('background-image', 'url(' + rightCol[i].url + ')'));
+            if (leftCol[i]) $('#column1').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').children('.image').css('background-image', 'url(' + leftCol[i].url + ')'));
+            if (midCol[i]) $('#column2').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').children('.image').css('background-image', 'url(' + midCol[i].url + ')'));
+            if (rightCol[i]) $('#column3').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').children('.image').css('background-image', 'url(' + rightCol[i].url + ')'));
         }
     }
 
