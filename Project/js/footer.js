@@ -1,5 +1,14 @@
+if (document.URL == "file:///Users/zprime/HCI_DP/Project/photo_window.html") {
+	$("#photo-btn").css("background-color", "#0176C3");
+} else if (document.URL == "file:///Users/zprime/HCI_DP/Project/message_list.html") {
+	$("#message-btn").css("background-color", "#0176C3");
+}
+
 $(function() {
     $('#upload-btn').click(function() {
+    	$("#photo-btn").css("background-color", "#2196F3");
+    	$("#upload-btn").css("background-color", "#0176C3");
+    	$("#message-btn").css("background-color", "#2196F3");
         $('#input_upload').click();
     });
 

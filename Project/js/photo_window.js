@@ -15,6 +15,9 @@ $(function() {
 
     window.addEventListener('deviceorientationabsolute', handleOrientation);
 
+    // change footer button color
+    $("#photo-btn").css("background-color", "#0176C3");
+
     $(document).on("click", ".image", function() {
         window.location="./photo_detail.html";
     });
