@@ -58,10 +58,12 @@ function calculateGeoInformation() {
 }
 
 function handleOrientation(event) {
+    console.log("alpha: " + event.alpha);
     if (gotCurrentPosition == false) return;
 
     var alpha = (360 - event.alpha) % 360;
     var angleIndex = Math.floor(alpha / UnitAngle);
+    console.log(angleIndex);
 
     var leftCol = [];
     var midCol = [];
@@ -103,9 +105,9 @@ function handleOrientation(event) {
         $('#column2').empty();
         $('#column3').empty();
         for(var i = 0; i < LinesPerColumn; i++) {
-            if (leftCol[i]) $('#column1').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').children('.image').css('background-image', 'url(' + leftCol[i].url + ')'));
-            if (midCol[i]) $('#column2').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').children('.image').css('background-image', 'url(' + midCol[i].url + ')'));
-            if (rightCol[i]) $('#column3').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image"  /></a>').children('.image').css('background-image', 'url(' + rightCol[i].url + ')'));
+            if (leftCol[i]) $('#column1').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image" style="background-image: url(' + leftCol[i].url + ')" /></a>'));
+            if (midCol[i]) $('#column2').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image" style="background-image: url(' + midCol[i].url + ')"  /></a>'));
+            if (rightCol[i]) $('#column3').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image" style="background-image: url(' + rightCol[i].url + ')" /></a>'));
         }
     }
 
