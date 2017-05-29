@@ -66,7 +66,7 @@ function calculateGeoInformation() {
         console.log(err);
     }, {
         enableHighAccuracy: true, 
-        maximumAge        : 0, 
+        maximumAge        : 1000, 
         timeout           : 1000,
     });
 }
@@ -76,14 +76,6 @@ function handleOrientation(event) {
 
     var alpha = (360 - event.alpha) % 360;
     var angleIndex = Math.floor(alpha / UnitAngle);
-	// for devices that cannot get the orientation value
-	if (angleIndex === 0) {
-		var angleIndex = 5;
-	}
-//	console.log("event.alpha:", event.alpha);
-//	console.log("alpha:", alpha);
-//	console.log("UnitAngle:", UnitAngle);
-//	console.log("angleindex:", angleIndex);
 
     var leftCol = [];
     var midCol = [];
