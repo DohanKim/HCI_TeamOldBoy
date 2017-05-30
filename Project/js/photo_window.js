@@ -105,9 +105,9 @@ function handleOrientation(event) {
         $('#column2').empty();
         $('#column3').empty();
         for(var i = 0; i < LinesPerColumn; i++) {
-            if (leftCol[i]) $('#column1').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image" style="background-image: url(' + leftCol[i].url + ')" /></a>'));
-            if (midCol[i]) $('#column2').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image" style="background-image: url(' + midCol[i].url + ')"  /></a>'));
-            if (rightCol[i]) $('#column3').append($('<a href="./photo_detail.html?key=' + photo.key + '"><div class="image" style="background-image: url(' + rightCol[i].url + ')" /></a>'));
+            if (leftCol[i]) $('#column1').append($('<a href="./photo_detail.html?key=' + leftCol[i].key + '"><div class="image" style="background-image: url(' + leftCol[i].url + ')" /></a>'));
+            if (midCol[i]) $('#column2').append($('<a href="./photo_detail.html?key=' + midCol[i].key + '"><div class="image" style="background-image: url(' + midCol[i].url + ')"  /></a>'));
+            if (rightCol[i]) $('#column3').append($('<a href="./photo_detail.html?key=' + rightCol[i].key + '"><div class="image" style="background-image: url(' + rightCol[i].url + ')" /></a>'));
         }
     }
 
