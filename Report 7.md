@@ -19,7 +19,7 @@
 -->
 **Instructions for preparation & setting up the testing environment**
 
-![](./images/7/experiment1.png)
+![](./images/7/experiment.png)
 - Prepare a space at least 3m x 3m large
 - Take pictures and upload them here and there surrounding the space 
 - Prepare for recording (AirDroid, will be explained later)
