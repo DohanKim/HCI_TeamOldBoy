@@ -19,7 +19,7 @@
 -->
 **Instructions for preparation & setting up the testing environment**
 
-![](https://i.imgur.com/0xH6qtb.png =350x350)
+![](./images/7/experiment1.png)
 - Prepare a space at least 3m x 3m large
 - Take pictures and upload them here and there surrounding the space 
 - Prepare for recording (AirDroid, will be explained later)
@@ -94,7 +94,7 @@ Thank you for your participation to our interface test. This test was for the se
 The major characteristic of target users we found out from researching existing services was age similarity. Most of users finding travel mates where in their 20s or early 30s. Except the age, it was hard to find any significant conditions. Therefore, we decided to set our testers as 2 female and 2 male who are in their 20s.
 
 **P1**
-![](./images/7/test1.jpg)
+![](./images/7/test1.JPG)
 She is 21 years old student and traveled to USA, Taiwan, Japan, and Philippines. She has no experience finding a travel mate during a travel. But she said if she is going to travel alone, she would try to find a travel mate.
 
 Summary: She was interested in the map showing where she traveled and the user of the page traveled and also showing recommendation travel places using 3 different color pin points. She suggested one more pin point to show where she want to go in the current location.
@@ -138,8 +138,8 @@ High-level reflections: What did you overall learn from the user testing experie
 -->
 Before getting to usablity lessons, This is our questionary results.
 
-![](./images/7/result1.jpg)
-![](./images/7/result2.jpg)
+![](./images/7/result1.png)
+![](./images/7/result2.png)
 
 
 
