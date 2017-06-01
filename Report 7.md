@@ -91,32 +91,38 @@ Thank you for your participation to our interface test. This test was for the se
 ----------
 ### Session Observations
 **How we choose testers**
+
 The major characteristic of target users we found out from researching existing services was age similarity. Most of users finding travel mates where in their 20s or early 30s. Except the age, it was hard to find any significant conditions. Therefore, we decided to set our testers as 2 female and 2 male who are in their 20s.
 
-**P1**
 ![](./images/7/test1.JPG)
+
+**P1**
+
 She is 21 years old student and traveled to USA, Taiwan, Japan, and Philippines. She has no experience finding a travel mate during a travel. But she said if she is going to travel alone, she would try to find a travel mate.
 
 Summary: She was interested in the map showing where she traveled and the user of the page traveled and also showing recommendation travel places using 3 different color pin points. She suggested one more pin point to show where she want to go in the current location.
 
-**P2**
 ![](./images/7/test2.jpg)
+
+**P2**
 
 He is 25 years old student and traveled to U.K, France, Italy, Germany, and Switzerland.
 He also doesn't have experience about finding a travel mate. But he will try to find another travel mate if he is traveling alone. However, he is worried about arranging a travel destination with his travel mate because he usually decided on a tight schedule.
 
 Summary: He needed another information such as future travel plan or other information about the user except for the photos.
 
-**P3
 ![](./images/7/test3.jpg)
+
+**P3**
 
 She is 25 years old student and traveled to Switzerland, Hong Kong, and Boracay.
 She also has no experience in finding a travel mate. But she wants to find a travel mate if she travels alone.
 
 Summary: She tested a lot in the main page. She felt uncomfortable about the main page view. She said the service would be better if the display was more natural. 
 
-**P4**
 ![](./images/7/test4.jpg)
+
+**P4**
 
 He is 28 years old student and traveled to France, England, Singapore and Australia.
 He had several experience finding travel mates when he traveled.
@@ -136,15 +142,20 @@ High-level reflections: What did you overall learn from the user testing experie
 - Level of criticality included?
 - High-level reflections are thoughtful and insightful?
 -->
-Before getting to usablity lessons, This is our questionary results.
+
+#### Comparison Result
+By asking the same questions about our service and existing service, Naver cafe 유랑, we could know relative advantage of our UI.
 
 ![](./images/7/result1.png)
+
+It shows that in aspect of fun and interesting, average score of our service is higher than 유랑. But the standard deviation is large enough to be overlapped, means we need more samples to judge.   
+
 ![](./images/7/result2.png)
 
-The first graph shows that the users felt our service is more easy and efficient in average. However, the variation of the data is overlaped, so it is not certain result. The second graph shows that our services are more helpful than existing service in finding attractive travel mates.
+This graph shows that our services are much more helpful than 유랑 in finding attractive travel mates. Users said that presence of the images was helpful.
 
+#### Userbility issues
 We set metrics for measuring criticality as below.
-
 - High
     - (Regardless of its size) Design issue that highly affects user's action.
     - Design issue that make major change in our features.
@@ -157,18 +168,18 @@ We set metrics for measuring criticality as below.
     - Design issue that relate to specific item (size, color)
 
 
-#### Photo Window (Task 1, Task 3)
-- Usabilty Issue (High - P1,P2,P3,P4) : There was no enough instruction or information about what each 9 photos means. (learnability)
-    -  Solution : To increase affordance(natural mapping), make the animation in photo window page more softly.
+**Photo Window (Task 1, Task 3)**
+- Usabilty Issue (High - P1,P2,P3,P4) : There was no enough instruction or information about what 9 photos in the photo window means. (learnability)
+    -  Solution : By making natural mapping, rotating animation of the photos following users' rotation, increase learnability.
 
-- Usabilty Issue (High - P1,P2,P3,P4) : When user upload photos, there was not enough information whether the upload was successfull. (user feedback)
-    - Solution: To incrase feedback, display uploaded photo at the photo window.
+- Usabilty Issue (High - P1,P2,P3,P4) : When user upload photos, there was not enough information whether the upload was successful. (user feedback)
+    - Solution: To give more feedback, display uploaded photo at the photo window.
 
-- Usabilty Issue (Medium - P1,P3): The change of photo is too fast for user, which leads them confused. (learnability, visiblity)
+- Usabilty Issue (Medium - P1,P3): The change of photo is too fast for user, which made them confused. (learnability, visiblity)
     - Solution: To increase learnablity, make the change of photo slower.(Change the angle interval from current 30˚)
 
 
-#### Photo Detail (Task 1)
+**Photo Detail (Task 1)**
 - Usabilty Issue(Medium - P2,P3):  User didn't watch the information in the map. (learnablity) 
     - Solution: Make the information of each icon in the map more larger. In addition, provide more than one recommendation and change the size and color of star.
 - Usabilty Issue(High - P1,P2,P3,P4): There was no enough information for travel mates.
@@ -177,14 +188,14 @@ We set metrics for measuring criticality as below.
     - Solution: Make the animation more slow and soft that user perceive it as feature of our services
 
 
-#### Message Box (Task 1,Task 2)
+**Message Box (Task 1,Task 2)**
 - Usabilty Issue(Medium - P1, P3): 'Message send' button overlap the user input region that user cannot see some texts. (safety)
     - Solution: Make the user input region smaller (just until the send button)
 - Usabilty Issue(Low - P2, P3): When user is moving only the text is became larger, not the button. (consistency)
     - Solution: Make the button also larger that user cannot feel confused.
 
 
-#### Overall Design (Task 1 , Task 2, Task 3)
+**Overall Design (Task 1 , Task 2, Task 3)**
 
 - Usabilty Issue(Low - P2) : The size of top menu bar in service is not consistent. (Visiablity, Learnablity)
     - Solution: Make the size of top menu bar same in every pages.
@@ -194,15 +205,9 @@ We set metrics for measuring criticality as below.
 
 
 #### High-level reflections
-
-We thought a lot about the new fasinating UI(normally different with existing UI) idea a lot and applied it our service. 
-
-However, currently almost every people use smartphone and they have many experience with many services and application. Therefore it's very important to have consistency with existing services. 
-
-Making new UI and finding good aspects in existing UI is both important.
+We spent a lot of time to think out of the box when devising the UI displaying photos which fit travelers' environment. Even though the idea scrolling the photos following users' movement and rotationwas novel, it also meant low external consistency with other existing services. The most important lesson we learned in this iteration was that when making new UI, learnability is really important so we should consider more in terms of affordance, external consistency, information scent and also user feedback.
 
 Based on these reflections we made our goals and plan for iteration.
-
 
 ----------
 ### Plan for Iteration
@@ -223,8 +228,6 @@ Our system's UI naturally has low external consistency because the interaction m
 - Display title in center of header to make more mobile friendly UI.
 - Display time and location of uploaded photos to give information to users.
 - Give message list size changing effect same with messages to make higher internal consistency, and to help user make clearer mapping between users actions and UI actions.
-
-
 
 ----------
 ### Studio Reflections
@@ -248,6 +251,3 @@ Our system's UI naturally has low external consistency because the interaction m
 - We gathered the age, gender, occupation, travel experience, and experience finding travel mates as the demographic information.
 - We made dummy users to set interview environment. The photos of dummy users are from profile of users of facebook group, "유럽 어디까지 가봤니" and from google image search result, "남자 여행 인스타".
 - We redesign user testing method. First, we added procedure that use existing service finding travel mates. In other word, tester uses both our service and current service, and answer the question. Also, we added the question which compares our service and existing service.
-
-
-
