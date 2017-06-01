@@ -141,7 +141,7 @@ Before getting to usablity lessons, This is our questionary results.
 ![](./images/7/result1.png)
 ![](./images/7/result2.png)
 
-
+The first graph shows that the users felt our service is more easy and efficient in average. However, the variation of the data is overlaped, so it is not certain result. The second graph shows that our services are more helpful than existing service in finding attractive travel mates.
 
 We set metrics for measuring criticality as below.
 
