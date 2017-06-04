@@ -24,6 +24,13 @@ function updatePhotos() {
         photos = data.val();
         console.log(photos);
         calculateGeoInformation();
+
+        for (var key in photos) {
+            if (photos.hasOwnProperty(key)) {
+                var photo = photos[key];
+                photo.key = key;
+            }
+        }
     });
 }
 
@@ -35,11 +42,9 @@ function calculateGeoInformation() {
         var currentCoords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude); 
 
         for (var key in photos) {
-			
             if (photos.hasOwnProperty(key)) {
                 var photo = photos[key];
                 var photoCoords = new google.maps.LatLng(photo.position);
-                photo.key = key;
                 photo.angle = (google.maps.geometry.spherical.computeHeading(currentCoords, photoCoords) + 360) % 360; // degree
                 photo.angleIndex = Math.floor(photo.angle / UnitAngle);
                 photo.distance = google.maps.geometry.spherical.computeDistanceBetween(currentCoords, photoCoords); // meter
@@ -72,6 +77,7 @@ function handleOrientation(event) {
     for (var key in photos) {
         if (photos.hasOwnProperty(key)) {
             var photo = photos[key];
+            if (photo.user == 'B') continue;
             if (photo.angleIndex == (angleIndex-1 + AngleIndexLimit) % AngleIndexLimit) {
                 leftCol.push(photo);
             }
