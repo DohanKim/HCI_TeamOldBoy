@@ -1,3 +1,24 @@
+var image = [];
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
 $(document).ready(function(){
 	$('#send_msg').animate({width:'80%'}, 20000, 'linear');
 
@@ -30,11 +51,18 @@ $(document).ready(function(){
 	  } 
 	  return query_string;
 	}();
-
 	
 	photosRef.child("/"+QueryString.key+"/url").once("value").then(function(photo){
 		$("#main_photo").attr('src', photo.val());
 	});
 
-	
+    photosRef.orderByChild("user").equalTo("B").once("value", function(backgrounds) {
+        backgrounds.forEach(function(background){
+            image.push(background.val().url);
+        }); 
+        image = shuffle(image);
+        for(var i = 1; i < 4; i++){
+            $(`#small_image_${i}`).attr('src', image[i-1]);
+        };
+    });	
 });
