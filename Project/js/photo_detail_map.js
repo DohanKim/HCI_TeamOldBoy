@@ -1,3 +1,8 @@
+var current_location = {};
+var myTravel = [];
+var hisTravel = [];
+var recommend = [];
+
 function PutDataToMap(map, label, travel_map){
 	// Construct the circle for each value in citymap.
 	// Note: We scale the area of the circle based on the population.
@@ -12,10 +17,10 @@ function PutDataToMap(map, label, travel_map){
 		var icon = 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png';
 	}
 	
-	
 	var point;
 	var marker;
 	var $modalEl;
+
 	for (var i =0; i<travel_map.length;i++) {
 	// Add the circle for this city to the map.
 		point = travel_map[i];
@@ -28,8 +33,8 @@ function PutDataToMap(map, label, travel_map){
 			  fillColor: color,
 			  fillOpacity: 0.35,
 			  map: map,
-			  center: {lat: point["lat"], lng: point["lng"]},
-			  radius: point["url"].length * 20
+			  center: {lat: point["lat"], lng: point["lng"]}
+			  //radius: point["url"].length * 20
 			});
 		}
 		
@@ -97,9 +102,6 @@ function store(travel_map, photo){
 	}
 }
 
-var myTravel = [];
-var hisTravel = [];
-var recommend = [];
 
 $(function(){
 	photosRef.once("value").then(function(photos){
@@ -115,27 +117,37 @@ $(function(){
 				store(recommend, photo)
 			}
 		});
-		
-		// Create the map.
-		var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 15,
-			center: {lat: 36.370536, lng: 127.362590},
-			mapTypeId: 'roadmap',  
-			scrollwheel: false, 
-			disableDoubleClickZoom: true,
-			streetViewControl: false,
-			mapTypeControl: false,
-			fullscreenControl: false
-		});
-		google.maps.event.addDomListener(window, "resize", function() {
-		   var center = map.getCenter();
-		   google.maps.event.trigger(map, "resize");
-		   map.setCenter(center); 
-		});
-		
-		PutDataToMap(map, 'U', hisTravel);
-		PutDataToMap(map, 'I', myTravel);
-		PutDataToMap(map, 'star', recommend);
+	
+        if( navigator.geolocation ){
+           // Call getCurrentPosition with success and failure callbacks
+            navigator.geolocation.getCurrentPosition(function(position){
+                current_location["lat"]=  position.coords.latitude;
+                current_location["lng"]=  position.coords.longitude;
+
+                // Create the map.
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: current_location,
+                    mapTypeId: 'roadmap',  
+                    scrollwheel: false, 
+                    disableDoubleClickZoom: true,
+                    streetViewControl: false,
+                    mapTypeControl: false,
+                    fullscreenControl: false
+                });
+                google.maps.event.addDomListener(window, "resize", function() {
+                   var center = map.getCenter();
+                   google.maps.event.trigger(map, "resize");
+                   map.setCenter(center); 
+                });
+                
+                PutDataToMap(map, 'U', hisTravel);
+                PutDataToMap(map, 'I', myTravel);
+                PutDataToMap(map, 'star', recommend);
+           });
+        }else{
+           alert("Sorry, your browser does not support geolocation services.");
+        }
 	});
 });
 
