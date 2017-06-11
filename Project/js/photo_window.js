@@ -107,6 +107,20 @@ function handleOrientation(event) {
         // move whole photos
         // remove invisible column
         //
+        if (angleIndex > prevAngleIndex) {
+            $('#photos').append('<div id="#column4" class="column"></div>').css('width', 0);       
+
+            $("#column1").animate({
+                width: '0'
+            }, { duration: 200, queue: false });
+
+            $("#column4").animate({
+                width: '33%'
+            }, { duration: 200, queue: false });
+        }
+        else {
+
+        }
         $('#column1').empty();
         $('#column2').empty();
         $('#column3').empty();
