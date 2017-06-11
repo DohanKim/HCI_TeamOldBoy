@@ -141,13 +141,15 @@ function myTimer() {
     
     console.log('distance: ', d);
     // update the flag
-    if (d > 0.005 && flag_smaller == false){
+//     if (d < 0.005 && flag_smaller == false){
+	if (d > 0.005) {
         flag_smaller = true;
         flag_bigger = false;
     }
     
     
-    if (d < 0.005 && flag_bigger == false){
+//     if (d > 0.005 && flag_bigger == false){
+	if (d < 0.005) {
         flag_bigger = true;
         flag_smaller = false;
         
