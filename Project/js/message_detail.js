@@ -8,7 +8,8 @@ $('#sendbutton').on('click', function (e){
     messageRef.push({
         input: input,
         hour : (new Date()).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}),
-		unread: true
+		unread: true,
+        type: 'm'
 	});
     $("#inputbox").val("");
 });
@@ -21,7 +22,8 @@ function enterkey() {
 		messageRef.push({
 			input: input,
 			hour : (new Date()).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}),
-			unread: true
+			unread: true,
+            type: 'm'
 		});
 		$("#inputbox").val("");
 	}
@@ -34,17 +36,40 @@ messageRef.on("value", function(newData) {
 	var input = newData.val();
 	var childHTMLs = Object.keys(input).map(function(key) {
 		var data = input[key];
-		var newMsgRef = firebase.database().ref("messages/" + key);
-		// update the messge status to "read"
-		newMsgRef.update({
-			"unread": false
-		});
-		return `
-			<div class="message">
-				<div class = "message_contents"><b>${data.input}</b><div>
-				<div class = "message_time"> <span>${data.hour}</span>
-			</div>
-			`
+        
+        if (data.type == 'm'){
+            var newMsgRef = firebase.database().ref("messages/" + key);
+            // update the messge status to "read"
+            newMsgRef.update({
+                "unread": false
+            });
+            /*
+            $("#mymessage").child().class("message_U");
+            $("#mymessage").child().html(data.input);
+            */
+            return `
+                <div class="message" id = "mymessage">
+                    <div class = "message_contents"><b>${data.input}</b><div>
+                    <div class = "message_time"> <span>${data.hour}</span>
+                </div>
+                `
+        }
+        
+        else{
+            var newMsgRef = firebase.database().ref("messages/" + key);
+            // update the messge status to "read"
+            newMsgRef.update({
+                "unread": false
+            });
+            return `
+                <div class="message" id = "yourmessage">
+                    <div class = "message_contents"><b>${data.input}</b><div>
+                    <div class = "message_time"> <span>${data.hour}</span>
+                </div>
+                `    
+            
+        }
+		
 	});
 	var childHTML = childHTMLs.join("");
 	$("#content").empty();
