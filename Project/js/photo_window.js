@@ -57,7 +57,7 @@ function calculateGeoInformation() {
     }, {
         enableHighAccuracy: true, 
         maximumAge        : 1000, 
-        timeout           : 1000,
+        timeout           : 2000,
         // wait 1sec and if the location is not updated, cached location is returned 
     });
 }
