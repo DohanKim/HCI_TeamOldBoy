@@ -5,6 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 PutDataToMap	js/photo_detail_map.js	/^function PutDataToMap(map, label, travel_map){$/;"	f	language:JavaScript
+angleIndex	js/photo_window.js	/^var angleIndex = 0;$/;"	v	language:JavaScript
 calculateGeoInformation	js/photo_window.js	/^function calculateGeoInformation() {$/;"	f	language:JavaScript
 controlUploadSize	js/photo_window.js	/^function controlUploadSize(position) {$/;"	f	language:JavaScript
 controlUploadSize.pre_position.position	js/photo_window.js	/^      pre_position = {"position": current_position, "time": current_time};  $/;"	p	language:JavaScript

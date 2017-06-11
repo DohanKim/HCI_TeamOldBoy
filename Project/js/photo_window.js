@@ -10,13 +10,41 @@ var currentPosition;
 var flag_bigger = false;
 var pre_position;
 
+var angleIndex = 0;
 $(function() {
     updatePhotos();
 
-    window.addEventListener('deviceorientationabsolute', handleOrientation);
+    //    window.addEventListener('deviceorientationabsolute', handleOrientation);
 
     // change footer button color
     $("#photo-btn").css("background-color", "#0176C3");
+
+    $(document).keydown(function(e) {
+        switch(e.which) {
+            case 37: // left
+                console.log("left pressed");
+                angleIndex = (angleIndex - 1 + 12) % 12;
+    console.log("angleIndex: " + angleIndex);
+                handleOrientation();
+                break;
+
+            case 38: // up
+                break;
+
+            case 39: // right
+                console.log("right pressed");
+                angleIndex = (angleIndex + 1) % 12;
+    console.log("angleIndex: " + angleIndex);
+                handleOrientation();
+                break;
+
+            case 40: // down
+                break;
+
+            default: return; // exit this handler for other keys
+        }
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+    });
 });
 
 function updatePhotos() {
@@ -36,7 +64,7 @@ function updatePhotos() {
 
 function calculateGeoInformation() {
     navigator.geolocation.watchPosition(function(position) {
-// 		controlUploadSize(position);
+        //controlUploadSize(position);
         currentPosition = position;
 
         var currentCoords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude); 
@@ -63,12 +91,16 @@ function calculateGeoInformation() {
 }
 
 function handleOrientation(event) {
-    console.log("alpha: " + event.alpha);
-    if (gotCurrentPosition == false) return;
+    if (event && gotCurrentPosition == false) return;
 
-    var alpha = (360 - event.alpha) % 360;
-    var angleIndex = Math.floor(alpha / UnitAngle);
-    console.log(angleIndex);
+    // if (event)
+    // {
+    //     var alpha = (360 - event.alpha) % 360;
+    //     var angleIndex = Math.floor(alpha / UnitAngle);
+    //     console.log(angleIndex);
+    // }
+
+    console.log("angleIndex: " + angleIndex);
 
     var leftCol = [];
     var midCol = [];
@@ -107,20 +139,6 @@ function handleOrientation(event) {
         // move whole photos
         // remove invisible column
         //
-        if (angleIndex > prevAngleIndex) {
-            $('#photos').append('<div id="#column4" class="column"></div>').css('width', 0);       
-
-            $("#column1").animate({
-                width: '0'
-            }, { duration: 200, queue: false });
-
-            $("#column4").animate({
-                width: '33%'
-            }, { duration: 200, queue: false });
-        }
-        else {
-
-        }
         $('#column1').empty();
         $('#column2').empty();
         $('#column3').empty();
