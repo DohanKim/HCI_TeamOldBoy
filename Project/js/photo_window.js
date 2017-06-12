@@ -14,7 +14,7 @@ var angleIndex = 0;
 $(function() {
     updatePhotos();
 
-    //    window.addEventListener('deviceorientationabsolute', handleOrientation);
+    window.addEventListener('deviceorientationabsolute', handleOrientation);
 
     // change footer button color
     $("#photo-btn").css("background-color", "#0176C3");
@@ -93,12 +93,12 @@ function calculateGeoInformation() {
 function handleOrientation(event) {
     if (event && gotCurrentPosition == false) return;
 
-    // if (event)
-    // {
-    //     var alpha = (360 - event.alpha) % 360;
-    //     var angleIndex = Math.floor(alpha / UnitAngle);
-    //     console.log(angleIndex);
-    // }
+    if (event)
+    {
+        var alpha = (360 - event.alpha) % 360;
+        var angleIndex = Math.floor(alpha / UnitAngle);
+        console.log(angleIndex);
+    }
 
     console.log("angleIndex: " + angleIndex);
 
