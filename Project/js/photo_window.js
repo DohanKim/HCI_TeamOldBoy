@@ -64,7 +64,7 @@ function updatePhotos() {
 
 function calculateGeoInformation() {
     navigator.geolocation.watchPosition(function(position) {
-        //controlUploadSize(position);
+        controlUploadSize(position);
         currentPosition = position;
 
         var currentCoords = new google.maps.LatLng(position.coords.latitude, position.coords.longitude); 
